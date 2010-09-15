@@ -1,0 +1,12 @@
+.DS_Store
+._*
+*~
+*.kpf
+*.swp
+*.swo
+.project
+.settings
+.buildpath
+modules/*
+!modules/recruiter_*
+modules/recruiter_features/
