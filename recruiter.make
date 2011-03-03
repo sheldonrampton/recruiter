@@ -162,8 +162,3 @@ projects[transformers][download][type] = git
 projects[transformers][download][url] = git://git.drupalcode.org/project/transformers.git
 projects[transformers][download][revision] = cb519b2cbaa1af02968f511ff05c8bc6365d72e0
 
-; Add recruiter feature modules.
-projects[recruiter_features][type] = module
-projects[recruiter_features][download][type] = git
-projects[recruiter_features][download][url] = ssh://gitosis@git.epiqo.com:50022/recruiter_features.git
-
