@@ -17,7 +17,7 @@ projects[ctools][download][revision] = a83dce0a2f68c659fa9ef02533a774226d0e6e3f
 projects[entity][type] = module
 projects[entity][download][type] = git
 projects[entity][download][url] = git://git.drupalcode.org/project/entity.git
-projects[entity][download][revision] = 2a89b56543adb3930aa6b9198c366542526cd305
+projects[entity][download][revision] = 716409609c7a4019997fa4b664237930fa783808
 ; http://drupal.org/node/1077148 Entity-view Views row style.
 projects[entity][patch][] = "http://drupal.org/files/issues/entity_row_plugin.patch"
 
@@ -53,7 +53,7 @@ projects[email][download][revision] = 03f7a94df173ebb9f9572c5e927dd52a91780015
 projects[field_collection][type] = module
 projects[field_collection][download][type] = git
 projects[field_collection][download][url] = git://git.drupalcode.org/project/field_collection.git
-projects[field_collection][download][revision] = 320290ef0dfcb1add7b530dc281cb515c8babf17
+projects[field_collection][download][revision] = 1e705e5c37414a1eb7b42d856ad778c0c9ce76e4
 
 projects[search_api][type] = module
 projects[search_api][download][type] = git
