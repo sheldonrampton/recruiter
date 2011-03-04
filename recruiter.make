@@ -110,7 +110,7 @@ projects[content_taxonomy][download][revision] = b28da805b18abaea38602bff467fbc1
 projects[autocomplete_deluxe][type] = module
 projects[autocomplete_deluxe][download][type] = git
 projects[autocomplete_deluxe][download][url] = git://git.drupalcode.org/project/autocomplete_deluxe.git
-projects[autocomplete_deluxe][download][revision] = 31e6c08dd95114310758b5db7d0b1922e4b15b9e
+projects[autocomplete_deluxe][download][revision] = fc4dda7cc588d4c569d72aaf9318d7ebcf961369
 
 projects[colorbox][type] = module
 projects[colorbox][download][type] = git
