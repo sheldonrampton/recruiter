@@ -2,8 +2,6 @@
 core = 7.x
 api = 2
 
-; For now use the latest dev version of some modules via Git.
-
 projects[views][type] = module
 projects[views][download][type] = git
 projects[views][download][url] = git://git.drupalcode.org/project/views.git
