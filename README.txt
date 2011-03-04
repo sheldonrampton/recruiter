@@ -40,11 +40,11 @@ Installation
 
    http://drupal.org/project/recruiter
 
-2. Change to the downloaded folder and run the build script with parameter "2"
+2. Change to the downloaded folder and run the build script with parameter "3"
    to build the stable distribution.
 
    cd recruiter
-   ./rebuild.sh 2
+   ./rebuild.sh 3
 
 3. Move the newly created "recruiter" subfolder to your webroot and configure
    your webserver accordingly.
@@ -58,6 +58,10 @@ Installation
    in the Drupal administration pages at
  
           "admin/config/search/search_api/server/solr_server/edit"
+
+6. Configure your private file system path as usual at
+
+          "admin/config/media/file-system"
 
 
 Features
