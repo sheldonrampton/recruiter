@@ -26,16 +26,16 @@ installation instructions please consult their respective documentation.
 Building the distribution
 -------------------------
 
-If you want to check out the distribution via git from drupal.org, you need to
-follow these instructions to build the distribution from scratch. If you have
-downloaded to complete tarball, you can skip these steps and jump directly to
-the installation instructions.
+Follow this instructions to build the distribution from scratch, e.g. using the
+latest development version from the Git repository. If you have downloaded an
+already packaged tarball, you can skip these steps and jump directly to the
+installation instructions.
 
 Recruiter is distributed with a .make file and one .profile file. The .make file
 defines what packages must be downloaded and the .profile file is responsible
 for configuring all those modules.
 
-Befor building the recruiter distribution you need two things:
+Before building the recruiter distribution you need two things:
 
  * Drush (http://drupal.org/project/drush)
  * Drush Make (http://drupal.org/project/drush_make)
@@ -52,6 +52,9 @@ respective documentation. Then continue with the following steps:
 
    cd recruiter
    ./rebuild.sh 3
+
+   If you want to use the latest development version, you have to build it with "3"
+   first, then execute rebuild.sh again with option "1".
 
 3. Move the newly created "recruiter" subfolder to your webroot. It contains a
    full Drupal installation with all required modules and the installation
