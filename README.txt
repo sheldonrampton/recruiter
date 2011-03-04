@@ -19,47 +19,62 @@ Maintained by epiqo, see http://epiqo.com.
 Requirements
 ------------
 
-Recruiter is distributed with a .make file and one .profile file. The .make file
-defines what packages that must be downloaded and the .profile file is
-responsible for configuring all those modules.
+Recruiter depends on Apache Solr (http://lucene.apache.org/solr/), for
+installation instructions please consult their respective documentation.
 
-Befor building the recruiter distribution you need three things:
+
+Building the distribution
+-------------------------
+
+If you want to check out the distribution via git from drupal.org, you need to
+follow these instructions to build the distribution from scratch. If you have
+downloaded to complete tarball, you can skip these steps and jump directly to
+the installation instructions.
+
+Recruiter is distributed with a .make file and one .profile file. The .make file
+defines what packages must be downloaded and the .profile file is responsible
+for configuring all those modules.
+
+Befor building the recruiter distribution you need two things:
 
  * Drush (http://drupal.org/project/drush)
  * Drush Make (http://drupal.org/project/drush_make)
- * Apache Solr (http://lucene.apache.org/solr/)
 
 For instructions on how to install those packages, please consult their
-respective documentation.
+respective documentation. Then continue with the following steps:
+
+1. Clone the Recruiter installation profile from drupal.org:
+
+   git clone --branch 7.x-1.x http://git.drupal.org/project/recruiter.git
+
+2. Change to the new folder and run the build script with parameter "3" to build
+   the stable distribution.
+
+   cd recruiter
+   ./rebuild.sh 3
+
+3. Move the newly created "recruiter" subfolder to your webroot. It contains a
+   full Drupal installation with all required modules and the installation
+   profile.
 
 
 Installation
 ------------
 
-1. Download and extract the Recruiter installation profile from
-
-   http://drupal.org/project/recruiter
-
-2. Change to the downloaded folder and run the build script with parameter "3"
-   to build the stable distribution.
-
-   cd recruiter
-   ./rebuild.sh 3
-
-3. Move the newly created "recruiter" subfolder to your webroot and configure
+1. Make sure your recruiter download is placed in the webroot and configure
    your webserver accordingly.
 
-4. Install Recruiter as a usual Drupal site by visitting it with your
+1. Install Recruiter as a usual Drupal site by visitting it with your
    webbrowser. Select the "recruiter" installation profile and follow the usual
    Drupal installation instructions (i.e. Drupal's INSTALL.txt in the webroot
    subfolder).
 
-5. Apache Solr is required for the job and resume searches, you can configure it
+2. Apache Solr is required for the job and resume searches, you can configure it
    in the Drupal administration pages at
  
           "admin/config/search/search_api/server/solr_server/edit"
 
-6. Configure your private file system path as usual at
+3. Configure your private file system path as usual at
 
           "admin/config/media/file-system"
 
