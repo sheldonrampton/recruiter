@@ -86,7 +86,7 @@ projects[link][download][type] = git
 projects[link][download][url] = git://git.drupalcode.org/project/link.git
 projects[link][download][branch] = 7.x-1.x
 ; Add support hook_entity_property_info(), issue http://drupal.org/node/1079782.
-projects[link][patch][] = "http://drupal.org/files/issues/link_entity_property_0.patch"
+projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_property.patch"
 
 projects[taxonomy_csv][type] = module
 projects[taxonomy_csv][download][type] = git
