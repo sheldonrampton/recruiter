@@ -648,7 +648,8 @@ function recruiter_job_search_default_search_api_index() {
           "weight" : "0",
           "settings" : { "default" : "1", "bundles" : [] }
         },
-        "search_api_alter_add_fulltext" : {
+        "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_add_aggregation" : {
           "status" : 1,
           "weight" : "0",
           "settings" : { "fields" : { "search_api_fulltext_1" : {
@@ -716,12 +717,12 @@ function recruiter_job_search_default_search_api_index() {
                   "field_job_region:weight" : 0,
                   "field_job_region:node_count" : 0,
                   "field_job_region:url" : 0
-                }
+                },
+                "type" : "fulltext"
               }
             }
           }
-        },
-        "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] }
+        }
       },
       "processors" : {
         "search_api_case_ignore" : { "status" : 0, "weight" : "0", "settings" : { "strings" : 0 } },

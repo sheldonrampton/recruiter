@@ -537,7 +537,8 @@ function recruiter_resume_search_default_search_api_index() {
           "weight" : "0",
           "settings" : { "default" : "0", "bundles" : { "resume" : "resume" } }
         },
-        "search_api_alter_add_fulltext" : {
+        "search_api_alter_add_url" : { "status" : 1, "weight" : "0", "settings" : [] },
+        "search_api_alter_add_aggregation" : {
           "status" : 1,
           "weight" : "0",
           "settings" : { "fields" : { "search_api_fulltext_1" : {
@@ -613,12 +614,12 @@ function recruiter_resume_search_default_search_api_index() {
                   "field_resume_skills_it:field_resume_skills_it_level:term:weight" : 0,
                   "field_resume_skills_it:field_resume_skills_it_level:term:node_count" : 0,
                   "field_resume_skills_it:field_resume_skills_it_level:term:url" : 0
-                }
+                },
+                "type" : "fulltext"
               }
             }
           }
-        },
-        "search_api_alter_add_url" : { "status" : 1, "weight" : "0", "settings" : [] }
+        }
       },
       "processors" : {
         "search_api_case_ignore" : { "status" : 0, "weight" : "0", "settings" : { "strings" : 0 } },
