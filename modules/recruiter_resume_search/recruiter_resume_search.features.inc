@@ -1,4 +1,18 @@
 <?php
+/**
+ * @file
+ * recruiter_resume_search.features.inc
+ */
+
+/**
+ * Implementation of hook_views_api().
+ */
+function recruiter_resume_search_views_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "views" && $api == "views_default") {
+    return array("version" => 3.0);
+  }
+}
 
 /**
  * Implementation of hook_default_search_api_facet().
@@ -20,7 +34,9 @@ function recruiter_resume_search_default_search_api_facet() {
       "ids_list" : [],
       "type" : "string",
       "field_name" : "Language \\u00bb Languages \\u00bb Taxonomy Term \\u00bb Name",
-      "show_active" : true
+      "show_active" : true,
+      "display_more_link" : false,
+      "more_limit" : 10
     },
     "rdf_mapping" : []
   }');
@@ -39,7 +55,9 @@ function recruiter_resume_search_default_search_api_facet() {
       "ids_list" : [],
       "type" : "string",
       "field_name" : "IT skills \\u00bb IT skills \\u00bb Taxonomy Term \\u00bb Name",
-      "show_active" : true
+      "show_active" : true,
+      "display_more_link" : false,
+      "more_limit" : 10
     },
     "rdf_mapping" : []
   }');
@@ -58,7 +76,9 @@ function recruiter_resume_search_default_search_api_facet() {
       "ids_list" : [],
       "type" : "string",
       "field_name" : "General skills \\u00bb General skills \\u00bb Taxonomy Term \\u00bb Name",
-      "show_active" : true
+      "show_active" : true,
+      "display_more_link" : false,
+      "more_limit" : 10
     },
     "rdf_mapping" : []
   }');
@@ -77,7 +97,9 @@ function recruiter_resume_search_default_search_api_facet() {
       "ids_list" : [],
       "type" : "string",
       "field_name" : "Work experience \\u00bb Company name",
-      "show_active" : true
+      "show_active" : true,
+      "display_more_link" : false,
+      "more_limit" : 10
     },
     "rdf_mapping" : []
   }');
@@ -617,16 +639,8 @@ function recruiter_resume_search_default_search_api_index() {
       }
     },
     "enabled" : "1",
+    "read_only" : "0",
     "rdf_mapping" : []
   }');
   return $items;
-}
-
-/**
- * Implementation of hook_views_api().
- */
-function recruiter_resume_search_views_api() {
-  return array(
-    'api' => '3.0-alpha1',
-  );
 }

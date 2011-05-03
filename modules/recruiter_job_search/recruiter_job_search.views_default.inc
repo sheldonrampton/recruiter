@@ -1,12 +1,15 @@
 <?php
+/**
+ * @file
+ * recruiter_job_search.views_default.inc
+ */
 
 /**
  * Implementation of hook_views_default_views().
  */
 function recruiter_job_search_views_default_views() {
-  $views = array();
+  $export = array();
 
-  // Exported view: job_search
   $view = new view;
   $view->name = 'job_search';
   $view->description = 'Recruiter job search';
@@ -59,7 +62,7 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['style_options']['override'] = 1;
   $handler->display->display_options['style_options']['sticky'] = 0;
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Empty text: Global: Text area */
+  /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
@@ -148,7 +151,7 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['fields']['field_job_organization']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['link_to_entity'] = 0;
-  /* Filter: Node: Content type */
+  /* Filter criterion: Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_job_search';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -157,20 +160,22 @@ function recruiter_job_search_views_default_views() {
     'job_per_link' => 'job_per_link',
     'job_per_template' => 'job_per_template',
   );
-  /* Filter: Search: Fulltext search */
+  /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_job_search';
   $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Fulltext search';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search';
-  /* Filter: Node: Published */
+  /* Filter criterion: Node: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_job_search';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
-  /* Filter: Node: Workflow state */
+  /* Filter criterion: Node: Workflow state */
   $handler->display->display_options['filters']['field_job_workflow_state']['id'] = 'field_job_workflow_state';
   $handler->display->display_options['filters']['field_job_workflow_state']['table'] = 'search_api_index_job_search';
   $handler->display->display_options['filters']['field_job_workflow_state']['field'] = 'field_job_workflow_state';
@@ -192,7 +197,7 @@ function recruiter_job_search_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Items per page'),
@@ -209,8 +214,7 @@ function recruiter_job_search_views_default_views() {
     t('Fulltext search'),
     t('Page'),
   );
+  $export['job_search'] = $view;
 
-  $views[$view->name] = $view;
-
-  return $views;
+  return $export;
 }

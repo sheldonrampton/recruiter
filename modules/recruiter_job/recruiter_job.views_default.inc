@@ -1,12 +1,15 @@
 <?php
+/**
+ * @file
+ * recruiter_job.views_default.inc
+ */
 
 /**
  * Implementation of hook_views_default_views().
  */
 function recruiter_job_views_default_views() {
-  $views = array();
+  $export = array();
 
-  // Exported view: job_administration
   $view = new view;
   $view->name = 'job_administration';
   $view->description = 'View all jobs in the system';
@@ -73,11 +76,11 @@ function recruiter_job_views_default_views() {
   );
   $handler->display->display_options['style_options']['override'] = 1;
   $handler->display->display_options['style_options']['sticky'] = 0;
-  /* Field: Node: Type */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
-  /* Field: Node: Title */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -96,11 +99,11 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Node: Updated date */
+  /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
-  /* Field: Fields: Workflow state */
+  /* Field: Content: Workflow state */
   $handler->display->display_options['fields']['field_job_workflow_state']['id'] = 'field_job_workflow_state';
   $handler->display->display_options['fields']['field_job_workflow_state']['table'] = 'field_data_field_job_workflow_state';
   $handler->display->display_options['fields']['field_job_workflow_state']['field'] = 'field_job_workflow_state';
@@ -119,7 +122,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['field_job_workflow_state']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_job_workflow_state']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_job_workflow_state']['field_api_classes'] = 0;
-  /* Field: Fields: Organization */
+  /* Field: Content: Organization */
   $handler->display->display_options['fields']['field_job_organization']['id'] = 'field_job_organization';
   $handler->display->display_options['fields']['field_job_organization']['table'] = 'field_data_field_job_organization';
   $handler->display->display_options['fields']['field_job_organization']['field'] = 'field_job_organization';
@@ -138,7 +141,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['field_job_organization']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['field_api_classes'] = 0;
-  /* Filter: Node: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -148,47 +151,51 @@ function recruiter_job_views_default_views() {
     'job_per_template' => 'job_per_template',
   );
   $handler->display->display_options['filters']['type']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['label'] = 'Job type';
   $handler->display->display_options['filters']['type']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
-  /* Filter: Fields: Organization (field_job_organization) - value */
+  /* Filter criterion: Content: Organization (field_job_organization) */
   $handler->display->display_options['filters']['field_job_organization_value']['id'] = 'field_job_organization_value';
   $handler->display->display_options['filters']['field_job_organization_value']['table'] = 'field_data_field_job_organization';
   $handler->display->display_options['filters']['field_job_organization_value']['field'] = 'field_job_organization_value';
   $handler->display->display_options['filters']['field_job_organization_value']['operator'] = 'contains';
   $handler->display->display_options['filters']['field_job_organization_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_job_organization_value']['expose']['operator'] = 'field_job_organization_value_op';
+  $handler->display->display_options['filters']['field_job_organization_value']['expose']['operator_id'] = 'field_job_organization_value_op';
   $handler->display->display_options['filters']['field_job_organization_value']['expose']['label'] = 'Organization';
   $handler->display->display_options['filters']['field_job_organization_value']['expose']['use_operator'] = 1;
+  $handler->display->display_options['filters']['field_job_organization_value']['expose']['operator'] = 'field_job_organization_value_op';
   $handler->display->display_options['filters']['field_job_organization_value']['expose']['identifier'] = 'field_job_organization_value';
-  $handler->display->display_options['filters']['field_job_organization_value']['expose']['optional'] = TRUE;
-  $handler->display->display_options['filters']['field_job_organization_value']['expose']['single'] = TRUE;
-  /* Filter: Node: Post date */
+  $handler->display->display_options['filters']['field_job_organization_value']['expose']['required'] = FALSE;
+  $handler->display->display_options['filters']['field_job_organization_value']['expose']['multiple'] = FALSE;
+  /* Filter criterion: Content: Post date */
   $handler->display->display_options['filters']['created']['id'] = 'created';
   $handler->display->display_options['filters']['created']['table'] = 'node';
   $handler->display->display_options['filters']['created']['field'] = 'created';
   $handler->display->display_options['filters']['created']['operator'] = '>=';
   $handler->display->display_options['filters']['created']['value']['value'] = '1970-01-01 00:00:00';
   $handler->display->display_options['filters']['created']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['created']['expose']['operator'] = 'created_op';
+  $handler->display->display_options['filters']['created']['expose']['operator_id'] = 'created_op';
   $handler->display->display_options['filters']['created']['expose']['label'] = 'Job created date';
   $handler->display->display_options['filters']['created']['expose']['use_operator'] = 1;
+  $handler->display->display_options['filters']['created']['expose']['operator'] = 'created_op';
   $handler->display->display_options['filters']['created']['expose']['identifier'] = 'created';
-  $handler->display->display_options['filters']['created']['expose']['single'] = TRUE;
-  /* Filter: Node: Updated date */
+  $handler->display->display_options['filters']['created']['expose']['multiple'] = FALSE;
+  /* Filter criterion: Content: Updated date */
   $handler->display->display_options['filters']['changed']['id'] = 'changed';
   $handler->display->display_options['filters']['changed']['table'] = 'node';
   $handler->display->display_options['filters']['changed']['field'] = 'changed';
   $handler->display->display_options['filters']['changed']['operator'] = '>';
   $handler->display->display_options['filters']['changed']['value']['value'] = '1970-01-01 00:00:00';
   $handler->display->display_options['filters']['changed']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['changed']['expose']['operator'] = 'changed_op';
+  $handler->display->display_options['filters']['changed']['expose']['operator_id'] = 'changed_op';
   $handler->display->display_options['filters']['changed']['expose']['label'] = 'Job updated date';
   $handler->display->display_options['filters']['changed']['expose']['use_operator'] = 1;
+  $handler->display->display_options['filters']['changed']['expose']['operator'] = 'changed_op';
   $handler->display->display_options['filters']['changed']['expose']['identifier'] = 'changed';
-  $handler->display->display_options['filters']['changed']['expose']['single'] = TRUE;
+  $handler->display->display_options['filters']['changed']['expose']['multiple'] = FALSE;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -204,7 +211,7 @@ function recruiter_job_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Items per page'),
@@ -220,10 +227,8 @@ function recruiter_job_views_default_views() {
     t('Job updated date'),
     t('Page'),
   );
+  $export['job_administration'] = $view;
 
-  $views[$view->name] = $view;
-
-  // Exported view: job_manage
   $view = new view;
   $view->name = 'job_manage';
   $view->description = 'UI for managing jobs.';
@@ -310,7 +315,7 @@ function recruiter_job_views_default_views() {
 </ul>
 ';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
-  /* Empty text: Global: Text area */
+  /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
@@ -318,7 +323,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = FALSE;
   $handler->display->display_options['empty']['area']['content'] = 'Empty.';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
-  /* Field: Node: Post date */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -332,7 +337,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['created']['alter']['html'] = 0;
   $handler->display->display_options['fields']['created']['hide_empty'] = 0;
   $handler->display->display_options['fields']['created']['empty_zero'] = 0;
-  /* Field: Node: Type */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -348,7 +353,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['type']['empty_zero'] = 0;
   $handler->display->display_options['fields']['type']['link_to_node'] = 0;
   $handler->display->display_options['fields']['type']['machine_name'] = 0;
-  /* Field: Node: Title */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -363,7 +368,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Node: Updated date */
+  /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
@@ -379,7 +384,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['changed']['hide_empty'] = 0;
   $handler->display->display_options['fields']['changed']['empty_zero'] = 0;
   $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
-  /* Field: Node: Job URL */
+  /* Field: Content: Job URL */
   $handler->display->display_options['fields']['job_url']['id'] = 'job_url';
   $handler->display->display_options['fields']['job_url']['table'] = 'node';
   $handler->display->display_options['fields']['job_url']['field'] = 'job_url';
@@ -402,7 +407,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['job_url']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['job_url']['hide_empty'] = 0;
   $handler->display->display_options['fields']['job_url']['empty_zero'] = 0;
-  /* Field: Node: Edit link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
@@ -417,7 +422,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['alter']['html'] = 0;
   $handler->display->display_options['fields']['edit_node']['hide_empty'] = 0;
   $handler->display->display_options['fields']['edit_node']['empty_zero'] = 0;
-  /* Field: Node: Delete link */
+  /* Field: Content: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['table'] = 'node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
@@ -432,7 +437,7 @@ function recruiter_job_views_default_views() {
   $handler->display->display_options['fields']['delete_node']['alter']['html'] = 0;
   $handler->display->display_options['fields']['delete_node']['hide_empty'] = 0;
   $handler->display->display_options['fields']['delete_node']['empty_zero'] = 0;
-  /* Filter: Node: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -441,12 +446,12 @@ function recruiter_job_views_default_views() {
     'job_per_link' => 'job_per_link',
     'job_per_template' => 'job_per_template',
   );
-  /* Filter: User: Current */
+  /* Filter criterion: User: Current */
   $handler->display->display_options['filters']['uid_current']['id'] = 'uid_current';
   $handler->display->display_options['filters']['uid_current']['table'] = 'users';
   $handler->display->display_options['filters']['uid_current']['field'] = 'uid_current';
   $handler->display->display_options['filters']['uid_current']['value'] = '1';
-  /* Filter: Fields: Workflow state (field_job_workflow_state) */
+  /* Filter criterion: Content: Workflow state (field_job_workflow_state) */
   $handler->display->display_options['filters']['field_job_workflow_state_value']['id'] = 'field_job_workflow_state_value';
   $handler->display->display_options['filters']['field_job_workflow_state_value']['table'] = 'field_data_field_job_workflow_state';
   $handler->display->display_options['filters']['field_job_workflow_state_value']['field'] = 'field_job_workflow_state_value';
@@ -469,7 +474,7 @@ function recruiter_job_views_default_views() {
   /* Display: Page unpublished */
   $handler = $view->new_display('page', 'Page unpublished', 'page_2');
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter: Node: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -477,12 +482,12 @@ function recruiter_job_views_default_views() {
     'job_per_link' => 'job_per_link',
     'job_per_template' => 'job_per_template',
   );
-  /* Filter: User: Current */
+  /* Filter criterion: User: Current */
   $handler->display->display_options['filters']['uid_current']['id'] = 'uid_current';
   $handler->display->display_options['filters']['uid_current']['table'] = 'users';
   $handler->display->display_options['filters']['uid_current']['field'] = 'uid_current';
   $handler->display->display_options['filters']['uid_current']['value'] = '1';
-  /* Filter: Fields: Workflow state (field_job_workflow_state) */
+  /* Filter criterion: Content: Workflow state (field_job_workflow_state) */
   $handler->display->display_options['filters']['field_job_workflow_state_value']['id'] = 'field_job_workflow_state_value';
   $handler->display->display_options['filters']['field_job_workflow_state_value']['table'] = 'field_data_field_job_workflow_state';
   $handler->display->display_options['filters']['field_job_workflow_state_value']['field'] = 'field_job_workflow_state_value';
@@ -500,7 +505,7 @@ function recruiter_job_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Items per page'),
@@ -527,8 +532,7 @@ function recruiter_job_views_default_views() {
     t('Page published'),
     t('Page unpublished'),
   );
+  $export['job_manage'] = $view;
 
-  $views[$view->name] = $view;
-
-  return $views;
+  return $export;
 }

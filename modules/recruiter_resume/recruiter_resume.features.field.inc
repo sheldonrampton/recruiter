@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_resume.features.field.inc
+ */
 
 /**
  * Implementation of hook_field_default_fields().
@@ -17,7 +21,7 @@ function recruiter_resume_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
@@ -82,7 +86,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -152,17 +156,17 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'fields_of_study',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -233,7 +237,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -503,7 +507,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -566,13 +570,13 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'occupational_fields',
           ),
@@ -631,13 +635,13 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'geography',
           ),
@@ -689,7 +693,7 @@ function recruiter_resume_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'term_level',
@@ -756,7 +760,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -820,7 +824,7 @@ function recruiter_resume_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'field_resume_personal_info',
       'default_value' => array(
-        '0' => array(
+        0 => array(
           'administrative_area' => '',
           'country' => 'US',
           'element_key' => 'field_collection_item|field_resume_personal_info|field_resume_address|und|0',
@@ -884,7 +888,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -947,7 +951,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'fid' => array(
-          '0' => 'fid',
+          0 => 'fid',
         ),
       ),
       'module' => 'image',
@@ -1021,7 +1025,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1076,7 +1080,7 @@ function recruiter_resume_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'term_level',
@@ -1142,7 +1146,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1197,7 +1201,7 @@ function recruiter_resume_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'term_level',
@@ -1263,7 +1267,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1326,7 +1330,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1482,17 +1486,17 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'occupational_fields',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -1556,7 +1560,7 @@ function recruiter_resume_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -2044,7 +2048,7 @@ function recruiter_resume_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
@@ -2063,7 +2067,7 @@ function recruiter_resume_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'resume',
       'default_value' => array(
-        '0' => array(
+        0 => array(
           'value' => 'incomplete',
         ),
       ),

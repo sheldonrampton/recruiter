@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_job.features.field.inc
+ */
 
 /**
  * Implementation of hook_field_default_fields().
@@ -24,7 +28,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -85,16 +89,16 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          '1' => '1 - 2 years',
-          '3' => '3 - 5 years',
-          '5' => '5 - 10 years',
-          '10' => 'more than 10 years',
+          1 => '1 - 2 years',
+          3 => '3 - 5 years',
+          5 => '5 - 10 years',
+          10 => 'more than 10 years',
         ),
         'allowed_values_function' => '',
         'profile2_private' => FALSE,
@@ -181,7 +185,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'fid' => array(
-          '0' => 'fid',
+          0 => 'fid',
         ),
       ),
       'module' => 'file',
@@ -254,17 +258,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'languages',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -334,7 +338,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -396,13 +400,13 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'occupational_fields',
           ),
@@ -484,13 +488,13 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'fields_of_study',
           ),
@@ -579,7 +583,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -672,13 +676,13 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'geography',
           ),
@@ -743,17 +747,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'general_skills',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -823,17 +827,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'it_skills',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -896,7 +900,7 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
@@ -913,7 +917,7 @@ function recruiter_job_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'job_per_file',
       'default_value' => array(
-        '0' => array(
+        0 => array(
           'value' => 'published',
         ),
       ),
@@ -993,7 +997,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1054,16 +1058,16 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          '1' => '1 - 2 years',
-          '3' => '3 - 5 years',
-          '5' => '5 - 10 years',
-          '10' => 'more than 10 years',
+          1 => '1 - 2 years',
+          3 => '3 - 5 years',
+          5 => '5 - 10 years',
+          10 => 'more than 10 years',
         ),
         'allowed_values_function' => '',
         'profile2_private' => FALSE,
@@ -1150,17 +1154,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'languages',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -1308,7 +1312,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1370,13 +1374,13 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'occupational_fields',
           ),
@@ -1458,13 +1462,13 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'fields_of_study',
           ),
@@ -1553,7 +1557,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -1646,13 +1650,13 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'geography',
           ),
@@ -1717,17 +1721,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'general_skills',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -1797,17 +1801,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'it_skills',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -1870,7 +1874,7 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
@@ -1887,7 +1891,7 @@ function recruiter_job_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'job_per_link',
       'default_value' => array(
-        '0' => array(
+        0 => array(
           'value' => 'published',
         ),
       ),
@@ -1956,7 +1960,7 @@ function recruiter_job_field_default_fields() {
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(
-        '0' => 'node',
+        0 => 'node',
       ),
       'field_name' => 'body',
       'foreign keys' => array(
@@ -1969,7 +1973,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -2067,7 +2071,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -2128,16 +2132,16 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          '1' => '1 - 2 years',
-          '3' => '3 - 5 years',
-          '5' => '5 - 10 years',
-          '10' => 'more than 10 years',
+          1 => '1 - 2 years',
+          3 => '3 - 5 years',
+          5 => '5 - 10 years',
+          10 => 'more than 10 years',
         ),
         'allowed_values_function' => '',
         'profile2_private' => FALSE,
@@ -2224,17 +2228,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'languages',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -2304,7 +2308,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -2366,13 +2370,13 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'occupational_fields',
           ),
@@ -2454,13 +2458,13 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'fields_of_study',
           ),
@@ -2549,7 +2553,7 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'format' => array(
-          '0' => 'format',
+          0 => 'format',
         ),
       ),
       'module' => 'text',
@@ -2642,13 +2646,13 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'geography',
           ),
@@ -2713,17 +2717,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'general_skills',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -2793,17 +2797,17 @@ function recruiter_job_field_default_fields() {
       ),
       'indexes' => array(
         'tid' => array(
-          '0' => 'tid',
+          0 => 'tid',
         ),
       ),
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
-          '0' => array(
+          0 => array(
             'parent' => '0',
             'vocabulary' => 'it_skills',
           ),
-          '1' => array(
+          1 => array(
             'content_taxonomy_ignore_in_suggestions' => 1,
             'parent' => 0,
             'vocabulary' => 'tags',
@@ -2866,7 +2870,7 @@ function recruiter_job_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
-          '0' => 'value',
+          0 => 'value',
         ),
       ),
       'module' => 'list',
@@ -2883,7 +2887,7 @@ function recruiter_job_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'job_per_template',
       'default_value' => array(
-        '0' => array(
+        0 => array(
           'value' => 'published',
         ),
       ),

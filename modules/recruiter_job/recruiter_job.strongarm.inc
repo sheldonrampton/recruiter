@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_job.strongarm.inc
+ */
 
 /**
  * Implementation of hook_strongarm().

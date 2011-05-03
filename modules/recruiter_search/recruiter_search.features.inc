@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_search.features.inc
+ */
 
 /**
  * Implementation of hook_default_search_api_server().

@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_common.features.inc
+ */
 
 /**
  * Implementation of hook_ctools_plugin_api().

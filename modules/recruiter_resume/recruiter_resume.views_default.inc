@@ -1,12 +1,15 @@
 <?php
+/**
+ * @file
+ * recruiter_resume.views_default.inc
+ */
 
 /**
  * Implementation of hook_views_default_views().
  */
 function recruiter_resume_views_default_views() {
-  $views = array();
+  $export = array();
 
-  // Exported view: resume_administration
   $view = new view;
   $view->name = 'resume_administration';
   $view->description = 'View all resumes in the system.';
@@ -132,7 +135,7 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['label']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['label']['hide_empty'] = 0;
   $handler->display->display_options['fields']['label']['empty_zero'] = 0;
-  /* Field: Fields: Resume state */
+  /* Field: Profile: Resume state */
   $handler->display->display_options['fields']['field_resume_state']['id'] = 'field_resume_state';
   $handler->display->display_options['fields']['field_resume_state']['table'] = 'field_data_field_resume_state';
   $handler->display->display_options['fields']['field_resume_state']['field'] = 'field_resume_state';
@@ -193,7 +196,7 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['access']['hide_empty'] = 0;
   $handler->display->display_options['fields']['access']['empty_zero'] = 0;
   $handler->display->display_options['fields']['access']['date_format'] = 'time ago';
-  /* Filter: Profile type: Machine-readable name */
+  /* Filter criterion: Profile type: Machine-readable name */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile_type';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -214,7 +217,7 @@ function recruiter_resume_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Items per page'),
@@ -229,8 +232,7 @@ function recruiter_resume_views_default_views() {
     t('Last access'),
     t('Page'),
   );
+  $export['resume_administration'] = $view;
 
-  $views[$view->name] = $view;
-
-  return $views;
+  return $export;
 }

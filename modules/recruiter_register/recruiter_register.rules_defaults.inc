@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_register.rules_defaults.inc
+ */
 
 /**
  * Implementation of hook_default_rules_configuration().

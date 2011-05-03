@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_resume.features.user_role.inc
+ */
 
 /**
  * Implementation of hook_user_default_roles().

@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * recruiter_common.features.taxonomy.inc
+ */
 
 /**
  * Implementation of hook_taxonomy_default_vocabularies().
@@ -14,16 +18,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '-9',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),
@@ -37,16 +41,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '-8',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),
@@ -60,16 +64,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '0',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),
@@ -83,16 +87,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '0',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),
@@ -106,16 +110,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '-7',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),
@@ -129,16 +133,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '-6',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),
@@ -152,16 +156,16 @@ function recruiter_common_taxonomy_default_vocabularies() {
       'weight' => '-10',
       'rdf_mapping' => array(
         'rdftype' => array(
-          '0' => 'skos:ConceptScheme',
+          0 => 'skos:ConceptScheme',
         ),
         'name' => array(
           'predicates' => array(
-            '0' => 'dc:title',
+            0 => 'dc:title',
           ),
         ),
         'description' => array(
           'predicates' => array(
-            '0' => 'rdfs:comment',
+            0 => 'rdfs:comment',
           ),
         ),
       ),

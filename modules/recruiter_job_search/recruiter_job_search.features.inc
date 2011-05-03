@@ -1,4 +1,28 @@
 <?php
+/**
+ * @file
+ * recruiter_job_search.features.inc
+ */
+
+/**
+ * Implementation of hook_ctools_plugin_api().
+ */
+function recruiter_job_search_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => 1);
+  }
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function recruiter_job_search_views_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "views" && $api == "views_default") {
+    return array("version" => 3.0);
+  }
+}
 
 /**
  * Implementation of hook_default_search_api_facet().
@@ -19,7 +43,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Required languages \\u00bb Name"
+      "field_name" : "Required languages \\u00bb Name",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -37,7 +64,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Occupational fields \\u00bb Name"
+      "field_name" : "Occupational fields \\u00bb Name",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -55,7 +85,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Fields of study \\u00bb Name"
+      "field_name" : "Fields of study \\u00bb Name",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -73,7 +106,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Organization"
+      "field_name" : "Organization",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -91,7 +127,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Region \\u00bb Name"
+      "field_name" : "Region \\u00bb Name",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -109,7 +148,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Required general skills \\u00bb Name"
+      "field_name" : "Required general skills \\u00bb Name",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -127,7 +169,10 @@ function recruiter_job_search_default_search_api_facet() {
       "default_true" : true,
       "ids_list" : [],
       "type" : "string",
-      "field_name" : "Required IT skills \\u00bb Name"
+      "field_name" : "Required IT skills \\u00bb Name",
+      "display_more_link" : false,
+      "more_limit" : 10,
+      "show_active" : true
     },
     "rdf_mapping" : []
   }');
@@ -697,16 +742,8 @@ function recruiter_job_search_default_search_api_index() {
       }
     },
     "enabled" : "1",
+    "read_only" : "0",
     "rdf_mapping" : []
   }');
   return $items;
-}
-
-/**
- * Implementation of hook_views_api().
- */
-function recruiter_job_search_views_api() {
-  return array(
-    'api' => '3.0-alpha1',
-  );
 }
