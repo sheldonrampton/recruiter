@@ -73,14 +73,23 @@ Installation
    Drupal installation instructions (i.e. Drupal's INSTALL.txt in the webroot
    subfolder).
 
-2. Apache Solr is required for the job and resume searches, you can configure it
-   in the Drupal administration pages at
+2. Apache Solr is required for the job and resume searches. The Search API provides
+   already some documentation for setting up a Solr server. See the "Setting up Solr"
+   paragraph at its documentation:
+
+     http://drupalcode.org/project/search_api_solr.git/blob_plain/refs/heads/7.x-1.x:/INSTALL.txt
+
+   Once the Solr server is running, tell the Search API about it by going to:
  
           "admin/config/search/search_api/server/solr_server/edit"
 
 3. Configure your private file system path as usual at
 
           "admin/config/media/file-system"
+
+
+That's it.
+
 
 
 Features
@@ -95,3 +104,4 @@ The distribution makes use of the following feature modules:
 * recruiter_resume: Allow applicants to create a resume.
 * recruiter_resume_search: Provides a resume search.
 * recruiter_search: Common components for searching.
+
