@@ -29,66 +29,69 @@ function recruiter_job_search_views_api() {
  */
 function recruiter_job_search_default_search_api_facet() {
   $items = array();
-  $items['job_search_field_job_languages_n'] = entity_import('search_api_facet', '{
-    "delta" : "job_search_field_job_languages_n",
+  $items['job_search_field_job_languages'] = entity_import('search_api_facet', '{
+    "delta" : "job_search_field_job_languages",
     "index_id" : "job_search",
-    "field" : "field_job_languages:name",
-    "name" : "Job search: Required languages \\u00bb Name",
+    "field" : "field_job_languages",
+    "name" : "Job search: Required languages",
     "enabled" : "1",
     "options" : {
       "limit" : 10,
+      "display_more_link" : false,
+      "more_limit" : 10,
       "min_count" : 1,
       "sort" : "count",
       "missing" : false,
+      "show_active" : true,
       "default_true" : true,
       "ids_list" : [],
-      "type" : "string",
-      "field_name" : "Required languages \\u00bb Name",
-      "display_more_link" : false,
-      "more_limit" : 10,
-      "show_active" : true
+      "type" : "",
+      "field_name" : "Required languages",
+      "entity_type" : "taxonomy_term"
     },
     "rdf_mapping" : []
   }');
-  $items['job_search_field_job_occupationa'] = entity_import('search_api_facet', '{
-    "delta" : "job_search_field_job_occupationa",
+  $items['job_search_field_job_occupatio_1'] = entity_import('search_api_facet', '{
+    "delta" : "job_search_field_job_occupatio_1",
     "index_id" : "job_search",
-    "field" : "field_job_occupational_field:name",
-    "name" : "Job search: Occupational fields \\u00bb Name",
+    "field" : "field_job_occupational_field",
+    "name" : "Job search: Occupational fields",
     "enabled" : "1",
     "options" : {
       "limit" : 10,
+      "display_more_link" : false,
+      "more_limit" : 10,
       "min_count" : 1,
       "sort" : "count",
       "missing" : false,
+      "show_active" : true,
       "default_true" : true,
       "ids_list" : [],
-      "type" : "string",
-      "field_name" : "Occupational fields \\u00bb Name",
-      "display_more_link" : false,
-      "more_limit" : 10,
-      "show_active" : true
+      "type" : "",
+      "field_name" : "Occupational fields",
+      "entity_type" : "taxonomy_term"
     },
     "rdf_mapping" : []
   }');
-  $items['job_search_field_job_of_study_na'] = entity_import('search_api_facet', '{
-    "delta" : "job_search_field_job_of_study_na",
+  $items['job_search_field_job_of_study'] = entity_import('search_api_facet', '{
+    "delta" : "job_search_field_job_of_study",
     "index_id" : "job_search",
-    "field" : "field_job_of_study:name",
-    "name" : "Job search: Fields of study \\u00bb Name",
+    "field" : "field_job_of_study",
+    "name" : "Job search: Fields of study",
     "enabled" : "1",
     "options" : {
       "limit" : 10,
+      "display_more_link" : false,
+      "more_limit" : 10,
       "min_count" : 1,
       "sort" : "count",
       "missing" : false,
+      "show_active" : true,
       "default_true" : true,
       "ids_list" : [],
-      "type" : "string",
-      "field_name" : "Fields of study \\u00bb Name",
-      "display_more_link" : false,
-      "more_limit" : 10,
-      "show_active" : true
+      "type" : "",
+      "field_name" : "Fields of study",
+      "entity_type" : "taxonomy_term"
     },
     "rdf_mapping" : []
   }');
@@ -113,66 +116,69 @@ function recruiter_job_search_default_search_api_facet() {
     },
     "rdf_mapping" : []
   }');
-  $items['job_search_field_job_region_name'] = entity_import('search_api_facet', '{
-    "delta" : "job_search_field_job_region_name",
+  $items['job_search_field_job_region'] = entity_import('search_api_facet', '{
+    "delta" : "job_search_field_job_region",
     "index_id" : "job_search",
-    "field" : "field_job_region:name",
-    "name" : "Job search: Region \\u00bb Name",
+    "field" : "field_job_region",
+    "name" : "Job search: Region",
     "enabled" : "1",
     "options" : {
       "limit" : 10,
+      "display_more_link" : false,
+      "more_limit" : 10,
       "min_count" : 1,
       "sort" : "count",
       "missing" : false,
+      "show_active" : true,
       "default_true" : true,
       "ids_list" : [],
-      "type" : "string",
-      "field_name" : "Region \\u00bb Name",
-      "display_more_link" : false,
-      "more_limit" : 10,
-      "show_active" : true
+      "type" : "",
+      "field_name" : "Region",
+      "entity_type" : "taxonomy_term"
     },
     "rdf_mapping" : []
   }');
-  $items['job_search_field_job_skills_gene'] = entity_import('search_api_facet', '{
-    "delta" : "job_search_field_job_skills_gene",
+  $items['job_search_field_job_skills_ge_1'] = entity_import('search_api_facet', '{
+    "delta" : "job_search_field_job_skills_ge_1",
     "index_id" : "job_search",
-    "field" : "field_job_skills_general:name",
-    "name" : "Job search: Required general skills \\u00bb Name",
+    "field" : "field_job_skills_general",
+    "name" : "Job search: Required general skills",
     "enabled" : "1",
     "options" : {
       "limit" : 10,
+      "display_more_link" : false,
+      "more_limit" : 10,
       "min_count" : 1,
       "sort" : "count",
       "missing" : false,
+      "show_active" : true,
       "default_true" : true,
       "ids_list" : [],
-      "type" : "string",
-      "field_name" : "Required general skills \\u00bb Name",
-      "display_more_link" : false,
-      "more_limit" : 10,
-      "show_active" : true
+      "type" : "",
+      "field_name" : "Required general skills",
+      "entity_type" : "taxonomy_term"
     },
     "rdf_mapping" : []
   }');
-  $items['job_search_field_job_skills_it_n'] = entity_import('search_api_facet', '{
-    "delta" : "job_search_field_job_skills_it_n",
+  $items['job_search_field_job_skills_it'] = entity_import('search_api_facet', '{
+    "delta" : "job_search_field_job_skills_it",
     "index_id" : "job_search",
-    "field" : "field_job_skills_it:name",
-    "name" : "Job search: Required IT skills \\u00bb Name",
+    "field" : "field_job_skills_it",
+    "name" : "Job search: Required IT skills",
     "enabled" : "1",
     "options" : {
       "limit" : 10,
+      "display_more_link" : false,
+      "more_limit" : 10,
       "min_count" : 1,
       "sort" : "count",
       "missing" : false,
+      "show_active" : true,
       "default_true" : true,
       "ids_list" : [],
-      "type" : "string",
-      "field_name" : "Required IT skills \\u00bb Name",
-      "display_more_link" : false,
-      "more_limit" : 10,
-      "show_active" : true
+      "type" : "",
+      "field_name" : "Required IT skills",
+      "entity_type" : "taxonomy_term"
     },
     "rdf_mapping" : []
   }');
@@ -195,451 +201,555 @@ function recruiter_job_search_default_search_api_index() {
       "fields" : {
         "search_api_language" : {
           "name" : "Item language",
+          "indexed" : 1,
           "type" : "string",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "search_api_fulltext_1" : {
           "name" : "Aggregated fulltext",
+          "indexed" : 1,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
-        "nid" : { "name" : "Node ID", "type" : "integer", "boost" : "1.0", "indexed" : 0 },
+        "nid" : { "name" : "Node ID", "indexed" : 0, "type" : "integer", "boost" : "1.0" },
         "vid" : {
           "name" : "Revision ID",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
-        "is_new" : { "name" : "Is new", "type" : "boolean", "boost" : "1.0", "indexed" : 0 },
+        "is_new" : { "name" : "Is new", "indexed" : 0, "type" : "boolean", "boost" : "1.0" },
         "type" : {
           "name" : "Content type",
+          "indexed" : 1,
           "type" : "string",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
-        "title" : { "name" : "Title", "type" : "text", "boost" : "5.0", "indexed" : 0 },
-        "language" : { "name" : "Language", "type" : "string", "boost" : "1.0", "indexed" : 0 },
-        "url" : { "name" : "URL", "type" : "uri", "boost" : "1.0", "indexed" : 0 },
-        "edit_url" : { "name" : "Edit URL", "type" : "uri", "boost" : "1.0", "indexed" : 0 },
+        "title" : { "name" : "Title", "indexed" : 0, "type" : "text", "boost" : "5.0" },
+        "language" : { "name" : "Language", "indexed" : 0, "type" : "string", "boost" : "1.0" },
+        "url" : { "name" : "URL", "indexed" : 0, "type" : "uri", "boost" : "1.0" },
+        "edit_url" : { "name" : "Edit URL", "indexed" : 0, "type" : "uri", "boost" : "1.0" },
         "status" : {
           "name" : "Published",
+          "indexed" : 1,
           "type" : "boolean",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "promote" : {
           "name" : "Promoted to frontpage",
+          "indexed" : 1,
           "type" : "boolean",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "sticky" : {
           "name" : "Sticky in lists",
+          "indexed" : 1,
           "type" : "boolean",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "created" : {
           "name" : "Date created",
+          "indexed" : 1,
           "type" : "date",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "changed" : {
           "name" : "Date changed",
+          "indexed" : 1,
           "type" : "date",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
+        },
+        "author" : {
+          "name" : "Author",
+          "indexed" : 0,
+          "type" : "integer",
+          "entity_type" : "user",
+          "boost" : "1.0"
+        },
+        "source" : {
+          "name" : "Translation source node",
+          "indexed" : 0,
+          "type" : "integer",
+          "entity_type" : "node",
+          "boost" : "1.0"
         },
         "log" : {
           "name" : "Revision log message",
+          "indexed" : 0,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "revision" : {
           "name" : "Creates revision",
+          "indexed" : 0,
           "type" : "boolean",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "comment" : {
           "name" : "Comments allowed",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "comment_count" : {
           "name" : "Comment count",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "comment_count_new" : {
           "name" : "New comment count",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
+        },
+        "field_tags" : {
+          "name" : "Tags",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_employment" : {
+          "name" : "Employment type",
+          "indexed" : 0,
+          "type" : "text",
+          "boost" : "1.0"
         },
         "field_job_experience" : {
           "name" : "Years of experience",
+          "indexed" : 1,
           "type" : "decimal",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
+        },
+        "field_job_languages" : {
+          "name" : "Required languages",
+          "indexed" : 1,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_location" : { "name" : "Location", "indexed" : 0, "type" : "text", "boost" : "1.0" },
+        "field_job_occupational_field" : {
+          "name" : "Occupational fields",
+          "indexed" : 1,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_of_study" : {
+          "name" : "Fields of study",
+          "indexed" : 1,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
         },
         "field_job_organization" : {
           "name" : "Organization",
+          "indexed" : 1,
           "type" : "string",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
+        },
+        "field_job_region" : {
+          "name" : "Region",
+          "indexed" : 1,
+          "type" : "integer",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general" : {
+          "name" : "Required general skills",
+          "indexed" : 1,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it" : {
+          "name" : "Required IT skills",
+          "indexed" : 1,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
         },
         "field_job_workflow_state" : {
           "name" : "Workflow state",
+          "indexed" : 1,
           "type" : "string",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
-        "field_job_location" : { "name" : "Location", "type" : "text", "boost" : "1.0", "indexed" : 0 },
-        "job_url" : { "name" : "Job URL", "type" : "uri", "boost" : "1.0", "indexed" : 0 },
-        "field_crawler_deleted_jobs" : {
-          "name" : "Deleted Jobs",
-          "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_new_jobs" : {
-          "name" : "New jobs",
-          "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_process_time" : {
-          "name" : "Last process time",
-          "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_status" : {
-          "name" : "Status code",
-          "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_total_jobs" : {
-          "name" : "Total jobs",
-          "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_active" : { "name" : "Active", "type" : "boolean", "boost" : "1.0", "indexed" : 0 },
-        "field_crawler_flag_delete" : {
-          "name" : "Mark for deletion",
-          "type" : "boolean",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_last_job" : {
-          "name" : "Last job created",
-          "type" : "date",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_profile_id" : {
-          "name" : "Profile id",
-          "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_crawler_web_harvest" : {
-          "name" : "Web Harvest Configuration",
-          "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_link" : { "name" : "Link", "type" : "string", "boost" : "1.0", "indexed" : 0 },
+        "job_url" : { "name" : "Job URL", "indexed" : 0, "type" : "uri", "boost" : "1.0" },
         "author:uid" : {
           "name" : "Author \\u00bb User ID",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:name" : {
           "name" : "Author \\u00bb Name",
+          "indexed" : 0,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:mail" : {
           "name" : "Author \\u00bb Email",
+          "indexed" : 0,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:url" : {
           "name" : "Author \\u00bb URL",
+          "indexed" : 0,
           "type" : "uri",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:edit_url" : {
           "name" : "Author \\u00bb Edit URL",
+          "indexed" : 0,
           "type" : "uri",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:last_login" : {
           "name" : "Author \\u00bb Last login",
+          "indexed" : 0,
           "type" : "date",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:created" : {
           "name" : "Author \\u00bb Created",
+          "indexed" : 0,
           "type" : "date",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "author:roles" : {
           "name" : "Author \\u00bb User roles",
+          "indexed" : 0,
           "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
+        },
+        "author:profile_resume" : {
+          "name" : "Author \\u00bb Resume profile",
+          "indexed" : 0,
+          "type" : "integer",
+          "entity_type" : "profile2",
+          "boost" : "1.0"
         },
         "body:value" : {
           "name" : "The main body text \\u00bb Text",
+          "indexed" : 1,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "body:summary" : {
           "name" : "The main body text \\u00bb Summary",
+          "indexed" : 0,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "body:format" : {
           "name" : "The main body text \\u00bb Text format",
+          "indexed" : 0,
           "type" : "string",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_occupational_field:tid" : {
-          "name" : "Occupational fields \\u00bb Term ID",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 1
-        },
-        "field_job_occupational_field:name" : {
-          "name" : "Occupational fields \\u00bb Name",
-          "type" : "list\\u003cstring\\u003e",
-          "boost" : "2.0",
-          "indexed" : 1
-        },
-        "field_job_occupational_field:description" : {
-          "name" : "Occupational fields \\u00bb Description",
-          "type" : "list\\u003ctext\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_occupational_field:weight" : {
-          "name" : "Occupational fields \\u00bb Weight",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_occupational_field:node_count" : {
-          "name" : "Occupational fields \\u00bb Node count",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_occupational_field:url" : {
-          "name" : "Occupational fields \\u00bb URL",
-          "type" : "list\\u003curi\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_of_study:tid" : {
-          "name" : "Fields of study \\u00bb Term ID",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_of_study:name" : {
-          "name" : "Fields of study \\u00bb Name",
-          "type" : "list\\u003cstring\\u003e",
-          "boost" : "2.0",
-          "indexed" : 1
-        },
-        "field_job_of_study:description" : {
-          "name" : "Fields of study \\u00bb Description",
-          "type" : "list\\u003ctext\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_of_study:weight" : {
-          "name" : "Fields of study \\u00bb Weight",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_of_study:node_count" : {
-          "name" : "Fields of study \\u00bb Node count",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_of_study:url" : {
-          "name" : "Fields of study \\u00bb URL",
-          "type" : "list\\u003curi\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_general:tid" : {
-          "name" : "Required general skills \\u00bb Term ID",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_general:name" : {
-          "name" : "Required general skills \\u00bb Name",
-          "type" : "list\\u003cstring\\u003e",
-          "boost" : "1.0",
-          "indexed" : 1
-        },
-        "field_job_skills_general:description" : {
-          "name" : "Required general skills \\u00bb Description",
-          "type" : "list\\u003ctext\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_general:weight" : {
-          "name" : "Required general skills \\u00bb Weight",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_general:node_count" : {
-          "name" : "Required general skills \\u00bb Node count",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_general:url" : {
-          "name" : "Required general skills \\u00bb URL",
-          "type" : "list\\u003curi\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_it:tid" : {
-          "name" : "Required IT skills \\u00bb Term ID",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_it:name" : {
-          "name" : "Required IT skills \\u00bb Name",
-          "type" : "list\\u003cstring\\u003e",
-          "boost" : "1.0",
-          "indexed" : 1
-        },
-        "field_job_skills_it:description" : {
-          "name" : "Required IT skills \\u00bb Description",
-          "type" : "list\\u003ctext\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_it:weight" : {
-          "name" : "Required IT skills \\u00bb Weight",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_it:node_count" : {
-          "name" : "Required IT skills \\u00bb Node count",
-          "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
-        },
-        "field_job_skills_it:url" : {
-          "name" : "Required IT skills \\u00bb URL",
-          "type" : "list\\u003curi\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_languages:tid" : {
           "name" : "Required languages \\u00bb Term ID",
+          "indexed" : 0,
           "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_languages:name" : {
           "name" : "Required languages \\u00bb Name",
+          "indexed" : 0,
           "type" : "list\\u003cstring\\u003e",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "field_job_languages:description" : {
           "name" : "Required languages \\u00bb Description",
+          "indexed" : 0,
           "type" : "list\\u003ctext\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_languages:weight" : {
           "name" : "Required languages \\u00bb Weight",
+          "indexed" : 0,
           "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_languages:node_count" : {
           "name" : "Required languages \\u00bb Node count",
+          "indexed" : 0,
           "type" : "list\\u003cinteger\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_languages:url" : {
           "name" : "Required languages \\u00bb URL",
+          "indexed" : 0,
           "type" : "list\\u003curi\\u003e",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
+        },
+        "field_job_languages:vocabulary" : {
+          "name" : "Required languages \\u00bb Vocabulary",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_vocabulary",
+          "boost" : "1.0"
+        },
+        "field_job_languages:parent" : {
+          "name" : "Required languages \\u00bb Parent terms",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:tid" : {
+          "name" : "Occupational fields \\u00bb Term ID",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:name" : {
+          "name" : "Occupational fields \\u00bb Name",
+          "indexed" : 0,
+          "type" : "list\\u003cstring\\u003e",
+          "boost" : "2.0"
+        },
+        "field_job_occupational_field:description" : {
+          "name" : "Occupational fields \\u00bb Description",
+          "indexed" : 0,
+          "type" : "list\\u003ctext\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:weight" : {
+          "name" : "Occupational fields \\u00bb Weight",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:node_count" : {
+          "name" : "Occupational fields \\u00bb Node count",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:url" : {
+          "name" : "Occupational fields \\u00bb URL",
+          "indexed" : 0,
+          "type" : "list\\u003curi\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:vocabulary" : {
+          "name" : "Occupational fields \\u00bb Vocabulary",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_vocabulary",
+          "boost" : "1.0"
+        },
+        "field_job_occupational_field:parent" : {
+          "name" : "Occupational fields \\u00bb Parent terms",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:tid" : {
+          "name" : "Fields of study \\u00bb Term ID",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:name" : {
+          "name" : "Fields of study \\u00bb Name",
+          "indexed" : 0,
+          "type" : "list\\u003cstring\\u003e",
+          "boost" : "2.0"
+        },
+        "field_job_of_study:description" : {
+          "name" : "Fields of study \\u00bb Description",
+          "indexed" : 0,
+          "type" : "list\\u003ctext\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:weight" : {
+          "name" : "Fields of study \\u00bb Weight",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:node_count" : {
+          "name" : "Fields of study \\u00bb Node count",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:url" : {
+          "name" : "Fields of study \\u00bb URL",
+          "indexed" : 0,
+          "type" : "list\\u003curi\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:vocabulary" : {
+          "name" : "Fields of study \\u00bb Vocabulary",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_vocabulary",
+          "boost" : "1.0"
+        },
+        "field_job_of_study:parent" : {
+          "name" : "Fields of study \\u00bb Parent terms",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
         },
         "field_job_region:tid" : {
           "name" : "Region \\u00bb Term ID",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_region:name" : {
           "name" : "Region \\u00bb Name",
+          "indexed" : 0,
           "type" : "string",
-          "boost" : "1.0",
-          "indexed" : 1
+          "boost" : "1.0"
         },
         "field_job_region:description" : {
           "name" : "Region \\u00bb Description",
+          "indexed" : 0,
           "type" : "text",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_region:weight" : {
           "name" : "Region \\u00bb Weight",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_region:node_count" : {
           "name" : "Region \\u00bb Node count",
+          "indexed" : 0,
           "type" : "integer",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
         },
         "field_job_region:url" : {
           "name" : "Region \\u00bb URL",
+          "indexed" : 0,
           "type" : "uri",
-          "boost" : "1.0",
-          "indexed" : 0
+          "boost" : "1.0"
+        },
+        "field_job_region:vocabulary" : {
+          "name" : "Region \\u00bb Vocabulary",
+          "indexed" : 0,
+          "type" : "integer",
+          "entity_type" : "taxonomy_vocabulary",
+          "boost" : "1.0"
+        },
+        "field_job_region:parent" : {
+          "name" : "Region \\u00bb Parent terms",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:tid" : {
+          "name" : "Required general skills \\u00bb Term ID",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:name" : {
+          "name" : "Required general skills \\u00bb Name",
+          "indexed" : 0,
+          "type" : "list\\u003cstring\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:description" : {
+          "name" : "Required general skills \\u00bb Description",
+          "indexed" : 0,
+          "type" : "list\\u003ctext\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:weight" : {
+          "name" : "Required general skills \\u00bb Weight",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:node_count" : {
+          "name" : "Required general skills \\u00bb Node count",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:url" : {
+          "name" : "Required general skills \\u00bb URL",
+          "indexed" : 0,
+          "type" : "list\\u003curi\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:vocabulary" : {
+          "name" : "Required general skills \\u00bb Vocabulary",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_vocabulary",
+          "boost" : "1.0"
+        },
+        "field_job_skills_general:parent" : {
+          "name" : "Required general skills \\u00bb Parent terms",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:tid" : {
+          "name" : "Required IT skills \\u00bb Term ID",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:name" : {
+          "name" : "Required IT skills \\u00bb Name",
+          "indexed" : 0,
+          "type" : "list\\u003cstring\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:description" : {
+          "name" : "Required IT skills \\u00bb Description",
+          "indexed" : 0,
+          "type" : "list\\u003ctext\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:weight" : {
+          "name" : "Required IT skills \\u00bb Weight",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:node_count" : {
+          "name" : "Required IT skills \\u00bb Node count",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:url" : {
+          "name" : "Required IT skills \\u00bb URL",
+          "indexed" : 0,
+          "type" : "list\\u003curi\\u003e",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:vocabulary" : {
+          "name" : "Required IT skills \\u00bb Vocabulary",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_vocabulary",
+          "boost" : "1.0"
+        },
+        "field_job_skills_it:parent" : {
+          "name" : "Required IT skills \\u00bb Parent terms",
+          "indexed" : 0,
+          "type" : "list\\u003cinteger\\u003e",
+          "entity_type" : "taxonomy_term",
+          "boost" : "1.0"
         }
       },
       "data_alter_callbacks" : {

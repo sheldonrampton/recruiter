@@ -10,8 +10,8 @@ function recruiter_job_search_block_info_alter(&$blocks, $theme, $code_blocks) {
   if ($theme == 'recruiter_bartik') {
     $block_deltas = array(
       'job_search_field_job_organizatio',
-      'job_search_field_job_region_name',
-      'job_search_field_job_languages_n',
+      'job_search_field_job_region',
+      'job_search_field_job_languages',
     );
     foreach ($block_deltas as $key => $delta) {
       if (!empty($blocks['search_api_facets'][$delta]) && !isset($blocks['search_api_facets'][$delta]['bid'])) {
