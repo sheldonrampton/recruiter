@@ -10,3 +10,4 @@
 modules/*
 !modules/recruiter_*
 modules/recruiter_features/
+libraries
