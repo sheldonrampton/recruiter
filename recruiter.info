@@ -35,8 +35,10 @@ dependencies[] = taxonomy_manager
 ; Install the recruiter modules.
 dependencies[] = recruiter_job
 dependencies[] = recruiter_job_search
+dependencies[] = recruiter_job_search_notifications
 dependencies[] = recruiter_resume
 dependencies[] = recruiter_resume_search
+dependencies[] = recruiter_resume_search_notifications
 dependencies[] = recruiter_register
 
 

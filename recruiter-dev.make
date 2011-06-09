@@ -71,6 +71,11 @@ libraries[SolrPhpClient][download][url] = "http://solr-php-client.googlecode.com
 libraries[SolrPhpClient][directory_name] = "SolrPhpClient"
 libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 
+projects[search_api_saved_searches][type] = module
+projects[search_api_saved_searches][download][type] = git
+projects[search_api_saved_searches][download][url] = git://git.drupalcode.org/project/search_api_saved_searches.git
+projects[search_api_saved_searches][download][branch] = 7.x-1.x
+
 projects[term_level][type] = module
 projects[term_level][download][type] = git
 projects[term_level][download][url] = git://git.drupalcode.org/project/term_level.git
