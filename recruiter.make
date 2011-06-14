@@ -54,9 +54,11 @@ projects[term_level][download][type] = git
 projects[term_level][download][revision] = d082279ddd4d290e869ab3832d7e8cb825dd901f
 
 ;Taxonomy utils
-projects[autocomplete_deluxe] = 1.0-beta1
 projects[taxonomy_csv] = 5.6
 projects[taxonomy_manager] = 1.0-beta1
+
+projects[autocomplete_deluxe][download][type] = git
+projects[autocomplete_deluxe][download][revision] = fc4dda7cc588d4c569d72aaf9318d7ebcf961369
 
 projects[content_taxonomy][download][type] = git
 projects[content_taxonomy][download][revision] = c7277bc260c0bafada9819e8a468572369c10df9
