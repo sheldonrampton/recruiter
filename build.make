@@ -8,7 +8,7 @@ core=7.x
 projects[drupal][type] = core 
 projects[drupal][download][type] = git 
 projects[drupal][download][url] = git://git.drupalcode.org/project/drupal.git
-projects[drupal][download][revision] = 7.0
+projects[drupal][download][revision] = 7.2
 
 ; Patch core with #1007830-25: Nested transactions throw exceptions on ddl changes
 projects[drupal][patch][] = "http://drupal.org/files/issues/1007830-25.patch"
