@@ -72,7 +72,7 @@ function recruiter_common_preprocess_html(&$variables) {
 function recruiter_common_menu() {
   $items['admin/recruiter'] = array(
     'title' => 'Recruiter',
-    'description' => 'Administer recruiter related stuff',
+    'description' => 'Administer recruitment content.',
     'position' => 'right',
     'weight' => -11,
     'page callback' => 'system_admin_menu_block_page',
