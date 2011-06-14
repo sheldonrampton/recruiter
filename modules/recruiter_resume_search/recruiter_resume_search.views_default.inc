@@ -51,10 +51,10 @@ function recruiter_resume_search_views_default_views() {
   $handler->display->display_options['fields']['label']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['label']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['label']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['label']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['label']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['label']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['label']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['label']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['label']['alter']['html'] = 0;
   $handler->display->display_options['fields']['label']['hide_empty'] = 0;
   $handler->display->display_options['fields']['label']['empty_zero'] = 0;
@@ -91,11 +91,11 @@ function recruiter_resume_search_views_default_views() {
   $handler->display->display_options['fields']['label']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['label']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['label']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['label']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['label']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['label']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['label']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['label']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['label']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['label']['alter']['html'] = 0;
   $handler->display->display_options['fields']['label']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['label']['element_default_classes'] = 1;
@@ -110,11 +110,11 @@ function recruiter_resume_search_views_default_views() {
   $handler->display->display_options['fields']['user:name']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['user:name']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['user:name']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['user:name']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['user:name']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['user:name']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['user:name']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['user:name']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['user:name']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['user:name']['alter']['html'] = 0;
   $handler->display->display_options['fields']['user:name']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['user:name']['element_default_classes'] = 1;
@@ -127,24 +127,6 @@ function recruiter_resume_search_views_default_views() {
   $handler->display->display_options['menu']['description'] = 'Search for resumes.';
   $handler->display->display_options['menu']['weight'] = '2';
   $handler->display->display_options['menu']['name'] = 'main-menu';
-  $translatables['resume_search'] = array(
-    t('Defaults'),
-    t('Resume search'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('None.'),
-    t('Label'),
-    t('Broken handler search_api_index_resume_search.user:name'),
-    t('Fulltext search'),
-    t('Page'),
-  );
   $export['resume_search'] = $view;
 
   return $export;

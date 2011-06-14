@@ -1255,7 +1255,7 @@ function recruiter_job_field_default_fields() {
           'label' => 'above',
           'module' => 'link',
           'settings' => array(),
-          'type' => 'default',
+          'type' => 'link_default',
           'weight' => 11,
         ),
         'teaser' => array(
@@ -1283,6 +1283,7 @@ function recruiter_job_field_default_fields() {
         'title_value' => '',
         'url' => 0,
         'user_register_form' => FALSE,
+        'validate_url' => 1,
       ),
       'widget' => array(
         'active' => 0,

@@ -27,6 +27,7 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['access']['perm'] = 'administer profiles';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '30';
@@ -103,11 +104,11 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['uid']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['uid']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['uid']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['uid']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['uid']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['uid']['alter']['html'] = 0;
   $handler->display->display_options['fields']['uid']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['uid']['element_default_classes'] = 1;
@@ -125,11 +126,11 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['label']['alter']['path'] = 'resume/[uid]';
   $handler->display->display_options['fields']['label']['alter']['absolute'] = 1;
   $handler->display->display_options['fields']['label']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['label']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['label']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['label']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['label']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['label']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['label']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['label']['alter']['html'] = 0;
   $handler->display->display_options['fields']['label']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['label']['element_default_classes'] = 1;
@@ -143,11 +144,11 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['field_resume_state']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_resume_state']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_resume_state']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_resume_state']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_resume_state']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_resume_state']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_resume_state']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_resume_state']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_resume_state']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_resume_state']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_resume_state']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['field_resume_state']['element_default_classes'] = 1;
@@ -164,11 +165,11 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['name']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['name']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['name']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['name']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['name']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['name']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['name']['alter']['html'] = 0;
   $handler->display->display_options['fields']['name']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['name']['element_default_classes'] = 1;
@@ -185,11 +186,11 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['fields']['access']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['access']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['access']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['access']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['access']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['access']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['access']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['access']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['access']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['access']['alter']['html'] = 0;
   $handler->display->display_options['fields']['access']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['access']['element_default_classes'] = 1;
@@ -211,27 +212,6 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['menu']['description'] = 'Manage all resumes on your site.';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'management';
-  $translatables['resume_administration'] = array(
-    t('Defaults'),
-    t('Resume administration'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('Profile type'),
-    t('User'),
-    t('Uid'),
-    t('Profile'),
-    t('resume/[uid]'),
-    t('Resume state'),
-    t('Last access'),
-    t('Page'),
-  );
   $export['resume_administration'] = $view;
 
   return $export;

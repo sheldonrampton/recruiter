@@ -78,10 +78,10 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['fields']['changed']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['changed']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['changed']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['changed']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['changed']['alter']['html'] = 0;
   $handler->display->display_options['fields']['changed']['hide_empty'] = 0;
   $handler->display->display_options['fields']['changed']['empty_zero'] = 0;
@@ -103,11 +103,11 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['fields']['job_url']['alter']['absolute'] = 1;
   $handler->display->display_options['fields']['job_url']['alter']['external'] = 0;
   $handler->display->display_options['fields']['job_url']['alter']['link_class'] = 'recruiter-colorbox';
-  $handler->display->display_options['fields']['job_url']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['job_url']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['job_url']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['job_url']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['job_url']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['job_url']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['job_url']['alter']['html'] = 0;
   $handler->display->display_options['fields']['job_url']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['job_url']['element_default_classes'] = 1;
@@ -125,11 +125,11 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
   $handler->display->display_options['fields']['title']['alter']['link_class'] = 'recruiter-colorbox';
   $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
@@ -143,10 +143,10 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['fields']['field_job_organization']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_job_organization']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_job_organization']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_job_organization']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_job_organization']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_job_organization']['empty_zero'] = 0;
@@ -190,29 +190,6 @@ function recruiter_job_search_views_default_views() {
   $handler->display->display_options['menu']['description'] = 'Search for jobs.';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
-  $translatables['job_search'] = array(
-    t('Defaults'),
-    t('Recruiter jobs'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('Empty text.'),
-    t('Empty.'),
-    t('Date'),
-    t('view'),
-    t('[job_url]'),
-    t('Title'),
-    t('_blank'),
-    t('Organization'),
-    t('Fulltext search'),
-    t('Page'),
-  );
   $export['job_search'] = $view;
 
   return $export;
