@@ -11,7 +11,7 @@ projects[entity][download][type] = git
 projects[entity][download][revision] = 7d0730d972a6d5e4cc4e0eb08b3bc937ac7a9721
 
 projects[field_collection][download][type] = git
-projects[field_collection][download][revision] = 66e162485611c3b726cc6e925d594c8cb8e1a3b2
+projects[field_collection][download][revision] = 16a4e473d70f9c4abf8021a37011c8c9d31e426c
 
 projects[profile2] = 1.0-beta3
 
