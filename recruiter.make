@@ -85,10 +85,6 @@ projects[colorbox][download][revision] = 934e68429eb974bc20e583932a3f89103f14783
 
 ;  -  Patches  -
 
-; http://drupal.org/node/1157048
-; Feature-packages appear overridden when they are not
-projects[features][patch][] = "http://drupal.org/files/issues/features-code-generation-fail-1157048-16.patch"
-
 ; http://drupal.org/node/1077148
 ; Entity-view Views row style.
 projects[entity][patch][] = "http://drupal.org/files/issues/entity_row_plugin.patch"
