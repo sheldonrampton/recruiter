@@ -54,9 +54,11 @@ projects[term_level][download][type] = git
 projects[term_level][download][branch] = 7.x-1.x
 
 ;Taxonomy utils
-projects[autocomplete_deluxe] = 1.0-beta1
-projects[taxonomy_csv] = 5.6
-projects[taxonomy_manager] = 1.0-beta1
+projects[] = taxonomy_csv
+projects[] = taxonomy_manager
+
+projects[autocomplete_deluxe][download][type] = git
+projects[autocomplete_deluxe][download][branch] = 7.x-1.x
 
 projects[content_taxonomy][download][type] = git
 projects[content_taxonomy][download][branch] = 7.x-1.x
