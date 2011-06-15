@@ -8,7 +8,7 @@ api = 2
 projects[ctools] = 1.0-beta1
 
 projects[entity][download][type] = git
-projects[entity][download][revision] = 7d0730d972a6d5e4cc4e0eb08b3bc937ac7a9721
+projects[entity][download][revision] = de3f489d9f780e3f8dc7a42562398dffb9e2ff8f
 
 projects[field_collection][download][type] = git
 projects[field_collection][download][revision] = 16a4e473d70f9c4abf8021a37011c8c9d31e426c
@@ -86,10 +86,6 @@ projects[colorbox][download][type] = git
 projects[colorbox][download][revision] = 934e68429eb974bc20e583932a3f89103f147837
 
 ;  -  Patches  -
-
-; http://drupal.org/node/1077148
-; Entity-view Views row style.
-projects[entity][patch][] = "http://drupal.org/files/issues/entity_row_plugin.patch"
 
 ; http://drupal.org/node/1079782
 ; Add support hook_entity_property_info().

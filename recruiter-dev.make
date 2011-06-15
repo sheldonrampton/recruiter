@@ -85,10 +85,6 @@ projects[colorbox][download][branch] = 7.x-1.x
 
 ;  -  Patches  -
 
-; http://drupal.org/node/1077148
-; Entity-view Views row style.
-projects[entity][patch][] = "http://drupal.org/files/issues/entity_row_plugin.patch"
-
 ; http://drupal.org/node/1079782
 ; Add support hook_entity_property_info().
 projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_property-7.patch"
