@@ -12,6 +12,7 @@ function recruiter_register_default_rules_configuration() {
   $items['rules_register_as_applicant'] = entity_import('rules_config', '{ "rules_register_as_applicant" : {
       "LABEL" : "Register as applicant",
       "PLUGIN" : "reaction rule",
+      "WEIGHT" : "-5",
       "REQUIRES" : [ "rules" ],
       "ON" : [ "user_insert" ],
       "IF" : [
@@ -25,6 +26,7 @@ function recruiter_register_default_rules_configuration() {
   $items['rules_register_as_recruiter'] = entity_import('rules_config', '{ "rules_register_as_recruiter" : {
       "LABEL" : "Register as recruiter",
       "PLUGIN" : "reaction rule",
+      "WEIGHT" : "-5",
       "REQUIRES" : [ "rules" ],
       "ON" : [ "user_insert" ],
       "IF" : [
