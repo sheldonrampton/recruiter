@@ -58,7 +58,10 @@ function recruiter_job_get_url($node) {
     return isset($node->field_job_link[LANGUAGE_NONE][0]['url']) ? drupal_strip_dangerous_protocols($node->field_job_link[LANGUAGE_NONE][0]['url']) : NULL;
   }
   elseif ($node->type == 'job_per_file') {
-    return entity_metadata_wrapper('node', $node)->field_job_file->file->url->value();
+    if (entity_metadata_wrapper('node', $node)->field_job_file->value()) {
+      return entity_metadata_wrapper('node', $node)->field_job_file->file->url->value();
+    }
+    return NULL;
   }
   return url("node/$node->nid", array('query' => array('render' => 'slim'), 'absolute' => TRUE));
 }
