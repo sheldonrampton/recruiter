@@ -17,7 +17,7 @@ function recruiter_resume_views_default_views() {
   $view->base_table = 'profile';
   $view->human_name = 'resume_administration';
   $view->core = 7;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Defaults */
@@ -89,7 +89,7 @@ function recruiter_resume_views_default_views() {
   $handler->display->display_options['relationships']['type']['table'] = 'profile';
   $handler->display->display_options['relationships']['type']['field'] = 'type';
   $handler->display->display_options['relationships']['type']['required'] = 1;
-  /* Relationship: Profile: User */
+  /* Relationship: Profile: User uid */
   $handler->display->display_options['relationships']['user']['id'] = 'user';
   $handler->display->display_options['relationships']['user']['table'] = 'profile';
   $handler->display->display_options['relationships']['user']['field'] = 'user';
