@@ -10,10 +10,8 @@ projects[ctools] = 1.0-rc1
 projects[entity][download][type] = git
 projects[entity][download][revision] = 8258cd9bce57dd88590a26248b75c3643b47fb13
 
-projects[field_collection][download][type] = git
-projects[field_collection][download][revision] = 48f7842efa9b377b8d83bb22e25ade9684b4ce9a
-
-projects[profile2] = 1.0-beta4
+projects[field_collection] = 1.0-beta2
+projects[profile2] = 1.0
 
 projects[message][download][type] = git
 projects[message][download][revision] = fad1db28aadbf4add8a87994abaa9a715694cef6
@@ -41,7 +39,7 @@ projects[search_api_saved_searches][download][revision] = cd9f35eb7e4afc212cfd80
 
 ;Field types
 projects[addressfield] = 1.0-beta1
-projects[email] = 1.0-beta1
+projects[email] = 1.0
 projects[date] = 2.0-alpha3
 projects[references] = 2.0-beta3
 
@@ -52,11 +50,10 @@ projects[term_level] = 1.0
 
 ;Taxonomy utils
 projects[taxonomy_csv] = 5.6
-projects[taxonomy_manager] = 1.0-beta1
+projects[taxonomy_manager] = 1.0-beta2
 
 projects[autocomplete_deluxe] = 1.0-beta5
-projects[content_taxonomy][download][type] = git
-projects[content_taxonomy][download][revision] = f62521bccbb5097e015c123edd06a1341583fdb8
+projects[content_taxonomy] = 1.0-beta1
 projects[rules_autotag] = 1.0
 
 projects[synonyms][download][type] = git

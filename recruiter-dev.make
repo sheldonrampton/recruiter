@@ -10,9 +10,7 @@ projects[] = ctools
 projects[entity][download][type] = git
 projects[entity][download][branch] = 7.x-1.x
 
-projects[field_collection][download][type] = git
-projects[field_collection][download][branch] = 7.x-1.x
-
+projects[] =field_collection
 projects[] = profile2
 
 projects[message][download][type] = git
@@ -54,12 +52,8 @@ projects[] = term_level
 ;Taxonomy utils
 projects[] = taxonomy_csv
 projects[] = taxonomy_manager
-
+projects[] = content_taxonomy
 projects[] = autocomplete_deluxe
-
-projects[content_taxonomy][download][type] = git
-projects[content_taxonomy][download][branch] = 7.x-1.x
-
 projects[] = rules_autotag
 
 projects[synonyms][download][type] = git
