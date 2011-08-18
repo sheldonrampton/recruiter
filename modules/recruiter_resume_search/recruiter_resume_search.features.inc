@@ -119,7 +119,7 @@ function recruiter_resume_search_default_search_api_index() {
     "machine_name" : "resume_search",
     "description" : null,
     "server" : "solr_server",
-    "entity_type" : "profile2",
+    "item_type" : "profile2",
     "options" : {
       "cron_limit" : "50",
       "fields" : {

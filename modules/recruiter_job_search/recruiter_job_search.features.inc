@@ -195,7 +195,7 @@ function recruiter_job_search_default_search_api_index() {
     "machine_name" : "job_search",
     "description" : "Index for job nodes used by the recruiter distribution.",
     "server" : "solr_server",
-    "entity_type" : "node",
+    "item_type" : "node",
     "options" : {
       "cron_limit" : "50",
       "fields" : {
