@@ -8,7 +8,7 @@ api = 2
 projects[ctools] = 1.0-rc1
 
 projects[entity][download][type] = git
-projects[entity][download][revision] = 8258cd9bce57dd88590a26248b75c3643b47fb13
+projects[entity][download][revision] = 01d1061e99f3349c63d1286341d6d6fc44239ef9
 
 projects[field_collection] = 1.0-beta2
 projects[profile2] = 1.0
