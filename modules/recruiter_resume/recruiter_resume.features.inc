@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
 function recruiter_resume_views_api() {
   list($module, $api) = func_get_args();
@@ -15,7 +15,7 @@ function recruiter_resume_views_api() {
 }
 
 /**
- * Implementation of hook_default_profile2_type().
+ * Implements hook_default_profile2_type().
  */
 function recruiter_resume_default_profile2_type() {
   $items = array();

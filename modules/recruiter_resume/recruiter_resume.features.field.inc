@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function recruiter_resume_field_default_fields() {
   $fields = array();
@@ -210,6 +210,7 @@ function recruiter_resume_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -848,7 +849,12 @@ function recruiter_resume_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'addressfield',
-          'settings' => array(),
+          'settings' => array(
+            'format_handlers' => array(
+              0 => 'address',
+            ),
+            'use_widget_handlers' => 1,
+          ),
           'type' => 'addressfield_default',
           'weight' => '3',
         ),
@@ -865,7 +871,11 @@ function recruiter_resume_field_default_fields() {
         'module' => 'addressfield',
         'settings' => array(
           'available_countries' => array(),
-          'name_format' => 'first_last',
+          'format_handlers' => array(
+            0 => 'address',
+            1 => 'name-full',
+          ),
+          'name_format' => 'name_line',
         ),
         'type' => 'addressfield_standard',
         'weight' => '1',
@@ -1536,6 +1546,7 @@ function recruiter_resume_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
