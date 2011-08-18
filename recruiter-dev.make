@@ -32,6 +32,10 @@ projects[strongarm] = 2.x-dev
 projects[search_api][download][type] = git
 projects[search_api][download][branch] = 7.x-1.x
 
+; Fix errors during upgrade: http://drupal.org/node/1253320
+projects[search_api][download][patch][] = "http://drupal.org/files/issues/search_api_fix_3.patch"
+
+
 projects[search_api_solr][download][type] = git
 projects[search_api_solr][download][branch] = 7.x-1.x
 

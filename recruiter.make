@@ -31,6 +31,10 @@ projects[strongarm] = 2.0-beta2
 ;Search API
 projects[search_api][download][type] = git
 projects[search_api][download][revision] = 13d6a3ba9648fb67f1ecfacfee7f839f8658adce
+
+; Fix errors during upgrade: http://drupal.org/node/1253320
+projects[search_api][download][patch][] = "http://drupal.org/files/issues/search_api_fix_3.patch"
+
 projects[search_api_solr][download][type] = git
 projects[search_api_solr][download][revision] = dba2933986152f651b7278b78311ac03763aa946
 
