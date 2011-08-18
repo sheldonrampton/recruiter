@@ -5,44 +5,42 @@ api = 2
 ;  -  Modules  -
 
 ; Main modules
-projects[ctools] = 1.0-beta1
+projects[ctools] = 1.0-rc1
 
 projects[entity][download][type] = git
-projects[entity][download][revision] = de3f489d9f780e3f8dc7a42562398dffb9e2ff8f
+projects[entity][download][revision] = 8258cd9bce57dd88590a26248b75c3643b47fb13
 
 projects[field_collection][download][type] = git
-projects[field_collection][download][revision] = 16a4e473d70f9c4abf8021a37011c8c9d31e426c
+projects[field_collection][download][revision] = 48f7842efa9b377b8d83bb22e25ade9684b4ce9a
 
-projects[profile2] = 1.0-beta3
+projects[profile2] = 1.0-beta4
 
 projects[message][download][type] = git
-projects[message][download][revision] = 45d68df7ed5648c1cebd32dd75725fe61dddd433
+projects[message][download][revision] = fad1db28aadbf4add8a87994abaa9a715694cef6
 
-projects[rules][download][type] = git
-projects[rules][download][revision] = 0d01006c07f8aa3daeddd378f19f7af88c0921f6
+projects[rules] = 2.0-rc1
 
 projects[views][download][type] = git
-projects[views][download][revision] = fce85743ba542ef96a288f11755bf230b78311c2
+projects[views][download][revision] = de509319baa2c81d01a6418fd1adad2f7acc54a6
 
 ; Features
 projects[features][download][type] = git
-projects[features][download][revision] = 954c04de4ee91d7ee9636bbc1017757028b81aa9
+projects[features][download][revision] = ff5100c91bd3b70a681bf74fcc45d88800af3b13
 
-projects[diff] = 2.0-beta2
+projects[diff] = 2.0
 projects[strongarm] = 2.0-beta2
 
 ;Search API
 projects[search_api][download][type] = git
-projects[search_api][download][revision] = 4ddae19450776b61c920058dae37ebc2f19660f6
-
+projects[search_api][download][revision] = 13d6a3ba9648fb67f1ecfacfee7f839f8658adce
 projects[search_api_solr][download][type] = git
-projects[search_api_solr][download][revision] = d6307679050949b871a4e25c8bc62bea84b3f9e0
+projects[search_api_solr][download][revision] = dba2933986152f651b7278b78311ac03763aa946
 
 projects[search_api_saved_searches][download][type] = git 
-projects[search_api_saved_searches][download][revision] = 2a26a9ade614b6191ac14d3a46c7e0d49833f26d
+projects[search_api_saved_searches][download][revision] = cd9f35eb7e4afc212cfd80f0649e9f0c43c00e45
 
 ;Field types
-projects[addressfield] = 1.0-alpha4
+projects[addressfield] = 1.0-beta1
 projects[email] = 1.0-beta1
 projects[date] = 2.0-alpha3
 projects[references] = 2.0-beta3
@@ -50,40 +48,32 @@ projects[references] = 2.0-beta3
 projects[link][download][type] = git
 projects[link][download][revision] = da9b09a2ed42f3dfb8e2d8c6556aeed72049a75b
 
-projects[term_level][download][type] = git
-projects[term_level][download][revision] = d082279ddd4d290e869ab3832d7e8cb825dd901f
+projects[term_level] = 1.0
 
 ;Taxonomy utils
 projects[taxonomy_csv] = 5.6
 projects[taxonomy_manager] = 1.0-beta1
 
-projects[autocomplete_deluxe][download][type] = git
-projects[autocomplete_deluxe][download][revision] = fc4dda7cc588d4c569d72aaf9318d7ebcf961369
-
+projects[autocomplete_deluxe] = 1.0-beta5
 projects[content_taxonomy][download][type] = git
-projects[content_taxonomy][download][revision] = c7277bc260c0bafada9819e8a468572369c10df9
-
-projects[rules_autotag][download][type] = git
-projects[rules_autotag][download][revision] = 57d4c3300adee09909ab1e708c5b5a962e262fcd
+projects[content_taxonomy][download][revision] = f62521bccbb5097e015c123edd06a1341583fdb8
+projects[rules_autotag] = 1.0
 
 projects[synonyms][download][type] = git
 projects[synonyms][download][revision] = 949472be5d105f12d89350271e07e2c56e1a92f8
 
 ;Web services
-projects[wsclient] = 1.0-alpha3
+projects[wsclient] = 1.0-alpha4
 
 projects[http_client][download][type] = git
-projects[http_client][download][revision] = 6e65667997ffe79172249b42a897cd81dd4ab510
+projects[http_client][download][revision] = 13a27e8352a995e97b96be32cb2c9584323bf6ec
 
 projects[restws][download][type] = git
 projects[restws][download][revision] = 5942a8d85e20727822e58cbadab1bdc0be5b7659
 
-projects[transformers][download][type] = git
-projects[transformers][download][revision] = cb519b2cbaa1af02968f511ff05c8bc6365d72e0
-
 ;Misc
-projects[colorbox][download][type] = git
-projects[colorbox][download][revision] = 934e68429eb974bc20e583932a3f89103f147837
+projects[colorbox] = 1.1
+
 
 ;  -  Patches  -
 

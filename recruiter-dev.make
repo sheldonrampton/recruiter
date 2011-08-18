@@ -18,8 +18,7 @@ projects[] = profile2
 projects[message][download][type] = git
 projects[message][download][branch] = 7.x-1.x
 
-projects[rules][download][type] = git
-projects[rules][download][branch] = 7.x-2.x
+projects[] = rules
 
 projects[views][download][type] = git
 projects[views][download][branch] = 7.x-3.x
@@ -50,21 +49,18 @@ projects[] = references
 projects[link][download][type] = git
 projects[link][download][branch] = 7.x-1.x
 
-projects[term_level][download][type] = git
-projects[term_level][download][branch] = 7.x-1.x
+projects[] = term_level
 
 ;Taxonomy utils
 projects[] = taxonomy_csv
 projects[] = taxonomy_manager
 
-projects[autocomplete_deluxe][download][type] = git
-projects[autocomplete_deluxe][download][branch] = 7.x-1.x
+projects[] = autocomplete_deluxe
 
 projects[content_taxonomy][download][type] = git
 projects[content_taxonomy][download][branch] = 7.x-1.x
 
-projects[rules_autotag][download][type] = git
-projects[rules_autotag][download][branch] = 7.x-1.x
+projects[] = rules_autotag
 
 projects[synonyms][download][type] = git
 projects[synonyms][download][branch] = 7.x-1.x
@@ -77,9 +73,6 @@ projects[http_client][download][branch] = 7.x-2.x
 
 projects[restws][download][type] = git
 projects[restws][download][branch] = 7.x-1.x
-
-projects[transformers][download][type] = git
-projects[transformers][download][branch] = 7.x-1.x
 
 ;Misc
 projects[colorbox][download][type] = git
