@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function recruiter_job_field_default_fields() {
   $fields = array();
@@ -311,6 +311,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -804,6 +805,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -885,6 +887,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -1213,6 +1216,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -1785,6 +1789,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -1866,6 +1871,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -2294,6 +2300,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -2787,6 +2794,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
@@ -2868,6 +2876,7 @@ function recruiter_job_field_default_fields() {
         'active' => 0,
         'module' => 'autocomplete_deluxe',
         'settings' => array(
+          'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
           'autocomplete_path' => 'autocomplete_deluxe/taxonomy',
           'content_taxonomy_autocomplete_new_terms' => 'moderate',
           'size' => 60,
