@@ -76,6 +76,12 @@ projects[restws][download][branch] = 7.x-1.x
 projects[colorbox][download][type] = git
 projects[colorbox][download][branch] = 7.x-1.x
 
+;Recruiter Features
+projects[recruiter_features][type] = module
+projects[recruiter_features][download][type] = git
+projects[recruiter_features][download][branch] = 7.x-1.x
+
+
 ;  -  Patches  -
 
 ; http://drupal.org/node/1079782

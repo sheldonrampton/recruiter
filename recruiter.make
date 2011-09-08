@@ -75,6 +75,11 @@ projects[restws][download][revision] = 5942a8d85e20727822e58cbadab1bdc0be5b7659
 ;Misc
 projects[colorbox] = 1.1
 
+;Recruiter Features
+projects[recruiter_features][type] = module
+projects[recruiter_features][download][type] = git
+projects[recruiter_features][download][revision] = 99640384b696e57997af9f6cf86f0b5ab0da45be
+
 
 ;  -  Patches  -
 
