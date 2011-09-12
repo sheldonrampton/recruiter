@@ -96,7 +96,7 @@ projects[http_client][patch][] = "http://drupal.org/files/issues/722886-http_cli
 
 ;Library for accessing solr servers
 libraries[SolrPhpClient][download][type] = "get"
-libraries[SolrPhpClient][download][url] = "http://solr-php-client.googlecode.com/files/SolrPhpClient.r22.2009-11-09.tgz"
+libraries[SolrPhpClient][download][url] = "http://solr-php-client.googlecode.com/files/SolrPhpClient.r60.2011-05-04.tgz"
 libraries[SolrPhpClient][directory_name] = "SolrPhpClient"
 libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 
