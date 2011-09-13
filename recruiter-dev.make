@@ -76,6 +76,12 @@ projects[restws][download][branch] = 7.x-1.x
 projects[colorbox][download][type] = git
 projects[colorbox][download][branch] = 7.x-1.x
 
+projects[rules_link][download][type] = git
+projects[rules_link][download][branch] = 7.x-1.x
+
+projects[field_permissions][download][type] = git
+projects[field_permissions][download][branch] = 7.x-1.x
+
 ;Recruiter Features
 projects[recruiter_features][type] = module
 projects[recruiter_features][download][type] = git
@@ -92,6 +98,10 @@ projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_pr
 ; Do not throw exception for 1XX and 2XX status code
 projects[http_client][patch][] = "http://drupal.org/files/issues/722886-http_client-2xx.patch"
 
+; Rules Link permissions fix http://drupal.org/node/1270812
+projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
+; Rules Link hook_entity_view fix http://drupal.org/node/1273102
+projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_entity_view.patch"
  
 ;  -  Libraries  -
 

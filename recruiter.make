@@ -75,6 +75,12 @@ projects[restws][download][revision] = 5942a8d85e20727822e58cbadab1bdc0be5b7659
 ;Misc
 projects[colorbox] = 1.1
 
+projects[rules_link][download][type] = git
+projects[rules_link][download][revision] = eb7b16b4f945c08f690120f1d10b35a4ab9ece5e
+
+projects[field_permissions][download][type] = git
+projects[field_permissions][download][revision] = 4c5c1e652a7dd23ea61dda8a2a014c1df330adcf
+
 ;Recruiter Features
 projects[recruiter_features][type] = module
 projects[recruiter_features][download][type] = git
@@ -91,7 +97,11 @@ projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_pr
 ; Do not throw exception for 1XX and 2XX status code
 projects[http_client][patch][] = "http://drupal.org/files/issues/722886-http_client-2xx.patch"
 
- 
+; Rules Link permissions fix http://drupal.org/node/1270812
+projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
+; Rules Link hook_entity_view fix http://drupal.org/node/1273102
+projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_entity_view.patch"
+
 ;  -  Libraries  -
 
 ;Library for accessing solr servers
