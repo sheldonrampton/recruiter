@@ -94,10 +94,6 @@ projects[recruiter_features][download][branch] = 7.x-1.x
 ; Add support hook_entity_property_info().
 projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_property-7.patch"
 
-; http://drupal.org/node/722886
-; Do not throw exception for 1XX and 2XX status code
-projects[http_client][patch][] = "http://drupal.org/files/issues/722886-http_client-2xx.patch"
-
 ; Rules Link permissions fix http://drupal.org/node/1270812
 projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
 ; Rules Link hook_entity_view fix http://drupal.org/node/1273102
