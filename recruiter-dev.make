@@ -92,7 +92,7 @@ projects[recruiter_features][download][branch] = 7.x-1.x
 
 ; http://drupal.org/node/1079782
 ; Add support hook_entity_property_info().
-projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_property-7.patch"
+projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity-property_0.patch"
 
 ; Rules Link permissions fix http://drupal.org/node/1270812
 projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
