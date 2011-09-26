@@ -64,7 +64,7 @@ projects[synonyms][download][type] = git
 projects[synonyms][download][branch] = 7.x-1.x
 
 ;Web services
-projects[] = wsclient
+projects[wsclient] = 1.x-dev
 
 projects[http_client][download][type] = git
 projects[http_client][download][branch] = 7.x-2.x
@@ -89,10 +89,6 @@ projects[recruiter_features][download][branch] = 7.x-1.x
 
 
 ;  -  Patches  -
-
-; http://drupal.org/node/1079782
-; Add support hook_entity_property_info().
-projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity-property_0.patch"
 
 ; Rules Link permissions fix http://drupal.org/node/1270812
 projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
