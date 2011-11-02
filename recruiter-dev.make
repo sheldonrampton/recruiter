@@ -82,6 +82,13 @@ projects[rules_link][download][branch] = 7.x-1.x
 projects[field_permissions][download][type] = git
 projects[field_permissions][download][branch] = 7.x-1.x
 
+projects[flag][download][type] = git
+projects[flag][download][branch] = 7.x-2.x
+; Flag any entity http://drupal.org/node/1035410
+projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
+; Flag entity properties http://drupal.org/node/1315850
+projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
+
 ;Recruiter Features
 projects[recruiter_features][type] = module
 projects[recruiter_features][download][type] = git

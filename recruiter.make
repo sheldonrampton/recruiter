@@ -81,6 +81,13 @@ projects[rules_link][download][revision] = eb7b16b4f945c08f690120f1d10b35a4ab9ec
 projects[field_permissions][download][type] = git
 projects[field_permissions][download][revision] = 4c5c1e652a7dd23ea61dda8a2a014c1df330adcf
 
+projects[flag][download][type] = git
+projects[flag][download][revision] = b33c392347e8c698d27bc92f830c7195a8390be0
+; Flag any entity http://drupal.org/node/1035410
+projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
+; Flag entity properties http://drupal.org/node/1315850
+projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
+
 ;Recruiter Features
 projects[recruiter_features][type] = module
 projects[recruiter_features][download][type] = git
