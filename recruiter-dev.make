@@ -105,7 +105,7 @@ libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 
 ; Also add the colorbox library.
 libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "http://colorpowered.com/colorbox/colorbox.zip"
+libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][destination] = "libraries"
 
