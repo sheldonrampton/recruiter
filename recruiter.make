@@ -41,6 +41,8 @@ projects[search_api_solr][download][revision] = dba2933986152f651b7278b78311ac03
 projects[search_api_saved_searches][download][type] = git 
 projects[search_api_saved_searches][download][revision] = cd9f35eb7e4afc212cfd80f0649e9f0c43c00e45
 
+projects[facetapi] = 1.0-beta7
+
 ;Field types
 projects[addressfield] = 1.0-beta1
 projects[email] = 1.0

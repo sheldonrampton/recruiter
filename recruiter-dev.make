@@ -42,6 +42,8 @@ projects[search_api_solr][download][branch] = 7.x-1.x
 projects[search_api_saved_searches][download][type] = git 
 projects[search_api_saved_searches][download][branch] = 7.x-1.x
 
+projects[] = facetapi
+
 ;Field types
 projects[] = addressfield
 projects[] = email
