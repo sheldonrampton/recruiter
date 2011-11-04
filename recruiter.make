@@ -93,6 +93,9 @@ projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patc
 projects[mimemail][download][type] = git
 projects[mimemail][download][revision] = ab70c342b3c42563324b34e3849713d3bcd5a54e
 
+projects[role_export][download][type] = git
+projects[role_export][download][revision] = 9082784d70fd4ea20496f9cf154a2095053c1c69
+
 ;Recruiter Features
 projects[recruiter_features][type] = module
 projects[recruiter_features][download][type] = git
