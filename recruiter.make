@@ -76,7 +76,7 @@ projects[restws][download][revision] = 5942a8d85e20727822e58cbadab1bdc0be5b7659
 projects[colorbox] = 1.1
 
 projects[rules_link][download][type] = git
-projects[rules_link][download][revision] = eb7b16b4f945c08f690120f1d10b35a4ab9ece5e
+projects[rules_link][download][revision] = 74b7dff60bb150329b75cb2359bc326406cd900d
 
 projects[field_permissions][download][type] = git
 projects[field_permissions][download][revision] = 4c5c1e652a7dd23ea61dda8a2a014c1df330adcf

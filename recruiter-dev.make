@@ -100,10 +100,6 @@ projects[recruiter_features][download][branch] = 7.x-1.x
 
 ;  -  Patches  -
 
-; Rules Link permissions fix http://drupal.org/node/1270812
-projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
-; Rules Link hook_entity_view fix http://drupal.org/node/1273102
-projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_entity_view.patch"
  
 ;  -  Libraries  -
 
