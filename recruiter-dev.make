@@ -91,6 +91,9 @@ projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
 ; Flag entity properties http://drupal.org/node/1315850
 projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
 
+projects[mailsystem][download][type] = git
+projects[mailsystem][download][branch] = 7.x-2.x
+
 projects[mimemail][download][type] = git
 projects[mimemail][download][branch] = 7.x-1.x
 
