@@ -78,7 +78,7 @@ projects[restws][download][revision] = 5942a8d85e20727822e58cbadab1bdc0be5b7659
 projects[colorbox] = 1.1
 
 projects[rules_link][download][type] = git
-projects[rules_link][download][revision] = 74b7dff60bb150329b75cb2359bc326406cd900d
+projects[rules_link][download][revision] = 82cb41bea24d28fb617e25e8d096dee64c492cf7
 
 projects[field_permissions][download][type] = git
 projects[field_permissions][download][revision] = 4c5c1e652a7dd23ea61dda8a2a014c1df330adcf
@@ -110,10 +110,6 @@ projects[recruiter_features][download][revision] = 99640384b696e57997af9f6cf86f0
 ; Add support hook_entity_property_info().
 projects[link][patch][] = "http://drupal.org/files/issues/1079782-link-entity_property-7.patch"
 
-; Rules Link permissions fix http://drupal.org/node/1270812
-projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_perm.patch"
-; Rules Link hook_entity_view fix http://drupal.org/node/1273102
-projects[rules_link][patch][] = "http://drupal.org/files/issues/rules_link_entity_view.patch"
 
 ;  -  Libraries  -
 
