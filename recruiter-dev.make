@@ -10,7 +10,7 @@ projects[] = ctools
 projects[entity][download][type] = git
 projects[entity][download][branch] = 7.x-1.x
 
-projects[] =field_collection
+projects[] = field_collection
 projects[] = profile2
 
 projects[message][download][type] = git
@@ -51,6 +51,9 @@ projects[] = references
 projects[] = link
 projects[] = term_level
 
+projects[entityreference][download][type] = git
+projects[entityreference][download][branch] = 7.x-1.x
+
 ;Taxonomy utils
 projects[] = taxonomy_csv
 projects[] = taxonomy_manager
@@ -74,6 +77,7 @@ projects[rules_link][download][type] = git
 projects[rules_link][download][branch] = 7.x-1.x
 
 projects[] = field_permissions
+projects[] = pathauto
 
 projects[flag][download][type] = git
 projects[flag][download][branch] = 7.x-2.x
