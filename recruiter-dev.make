@@ -21,6 +21,9 @@ projects[] = rules
 projects[views][download][type] = git
 projects[views][download][branch] = 7.x-3.x
 
+projects[views_bulk_operations][download][type] = git
+projects[views_bulk_operations][download][branch] = 7.x-3.x
+
 ; Features
 projects[features][download][type] = git
 projects[features][download][branch] = 7.x-1.x
