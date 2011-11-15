@@ -71,8 +71,7 @@ projects[wsclient] = 1.x-dev
 projects[http_client][download][type] = git
 projects[http_client][download][branch] = 7.x-2.x
 
-projects[restws][download][type] = git
-projects[restws][download][branch] = 7.x-1.x
+projects[] = restws
 
 ;Misc
 projects[colorbox][download][type] = git
@@ -97,8 +96,7 @@ projects[mailsystem][download][branch] = 7.x-2.x
 projects[mimemail][download][type] = git
 projects[mimemail][download][branch] = 7.x-1.x
 
-projects[role_export][download][type] = git
-projects[role_export][download][branch] = 7.x-1.x
+projects[] = role_export
 
 ;Recruiter Features
 projects[recruiter_features][type] = module
