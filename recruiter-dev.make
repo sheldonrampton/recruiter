@@ -26,7 +26,7 @@ projects[features][download][type] = git
 projects[features][download][branch] = 7.x-1.x
 
 projects[] = diff
-projects[strongarm] = 2.x-dev
+projects[] = strongarm
 
 ;Search API
 projects[search_api][download][type] = git
@@ -39,8 +39,7 @@ projects[search_api][download][patch][] = "http://drupal.org/files/issues/search
 projects[search_api_solr][download][type] = git
 projects[search_api_solr][download][branch] = 7.x-1.x
 
-projects[search_api_saved_searches][download][type] = git 
-projects[search_api_saved_searches][download][branch] = 7.x-1.x
+projects[] = search_api_saved_searches
 
 projects[] = facetapi
 
@@ -49,10 +48,7 @@ projects[] = addressfield
 projects[] = email
 projects[] = date
 projects[] = references
-
-projects[link][download][type] = git
-projects[link][download][branch] = 7.x-1.x
-
+projects[] = link
 projects[] = term_level
 
 ;Taxonomy utils
@@ -62,26 +58,22 @@ projects[] = content_taxonomy
 projects[] = autocomplete_deluxe
 projects[] = rules_autotag
 
-projects[synonyms][download][type] = git
-projects[synonyms][download][branch] = 7.x-1.x
+projects[synonyms] = 1.x-dev
 
 ;Web services
 projects[wsclient] = 1.x-dev
 
-projects[http_client][download][type] = git
-projects[http_client][download][branch] = 7.x-2.x
+projects[http_client] = 2.x-dev
 
 projects[] = restws
 
 ;Misc
-projects[colorbox][download][type] = git
-projects[colorbox][download][branch] = 7.x-1.x
+projects[] = colorbox
 
 projects[rules_link][download][type] = git
 projects[rules_link][download][branch] = 7.x-1.x
 
-projects[field_permissions][download][type] = git
-projects[field_permissions][download][branch] = 7.x-1.x
+projects[] = field_permissions
 
 projects[flag][download][type] = git
 projects[flag][download][branch] = 7.x-2.x
@@ -90,11 +82,9 @@ projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
 ; Flag entity properties http://drupal.org/node/1315850
 projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
 
-projects[mailsystem][download][type] = git
-projects[mailsystem][download][branch] = 7.x-2.x
+projects[] = mailsystem
 
-projects[mimemail][download][type] = git
-projects[mimemail][download][branch] = 7.x-1.x
+projects[mimemail] = 1.x-dev 
 
 projects[] = role_export
 
