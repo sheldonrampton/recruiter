@@ -66,13 +66,6 @@ projects[] = rules_autotag
 
 projects[synonyms] = 1.x-dev
 
-;Web services
-projects[wsclient] = 1.x-dev
-
-projects[http_client] = 2.x-dev
-
-projects[] = restws
-
 ;Misc
 projects[] = colorbox
 
