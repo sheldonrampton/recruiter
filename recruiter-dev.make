@@ -74,6 +74,7 @@ projects[rules_link][download][branch] = 7.x-1.x
 
 projects[] = field_permissions
 projects[] = pathauto
+projects[] = token
 
 projects[flag][download][type] = git
 projects[flag][download][branch] = 7.x-2.x
