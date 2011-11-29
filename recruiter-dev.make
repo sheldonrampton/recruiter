@@ -5,18 +5,18 @@ api = 2
 ;  -  Modules  -
 
 ; Main modules
-projects[] = ctools
+projects[ctools] = 1
 
 projects[entity][download][type] = git
 projects[entity][download][branch] = 7.x-1.x
 
-projects[] = field_collection
-projects[] = profile2
+projects[field_collection] = 1
+projects[profile2] = 1
 
 projects[message][download][type] = git
 projects[message][download][branch] = 7.x-1.x
 
-projects[] = rules
+projects[rules] = 2
 
 projects[views][download][type] = git
 projects[views][download][branch] = 7.x-3.x
@@ -28,8 +28,8 @@ projects[views_bulk_operations][download][branch] = 7.x-3.x
 projects[features][download][type] = git
 projects[features][download][branch] = 7.x-1.x
 
-projects[] = diff
-projects[] = strongarm
+projects[diff] = 2
+projects[strongarm] = 2
 
 ;Search API
 projects[search_api][download][type] = git
@@ -42,39 +42,39 @@ projects[search_api][download][patch][] = "http://drupal.org/files/issues/search
 projects[search_api_solr][download][type] = git
 projects[search_api_solr][download][branch] = 7.x-1.x
 
-projects[] = search_api_saved_searches
+projects[search_api_saved_searches] = 1
 
-projects[] = facetapi
+projects[facetapi] = 1
 
 ;Field types
-projects[] = addressfield
-projects[] = email
-projects[] = date
-projects[] = references
-projects[] = link
-projects[] = term_level
+projects[addressfield] = 1
+projects[email] = 1
+projects[date] = 2
+projects[references] = 2
+projects[link] = 1
+projects[term_level] = 1
 
 projects[entityreference][download][type] = git
 projects[entityreference][download][branch] = 7.x-1.x
 
 ;Taxonomy utils
-projects[] = taxonomy_csv
-projects[] = taxonomy_manager
-projects[] = content_taxonomy
-projects[] = autocomplete_deluxe
-projects[] = rules_autotag
+projects[taxonomy_csv] = 5
+projects[taxonomy_manager] = 1
+projects[content_taxonomy] = 1
+projects[autocomplete_deluxe] = 1
+projects[rules_autotag] = 1
 
 projects[synonyms] = 1.x-dev
 
 ;Misc
-projects[] = colorbox
+projects[colorbox] = 1
 
 projects[rules_link][download][type] = git
 projects[rules_link][download][branch] = 7.x-1.x
 
-projects[] = field_permissions
-projects[] = pathauto
-projects[] = token
+projects[field_permissions] = 1
+projects[pathauto] = 1
+projects[token] = 1
 
 projects[flag][download][type] = git
 projects[flag][download][branch] = 7.x-2.x
@@ -83,11 +83,11 @@ projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
 ; Flag entity properties http://drupal.org/node/1315850
 projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
 
-projects[] = mailsystem
+projects[mailsystem] = 2
 
 projects[mimemail] = 1.x-dev 
 
-projects[] = role_export
+projects[role_export] = 1
 
 ;Recruiter Features
 projects[recruiter_features][type] = module
@@ -95,9 +95,6 @@ projects[recruiter_features][download][type] = git
 projects[recruiter_features][download][branch] = 7.x-1.x
 
 
-;  -  Patches  -
-
- 
 ;  -  Libraries  -
 
 ;Library for accessing solr servers
