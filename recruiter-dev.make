@@ -50,7 +50,6 @@ projects[facetapi] = 1
 projects[addressfield] = 1
 projects[email] = 1
 projects[date] = 2
-projects[references] = 2
 projects[link] = 1
 projects[term_level] = 1
 
