@@ -12,6 +12,7 @@ projects[entity][download][branch] = 7.x-1.x
 
 projects[field_collection] = 1
 projects[profile2] = 1
+projects[context] = 3
 
 projects[message][download][type] = git
 projects[message][download][branch] = 7.x-1.x
