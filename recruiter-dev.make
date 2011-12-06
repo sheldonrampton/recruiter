@@ -82,6 +82,8 @@ projects[flag][download][branch] = 7.x-2.x
 projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
 ; Flag entity properties http://drupal.org/node/1315850
 projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
+; Flag Add views handler for flag entity links http://drupal.org/node/1362298
+projects[flag][patch][] = "http://drupal.org/files/flag_views_entity_handler_0.patch"
 
 projects[mailsystem] = 2
 
