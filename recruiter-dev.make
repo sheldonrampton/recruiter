@@ -7,41 +7,34 @@ api = 2
 ; Main modules
 projects[ctools] = 1
 
-projects[entity][download][type] = git
-projects[entity][download][branch] = 7.x-1.x
+projects[entity] = 1.x-dev
 
 projects[field_collection] = 1
 projects[profile2] = 1
 projects[context] = 3
 
-projects[message][download][type] = git
-projects[message][download][branch] = 7.x-1.x
+projects[message] = 1.x-dev
 
 projects[rules] = 2
 
-projects[views][download][type] = git
-projects[views][download][branch] = 7.x-3.x
+projects[views] = 3.x-dev
 
-projects[views_bulk_operations][download][type] = git
-projects[views_bulk_operations][download][branch] = 7.x-3.x
+projects[views_bulk_operations] = 3.x-dev
 
 ; Features
-projects[features][download][type] = git
-projects[features][download][branch] = 7.x-1.x
+projects[features] = 1.x-dev
 
 projects[diff] = 2
 projects[strongarm] = 2
 
 ;Search API
-projects[search_api][download][type] = git
-projects[search_api][download][branch] = 7.x-1.x
+projects[search_api] = 1.x-dev
 
 ; Fix errors during upgrade: http://drupal.org/node/1253320
 projects[search_api][download][patch][] = "http://drupal.org/files/issues/search_api_fix_3.patch"
 
 
-projects[search_api_solr][download][type] = git
-projects[search_api_solr][download][branch] = 7.x-1.x
+projects[search_api_solr] = 1.x-dev
 
 projects[search_api_saved_searches] = 1
 
@@ -54,8 +47,7 @@ projects[date] = 2
 projects[link] = 1
 projects[term_level] = 1
 
-projects[entityreference][download][type] = git
-projects[entityreference][download][branch] = 7.x-1.x
+projects[entityreference] = 1.x-dev
 
 ;Taxonomy utils
 projects[taxonomy_csv] = 5
@@ -69,8 +61,7 @@ projects[synonyms] = 1.x-dev
 ;Misc
 projects[colorbox] = 1
 
-projects[rules_link][download][type] = git
-projects[rules_link][download][branch] = 7.x-1.x
+projects[rules_link] = 1.x-dev
 
 projects[field_permissions] = 1
 projects[pathauto] = 1
@@ -92,9 +83,7 @@ projects[mimemail] = 1.x-dev
 projects[role_export] = 1
 
 ;Recruiter Features
-projects[recruiter_features][type] = module
-projects[recruiter_features][download][type] = git
-projects[recruiter_features][download][branch] = 7.x-1.x
+projects[recruiter_features] = 1.x-dev
 
 
 ;  -  Libraries  -
