@@ -30,10 +30,6 @@ projects[strongarm] = 2
 ;Search API
 projects[search_api] = 1.x-dev
 
-; Fix errors during upgrade: http://drupal.org/node/1253320
-projects[search_api][patch][] = "http://drupal.org/files/issues/search_api_fix_3.patch"
-
-
 projects[search_api_solr] = 1.x-dev
 
 projects[search_api_saved_searches] = 1
