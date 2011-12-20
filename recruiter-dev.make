@@ -17,7 +17,7 @@ projects[message] = 1.x-dev
 
 projects[rules] = 2
 
-projects[views] = 3.x-dev
+projects[views] = 3
 
 projects[views_bulk_operations] = 3.x-dev
 
@@ -28,7 +28,7 @@ projects[diff] = 2
 projects[strongarm] = 2
 
 ;Search API
-projects[search_api] = 1.x-dev
+projects[search_api] = 1
 
 projects[search_api_solr] = 1.x-dev
 
