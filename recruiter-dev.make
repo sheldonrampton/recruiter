@@ -41,7 +41,7 @@ projects[addressfield] = 1
 projects[email] = 1
 projects[date] = 2
 projects[link] = 1
-projects[term_level] = 1
+projects[term_level] = 1.x-dev
 
 projects[entityreference] = 1.x-dev
 
