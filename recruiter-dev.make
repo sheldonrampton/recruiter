@@ -43,7 +43,7 @@ projects[date] = 2
 projects[link] = 1
 projects[term_level] = 1.x-dev
 
-projects[entityreference] = 1.x-dev
+projects[entityreference] = 1
 
 ;Taxonomy utils
 projects[taxonomy_csv] = 5
