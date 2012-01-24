@@ -22,7 +22,7 @@ projects[views] = 3
 projects[views_bulk_operations] = 3.x-dev
 
 ; Features
-projects[features] = 1.x-dev
+projects[features] = 1
 
 projects[diff] = 2
 projects[strongarm] = 2
