@@ -49,7 +49,7 @@ projects[entityreference] = 1
 projects[taxonomy_csv] = 5
 projects[taxonomy_manager] = 1
 projects[content_taxonomy] = 1
-projects[autocomplete_deluxe] = 1
+projects[autocomplete_deluxe] = 1.x-dev
 projects[rules_autotag] = 1
 
 projects[synonyms] = 1.x-dev
