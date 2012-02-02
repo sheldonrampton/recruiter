@@ -34,7 +34,7 @@ projects[search_api_solr] = 1.x-dev
 
 projects[search_api_saved_searches] = 1
 
-projects[facetapi] = 1.x-dev
+projects[facetapi] = 1
 
 ;Field types
 projects[addressfield] = 1
