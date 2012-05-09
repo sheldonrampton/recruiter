@@ -26,6 +26,8 @@ projects[diff][version] = "2.0"
 projects[email][version] = "1.0"
 
 projects[entity][version] = "1.0-rc2"
+; Incorrect invocation of hook_options_list() http://drupal.org/node/1556192
+projects[entity][patch][] = "http://drupal.org/files/1556192-hook_options_list-invocation-1.patch"
 
 projects[entityreference][version] = "1.0-rc1"
 

@@ -7,7 +7,9 @@ api = 2
 ; Main modules
 projects[ctools] = 1
 
-projects[entity] = 1.x-dev
+projects[entity][version] = 1.x-dev
+; Incorrect invocation of hook_options_list() http://drupal.org/node/1556192
+projects[entity][patch][] = "http://drupal.org/files/1556192-hook_options_list-invocation-1.patch"
 
 projects[field_collection] = 1
 projects[profile2] = 1
