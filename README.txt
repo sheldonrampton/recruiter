@@ -31,17 +31,17 @@ latest development version from the Git repository. If you have downloaded an
 already packaged tarball, you can skip these steps and jump directly to the
 installation instructions.
 
-Recruiter is distributed with a .make file and one .profile file. The .make file
-defines what packages must be downloaded and the .profile file is responsible
-for configuring all those modules.
+Recruiter is distributed with several .make files and one .profile file. The
+.make files define what packages must be downloaded and the .profile file is
+responsible for configuring all those modules. See also the "Make files" section
+at the end of this document.
 
-Before building the recruiter distribution you need two things:
+Before building the recruiter distribution you need Drush (version 5):
 
- * Drush (http://drupal.org/project/drush)
- * Drush Make (http://drupal.org/project/drush_make)
+ * http://drupal.org/project/drush
 
-For instructions on how to install those packages, please consult their
-respective documentation. Then continue with the following steps:
+For instructions on how to install it, please consult the respective
+documentation. Then continue with the following steps:
 
 1. Clone the Recruiter installation profile from drupal.org:
 
@@ -53,13 +53,17 @@ respective documentation. Then continue with the following steps:
    cd recruiter
    ./rebuild.sh 3
 
-   If you want to use the latest development version, you have to build it with
-   "3" first, then execute rebuild.sh again with option "1" from within the
-   already built Drupal installation (under "profiles/recruiter").
-
-3. Move the newly created "recruiter" subfolder to your webroot. It contains a
-   full Drupal installation with all required modules and the installation
-   profile.
+3. Move the newly created "recruiter" subfolder to your webroot (e.g.
+   /var/www/recruiter). It contains a full Drupal installation with all required
+   modules and the installation profile (stable version).
+   
+4. If you want to use the latest development version, you need to run rebuild.sh
+   with option "1" again in your recruiter installation. For example:
+   
+   cd /var/www/recruiter/profiles/recruiter
+   ./rebuild.sh 1
+   
+   This will update all modules in /var/www/recruiter/profiles/recruiter/modules
 
 
 Installation
@@ -68,28 +72,27 @@ Installation
 1. Make sure your recruiter download is placed in the webroot and configure
    your webserver accordingly.
 
-1. Install Recruiter as a usual Drupal site by visiting it with your
-   web browser. Select the "recruiter" installation profile and follow the usual
+1. Install Recruiter as a usual Drupal site by visiting it with your web
+   browser. Select the "recruiter" installation profile and follow the usual
    Drupal installation instructions (i.e. Drupal's INSTALL.txt in the webroot
    subfolder).
 
-2. Apache Solr is required for the job and resume searches. The Search API provides
-   already some documentation for setting up a Solr server. See the "Setting up Solr"
-   paragraph at its documentation:
+2. Apache Solr is required for the job and resume searches. The Search API
+   provides already some documentation for setting up a Solr server. See the 
+   "Setting up Solr" paragraph at its documentation:
 
      http://drupalcode.org/project/search_api_solr.git/blob_plain/refs/heads/7.x-1.x:/INSTALL.txt
 
    Once the Solr server is running, tell the Search API about it by going to:
  
-          "admin/config/search/search_api/server/solr_server/edit"
+     "admin/config/search/search_api/server/solr_server/edit"
 
 3. Configure your private file system path as usual at
 
-          "admin/config/media/file-system"
+     "admin/config/media/file-system"
 
 
 That's it.
-
 
 
 Features
@@ -101,7 +104,19 @@ The distribution makes use of the following feature modules:
 * recruiter_register: Allow users to register as recruiter or applicant.
 * recruiter_job: Allows recruiters to create and manage jobs.
 * recruiter_job_search: Provides a job search.
+* recruiter_job_search_notifications: Users can subscribe to searches and new
+  search results are sent out per email periodically.
 * recruiter_resume: Allow applicants to create a resume.
 * recruiter_resume_search: Provides a resume search.
 * recruiter_search: Common components for searching.
 
+
+Make files
+----------
+
+ * build.make: contains the Drupal core version and the reference to this
+     installation profile to recursively build the distribution from scratch.
+ * recruiter.make: Holds all components and their exact stable versions.
+ * recruiter-dev.make: Holds all components with their continuing verions. 
+ * drupal-org.make: required for auto-packaging on drupal.org.
+  

@@ -27,4 +27,3 @@ of the Recruiter distribution, e.g. from 1.0-beta1 to 1.0-beta2.
    The new release might include some new features you may want to enable.
 
 5. If everything went fine, disable the maintenance mode. That's it.
-
