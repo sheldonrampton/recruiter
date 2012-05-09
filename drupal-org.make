@@ -62,9 +62,7 @@ projects[pathauto][version] = "1.0"
 
 projects[profile2][version] = "1.2"
 
-projects[recruiter_features][download][type] = git
-projects[recruiter_features][download][branch] = 7.x-1.x 
-projects[recruiter_features][download][revision] = 6cd272c9eed5f208777f90d7fb95f147c4ecd22d
+projects[recruiter_features][version] = "1.0-beta5"
 
 projects[role_export][version] = "1.0"
 
