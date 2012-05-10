@@ -82,13 +82,13 @@ function recruiter_import_vocabulary($voc, &$context) {
   }
 
   // Set options for import.
-  $options['import_format'] = TAXONOMY_CSV_FORMAT_PARENTS;
+  $options['import_format'] = TAXONOMY_CSV_FORMAT_TREE;
   $options['enclosure'] = '"';
   $options['vocabulary_target'] = 'existing';
   $options['vocabulary_id'] = $voc->vid;
   $options['check_hierarchy'] = FALSE;
   $options['set_hierarchy'] = 1;
-  $options['existing_items'] = TAXONOMY_CSV_EXISTING_UPDATE_MERGE;
+  $options['source_choice'] = 'text';
   $options['url'] = $filename;
   taxonomy_csv_import($options);
 
