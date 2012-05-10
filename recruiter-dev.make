@@ -57,6 +57,9 @@ projects[rules_autotag] = 1
 projects[synonyms] = 1.x-dev
 
 ;Misc
+
+projects[admin_menu] = 3
+
 projects[colorbox] = 1
 
 projects[rules_link] = 1.x-dev

@@ -7,6 +7,8 @@ api = 2
 
 projects[addressfield][version] = "1.0-beta2"
 
+projects[admin_menu] = "3.0-rc2"
+
 projects[autocomplete_deluxe][download][type] = git
 projects[autocomplete_deluxe][download][branch] = 7.x-1.x
 projects[autocomplete_deluxe][download][revision] = a92b71e91208356b93a83525c695732b189d0653 

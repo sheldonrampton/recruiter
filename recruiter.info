@@ -20,13 +20,13 @@ dependencies[] = path
 dependencies[] = taxonomy
 dependencies[] = dblog
 dependencies[] = shortcut
-dependencies[] = toolbar
 dependencies[] = overlay
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
 ; Install contributed modules.
+dependencies[] = admin_menu_toolbar
 dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = views_ui
