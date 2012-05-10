@@ -66,7 +66,7 @@ projects[pathauto][version] = "1.0"
 
 projects[profile2][version] = "1.2"
 
-projects[recruiter_features][version] = "1.0-beta5"
+projects[recruiter_features][version] = "1.0-beta6"
 
 projects[role_export][version] = "1.0"
 
@@ -96,9 +96,7 @@ projects[taxonomy_csv][version] = "5.10"
 
 projects[taxonomy_manager][version] = "1.0-beta2"
 
-projects[term_level][download][type] = git
-projects[term_level][download][branch] = 7.x-1.x
-projects[term_level][download][revision] = 7f4bd03d0524aef585b10a987b27f7e4f6c6bc08
+projects[term_level][version] = "1.1"
 
 projects[token][version] = "1.0"
 
