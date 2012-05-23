@@ -69,7 +69,7 @@ projects[pathauto][version] = "1.0"
 
 projects[profile2][version] = "1.2"
 
-projects[recruiter_features][version] = "1.0-beta6"
+projects[recruiter_features][version] = "1.0-beta7"
 
 projects[role_export][version] = "1.0"
 
