@@ -20,7 +20,7 @@ projects[colorbox][version] = "1.3"
 
 projects[content_taxonomy][version] = "1.0-beta1"
 
-projects[context][version] = "3.0-beta2"
+projects[context][version] = "3.0-beta3"
 
 projects[date][version] = "2.5"
 
