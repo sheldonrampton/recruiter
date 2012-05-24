@@ -92,6 +92,8 @@ projects[views][version] = "3"
 
 projects[views_bulk_operations][version] = "3.x-dev"
 
+projects[wysiwyg] = "2.x-dev"
+
 ;  -  Libraries  -
 
 ;Library for accessing solr servers
@@ -105,3 +107,7 @@ libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][destination] = "libraries"
+
+; CKEditor
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
