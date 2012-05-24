@@ -15,7 +15,7 @@ projects[ctools][version] = "1"
 
 projects[colorbox][version] = "1"
 
-projects[content_taxonomy][version] = "1"
+projects[content_taxonomy][version] = "1.x-dev"
 
 projects[context][version] = "3"
 
@@ -58,7 +58,7 @@ projects[mimemail][version] = "1.x-dev"
 
 projects[pathauto][version] = "1"
 
-projects[profile2][version] = "1"
+projects[profile2][version] = "1.x-dev"
 
 projects[recruiter_features][version] = "1.x-dev"
 
