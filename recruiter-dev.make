@@ -1,75 +1,46 @@
-; recruiter profile make file
+; Recruiter drush make build file for drupal.org packaging.
 core = 7.x
+
 api = 2
 
-;  -  Modules  -
+; Modules
 
-; Main modules
-projects[ctools] = 1
+projects[addressfield][version] = "1"
 
-projects[entity][version] = 1.x-dev
-; Incorrect invocation of hook_options_list() http://drupal.org/node/1556192
-projects[entity][patch][] = "http://drupal.org/files/1556192-hook_options_list-invocation-1.patch"
+projects[admin_menu] = "3"
 
-projects[field_collection] = 1
-projects[profile2] = 1
-projects[context] = 3
+projects[autocomplete_deluxe][version] = "1.x-dev"
 
-projects[message] = 1.x-dev
+projects[ctools][version] = "1"
 
-projects[rules] = 2
+projects[colorbox][version] = "1"
 
-projects[views] = 3
+projects[content_taxonomy][version] = "1"
 
-projects[views_bulk_operations] = 3.x-dev
+projects[context][version] = "3"
 
-; Features
-projects[features] = 1
+projects[date][version] = "2"
 
-projects[diff] = 2
-projects[strongarm] = 2
+projects[diff][version] = "2"
 
-;Search API
-projects[search_api] = 1
+projects[email][version] = "1"
 
-projects[search_api_solr] = 1.x-dev
+projects[entity][version] = "1.x-dev"
 
-projects[search_api_saved_searches] = 1
+projects[entityreference][version] = "1"
 
-projects[facetapi] = 1
+projects[facetapi][version] = "1"
 
-;Field types
-projects[addressfield] = 1
-projects[email] = 1
-projects[date] = 2
-projects[link] = 1
-projects[term_level] = 1.x-dev
+projects[features][version] = "1"
 
-projects[entityreference] = 1
+projects[field_collection][version] = "1"
 
-;Taxonomy utils
-projects[taxonomy_csv] = 5
-projects[taxonomy_manager] = 1
-projects[content_taxonomy] = 1
-projects[autocomplete_deluxe] = 1.x-dev
-projects[rules_autotag] = 1
+projects[field_permissions][version] = "1"
 
-projects[synonyms] = 1.x-dev
-
-;Misc
-
-projects[admin_menu] = 3
-
-projects[colorbox] = 1
-
-projects[rules_link] = 1.x-dev
-
-projects[field_permissions] = 1
-projects[pathauto] = 1
-projects[token] = 1
-
+projects[flag][version] = "2.x-dev"
 projects[flag][download][type] = git
 projects[flag][download][branch] = 7.x-2.x
+projects[flag][download][revision] = d97949a81ce48c0ba9afcff8a6dd2c55352d4747
 ; Flag any entity http://drupal.org/node/1035410
 projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
 ; Flag entity properties http://drupal.org/node/1315850
@@ -77,15 +48,49 @@ projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patc
 ; Flag Add views handler for flag entity links http://drupal.org/node/1362298
 projects[flag][patch][] = "http://drupal.org/files/flag_views_entity_handler_1.patch"
 
-projects[mailsystem] = 2
+projects[link][version] = "1"
 
-projects[mimemail] = 1.x-dev 
+projects[mailsystem] = "2"
 
-projects[role_export] = 1
+projects[message] = "1"
 
-;Recruiter Features
-projects[recruiter_features] = 1.x-dev
+projects[mimemail][version] = "1.x-dev"
 
+projects[pathauto][version] = "1"
+
+projects[profile2][version] = "1"
+
+projects[recruiter_features][version] = "1.x-dev"
+
+projects[role_export][version] = "1"
+
+projects[rules][version] = "2.x-dev"
+
+projects[rules_autotag][version] = "1"
+
+projects[rules_link][version] = "1.x-dev"
+
+projects[search_api][version] = "1"
+
+projects[search_api_saved_searches][version] = "1"
+
+projects[search_api_solr][version] = "1.x-dev"
+
+projects[strongarm][version] = "2"
+
+projects[synonyms][version] = "1.x-dev"
+
+projects[taxonomy_csv][version] = "5"
+
+projects[taxonomy_manager][version] = "1"
+
+projects[term_level][version] = "1"
+
+projects[token][version] = "1"
+
+projects[views][version] = "3"
+
+projects[views_bulk_operations][version] = "3.x-dev"
 
 ;  -  Libraries  -
 
@@ -100,4 +105,3 @@ libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][destination] = "libraries"
-
