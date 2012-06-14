@@ -1,5 +1,9 @@
 <?php
-// $Id: standard.install,v 1.22 2010/08/09 19:55:57 dries Exp $
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the recruiter profile.
+ */
 
 /**
  * Implements hook_install().

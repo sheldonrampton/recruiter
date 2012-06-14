@@ -1,7 +1,5 @@
-; $Id: standard.info,v 1.1 2010/01/04 23:08:34 webchick Exp $
 name = Recruiter
 description = Install recruiter distribution.
-version = VERSION
 core = 7.x
 
 ; Install the modules from the standard profile.
@@ -41,6 +39,3 @@ dependencies[] = recruiter_resume
 dependencies[] = recruiter_resume_search
 dependencies[] = recruiter_resume_search_notifications
 dependencies[] = recruiter_register
-
-
-files[] = recruiter.profile

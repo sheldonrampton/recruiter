@@ -1,5 +1,9 @@
 <?php
-// $Id: standard.profile,v 1.2 2010/07/22 16:16:42 dries Exp $
+
+/**
+ * @file
+ * Contains some hooks that are used during installation.
+ */
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -7,12 +11,12 @@
  * Allows the profile to alter the site configuration form.
  */
 function recruiter_form_install_configure_form_alter(&$form, $form_state) {
-  // Pre-populate the site name with the server name.
-  $form['site_information']['site_name']['#default_value'] = t('eq-Recruiter');
+  // Pre-populate the site name with our profile's name.
+  $form['site_information']['site_name']['#default_value'] = t('Recruiter');
 }
 
 /**
- * Implements of hook_install_tasks().
+ * Implements hook_install_tasks().
  */
 function recruiter_install_tasks() {
   $tasks = array(
@@ -27,7 +31,7 @@ function recruiter_install_tasks() {
 }
 
 /**
- * Defines batch op for importing
+ * Defines batch operation for importing.
  */
 function recruiter_import_vocabularies_batch() {
   $batch = array(
@@ -44,7 +48,7 @@ function recruiter_import_vocabularies_batch() {
 }
 
 /**
- * Import batch operation for vocs
+ * Import batch operation for vocabularies.
  */
 function recruiter_import_vocabularies(&$context) {
   if (!isset($context['sandbox']['progress'])) {
@@ -65,15 +69,15 @@ function recruiter_import_vocabularies(&$context) {
 }
 
 /**
- * Imports terms into a vocabulary using taxonomy csv
+ * Imports terms into a vocabulary using taxonomy csv.
  */
 function recruiter_import_vocabulary($voc, &$context) {
   // Note: drupal_get_path('profile', 'recruiter') didn't work here.
-  $import_dir =  dirname(__FILE__) . '/taxonomy_import/';
+  $import_dir = dirname(__FILE__) . '/taxonomy_import/';
 
   // Use Taxonomy CSV to import terms from a file.
   $module_dir = dirname(__FILE__) . '/modules/taxonomy_csv';
-  require_once("$module_dir/import/taxonomy_csv.import.api.inc");
+  require_once "$module_dir/import/taxonomy_csv.import.api.inc";
 
   // Import terms for each voc, where a .csv file exits.
   $filename = $import_dir . $voc->machine_name . '.csv';
@@ -96,7 +100,7 @@ function recruiter_import_vocabulary($voc, &$context) {
 }
 
 /**
- * Prints message after batch is finished
+ * Prints message after batch is finished.
  */
 function recruiter_import_vocabularies_finished($success, $results, $operations) {
   $message = "";
