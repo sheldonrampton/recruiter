@@ -23,49 +23,6 @@ Recruiter depends on Apache Solr (http://lucene.apache.org/solr/), for
 installation instructions please consult their respective documentation.
 
 
-Building the distribution
--------------------------
-
-Follow this instructions to build the distribution from scratch, e.g. using the
-latest development version from the Git repository. If you have downloaded an
-already packaged tarball, you can skip these steps and jump directly to the
-installation instructions.
-
-Recruiter is distributed with several .make files and one .profile file. The
-.make files define what packages must be downloaded and the .profile file is
-responsible for configuring all those modules. See also the "Make files" section
-at the end of this document.
-
-Before building the recruiter distribution you need Drush (version 5):
-
- * http://drupal.org/project/drush
-
-For instructions on how to install it, please consult the respective
-documentation. Then continue with the following steps:
-
-1. Clone the Recruiter installation profile from drupal.org:
-
-   git clone --branch 7.x-1.x http://git.drupal.org/project/recruiter.git
-
-2. Change to the new folder and run the build script with parameter "3" to build
-   the stable distribution.
-
-   cd recruiter
-   ./rebuild.sh 3
-
-3. Move the newly created "recruiter" subfolder to your webroot (e.g.
-   /var/www/recruiter). It contains a full Drupal installation with all required
-   modules and the installation profile (stable version).
-   
-4. If you want to use the latest development version, you need to run rebuild.sh
-   with option "1" again in your recruiter installation. For example:
-   
-   cd /var/www/recruiter/profiles/recruiter
-   ./rebuild.sh 1
-   
-   This will update all modules in /var/www/recruiter/profiles/recruiter/modules
-
-
 Installation
 ------------
 
@@ -73,7 +30,7 @@ Installation
    your webserver accordingly.
 
 1. Install Recruiter as a usual Drupal site by visiting it with your web
-   browser. Select the "recruiter" installation profile and follow the usual
+   browser. Select the "Recruiter" installation profile and follow the usual
    Drupal installation instructions (i.e. Drupal's INSTALL.txt in the webroot
    subfolder).
 
@@ -118,6 +75,50 @@ The distribution makes use of the following feature modules:
 * recruiter_resume: Allow applicants to create a resume.
 * recruiter_resume_search: Provides a resume search.
 * recruiter_search: Common components for searching.
+* recruiter_admin: Administrative permissions for content admins.
+
+
+Building the distribution
+-------------------------
+
+Follow this instructions to build the distribution from scratch, e.g. using the
+latest development version from the Git repository. If you have downloaded an
+already packaged tarball, you can skip these steps and jump directly to the
+installation instructions.
+
+Recruiter is distributed with several .make files and one .profile file. The
+.make files define what packages must be downloaded and the .profile file is
+responsible for configuring all those modules. See also the "Make files" section
+at the end of this document.
+
+Before building the recruiter distribution you need Drush (version 5+):
+
+ * http://drupal.org/project/drush
+
+For instructions on how to install it, please consult the respective
+documentation. Then continue with the following steps:
+
+1. Clone the Recruiter installation profile from drupal.org:
+
+   git clone --branch 7.x-1.x http://git.drupal.org/project/recruiter.git
+
+2. Change to the new folder and run the build script with parameter "3" to build
+   the stable distribution.
+
+   cd recruiter
+   ./rebuild.sh 3
+
+3. Move the newly created "recruiter" subfolder to your webroot (e.g.
+   /var/www/recruiter). It contains a full Drupal installation with all required
+   modules and the installation profile (stable version).
+
+4. If you want to use the latest development version, you need to run rebuild.sh
+   with option "1" again in your recruiter installation. For example:
+
+   cd /var/www/recruiter/profiles/recruiter
+   ./rebuild.sh 1
+
+   This will update all modules in /var/www/recruiter/profiles/recruiter/modules
 
 
 Make files
