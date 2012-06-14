@@ -83,13 +83,22 @@ Installation
 
      http://drupalcode.org/project/search_api_solr.git/blob_plain/refs/heads/7.x-1.x:/INSTALL.txt
 
-   Once the Solr server is running, tell the Search API about it by going to:
+   Once the Solr server is running configure it in settings.php, example:
+
+     $conf['recruiter_solr_port'] = 8983;
+     $conf['recruiter_solr_path'] = 'solr';
+
+   You can also override the settings in the admin UI at
  
      "admin/config/search/search_api/server/solr_server/edit"
 
 3. Configure your private file system path as usual at
 
      "admin/config/media/file-system"
+
+   or in settings.php, example:
+
+     $conf['file_private_path'] = '/path/to/private/files';
 
 
 That's it.
