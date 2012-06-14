@@ -424,4 +424,7 @@ function recruiter_install() {
   $theme_settings['toggle_name'] = FALSE;
   variable_set('theme_recruiter_bartik_settings', $theme_settings);
   variable_set('user_pictures', 0);
+
+  // Create resume for user 1.
+  profile2_save(profile2_create(array('type' => 'resume', 'uid' => 1)));
 }
