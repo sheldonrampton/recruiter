@@ -15,7 +15,7 @@ projects[ctools][version] = "1"
 
 projects[colorbox][version] = "1"
 
-projects[content_taxonomy][version] = "1"
+projects[content_taxonomy][version] = "1.x-dev"
 
 projects[context][version] = "3"
 
@@ -58,7 +58,7 @@ projects[mimemail][version] = "1.x-dev"
 
 projects[pathauto][version] = "1"
 
-projects[profile2][version] = "1"
+projects[profile2][version] = "1.x-dev"
 
 projects[recruiter_features][version] = "1.x-dev"
 
@@ -92,6 +92,8 @@ projects[views][version] = "3"
 
 projects[views_bulk_operations][version] = "3.x-dev"
 
+projects[wysiwyg] = "2.x-dev"
+
 ;  -  Libraries  -
 
 ;Library for accessing solr servers
@@ -105,3 +107,7 @@ libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][destination] = "libraries"
+
+; CKEditor
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
