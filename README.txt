@@ -81,10 +81,9 @@ The distribution makes use of the following feature modules:
 Building the distribution
 -------------------------
 
-Follow this instructions to build the distribution from scratch, e.g. using the
+Follow these instructions to build the distribution from scratch, e.g. using the
 latest development version from the Git repository. If you have downloaded an
-already packaged tarball, you can skip these steps and jump directly to the
-installation instructions.
+already packaged tarball, you don't need to do this.
 
 Recruiter is distributed with several .make files and one .profile file. The
 .make files define what packages must be downloaded and the .profile file is
@@ -127,6 +126,6 @@ Make files
  * build.make: contains the Drupal core version and the reference to this
      installation profile to recursively build the distribution from scratch.
  * recruiter.make: Holds all components and their exact stable versions.
- * recruiter-dev.make: Holds all components with their continuing verions. 
+ * recruiter-dev.make: Holds all components with their continuing versions.
  * drupal-org.make: required for auto-packaging on drupal.org.
   
