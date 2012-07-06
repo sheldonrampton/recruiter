@@ -94,6 +94,8 @@ projects[search_api_solr][download][type] = git
 projects[search_api_solr][download][branch] = 7.x-1.x
 projects[search_api_solr][download][revision] = 8452317bba42de384f3127eccd8e19d63df2349c
 
+projects[search_api_db][version] = "1.0-beta3"
+
 projects[strongarm][version] = "2.0-rc1"
 
 projects[synonyms][version] = "1.x-dev"
