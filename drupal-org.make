@@ -25,7 +25,7 @@ projects[diff][version] = "2"
 
 projects[email][version] = "1"
 
-projects[entity][version] = "1.x-dev"
+projects[entity][version] = "1"
 
 projects[entityreference][version] = "1"
 
