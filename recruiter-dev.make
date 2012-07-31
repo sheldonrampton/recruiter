@@ -76,7 +76,7 @@ projects[search_api_saved_searches][version] = "1"
 
 projects[search_api_solr][version] = "1.x-dev"
 
-projects[search_api_db][version] = "1"
+projects[search_api_db][version] = "1.x-dev"
 
 projects[strongarm][version] = "2"
 
