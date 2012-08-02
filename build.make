@@ -8,7 +8,7 @@ core = 7.x
 projects[drupal][type] = core 
 projects[drupal][download][type] = git 
 projects[drupal][download][url] = git://git.drupalcode.org/project/drupal.git
-projects[drupal][download][revision] = 7.14
+projects[drupal][download][revision] = 7.15
 
 ; Recursion will build the recruiter.make file found there for us.
 projects[recruiter][type] = profile
