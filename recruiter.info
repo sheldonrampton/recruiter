@@ -30,6 +30,7 @@ dependencies[] = rules_admin
 dependencies[] = views_ui
 dependencies[] = taxonomy_manager
 dependencies[] = colorbox
+dependencies[] = context_ui
 
 ; Install the recruiter modules.
 dependencies[] = recruiter_job
