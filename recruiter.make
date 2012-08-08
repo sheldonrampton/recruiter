@@ -109,6 +109,11 @@ projects[views_bulk_operations][download][type] = git
 projects[views_bulk_operations][download][branch] = 7.x-3.x
 projects[views_bulk_operations][download][revision] = 50be134537e7f7151d15670ee7d9e1099fb1f565
 
+projects[wysiwyg][version] = "2.x-dev"
+projects[wysiwyg][download][type] = git
+projects[wysiwyg][download][branch] = 7.x-2.x
+projects[wysiwyg][download][revision] = d17bf117b58e49357cb3b64904a1b8c40ab2f6ca
+
 ;  -  Libraries  -
 
 ;Library for accessing solr servers
