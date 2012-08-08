@@ -15,7 +15,7 @@ projects[ctools][version] = "1.0"
 
 projects[colorbox][version] = "1.3"
 
-projects[content_taxonomy][version] = "1.0-dev"
+projects[content_taxonomy][version] = "1.x-dev"
 projects[content_taxonomy][download][type] = git
 projects[content_taxonomy][download][branch] = 7.x-1.x
 projects[content_taxonomy][download][revision] = f3ad6dc33629ec33db58aaee678fab26967349bb
