@@ -64,7 +64,7 @@ projects[recruiter_features][version] = "1.x-dev"
 
 projects[role_export][version] = "1"
 
-projects[rules][version] = "2.x-dev"
+projects[rules][version] = "2"
 
 projects[rules_autotag][version] = "1"
 
