@@ -54,7 +54,7 @@ projects[mailsystem] = "2"
 
 projects[message] = "1"
 
-projects[mimemail][version] = "1.x-dev"
+projects[mimemail][version] = "1"
 
 projects[pathauto][version] = "1"
 
