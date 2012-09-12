@@ -37,16 +37,14 @@ projects[field_collection][version] = "1"
 
 projects[field_permissions][version] = "1"
 
-projects[flag][version] = "2.x-dev"
 projects[flag][download][type] = git
-projects[flag][download][branch] = 7.x-2.x
-projects[flag][download][revision] = d97949a81ce48c0ba9afcff8a6dd2c55352d4747
-; Flag any entity http://drupal.org/node/1035410
-projects[flag][patch][] = "http://drupal.org/files/flag_entity2_0.patch"
+projects[flag][download][branch] = 7.x-3.x
+projects[flag][download][revision] = 3c64d18f7a8488039f6b4e01b8596cb1ed923b61
 ; Flag entity properties http://drupal.org/node/1315850
-projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
+; @todo needs to be rerolled
+; projects[flag][patch][] = "http://drupal.org/files/flag_entity_properties_0.patch"
 ; Flag Add views handler for flag entity links http://drupal.org/node/1362298
-projects[flag][patch][] = "http://drupal.org/files/flag_views_entity_handler_1.patch"
+projects[flag][patch][] = "http://drupal.org/files/1362298_independent_query_backend_flag_links.patch"
 
 projects[link][version] = "1"
 
