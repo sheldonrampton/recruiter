@@ -9,7 +9,7 @@ projects[addressfield][version] = "1"
 
 projects[admin_menu] = "3"
 
-projects[autocomplete_deluxe][version] = "1"
+projects[autocomplete_deluxe][version] = "2.x-dev"
 
 projects[ctools][version] = "1"
 
