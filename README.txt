@@ -19,8 +19,9 @@ Maintained by epiqo, see http://epiqo.com.
 Requirements
 ------------
 
-Recruiter depends on Apache Solr (http://lucene.apache.org/solr/), for
-installation instructions please consult their respective documentation.
+Same as Drupal 7: http://drupal.org/requirements
+Recruiter is more complex than Drupal core, so an increased memory_limit setting
+in php.ini is recommended (at least 128MB).
 
 
 Installation
@@ -29,25 +30,10 @@ Installation
 1. Make sure your recruiter download is placed in the webroot and configure
    your webserver accordingly.
 
-1. Install Recruiter as a usual Drupal site by visiting it with your web
+2. Install Recruiter as a usual Drupal site by visiting it with your web
    browser. Select the "Recruiter" installation profile and follow the usual
    Drupal installation instructions (i.e. Drupal's INSTALL.txt in the webroot
    subfolder).
-
-2. Apache Solr is required for the job and resume searches. The Search API
-   provides already some documentation for setting up a Solr server. See the 
-   "Setting up Solr" paragraph at its documentation:
-
-     http://drupalcode.org/project/search_api_solr.git/blob_plain/refs/heads/7.x-1.x:/INSTALL.txt
-
-   Once the Solr server is running configure it in settings.php, example:
-
-     $conf['recruiter_solr_port'] = 8983;
-     $conf['recruiter_solr_path'] = 'solr';
-
-   You can also override the settings in the admin UI at
- 
-     "admin/config/search/search_api/server/solr_server/edit"
 
 3. Configure your private file system path as usual at
 
@@ -59,6 +45,30 @@ Installation
 
 
 That's it.
+
+
+Apache Solr
+-----------
+
+Recruiter can be used with Apache Solr (http://lucene.apache.org/solr/), for
+installation instructions please consult their respective documentation.
+
+The Search API Solr integration provides already some documentation for setting
+up a Solr server. See the "Setting up Solr" paragraph at its documentation:
+
+  http://drupalcode.org/project/search_api_solr.git/blob_plain/refs/heads/7.x-1.x:/INSTALL.txt
+
+Enable the recruiter_search_solr module which will switch the job and resume
+searches to the Solr backend.
+
+Once the Solr server is running configure it in settings.php, example:
+
+  $conf['recruiter_solr_port'] = 8983;
+  $conf['recruiter_solr_path'] = 'solr';
+
+You can also override the settings in the admin UI at
+
+  "admin/config/search/search_api/server/solr_server/edit"
 
 
 Features
