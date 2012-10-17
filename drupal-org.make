@@ -5,6 +5,8 @@ api = 2
 
 ; Modules
 
+projects[acl][version] = "1"
+
 projects[addressfield][version] = "1"
 
 projects[admin_menu] = "3"
@@ -14,6 +16,12 @@ projects[autocomplete_deluxe][version] = "2.x-dev"
 projects[ctools][version] = "1"
 
 projects[colorbox][version] = "1"
+
+projects[content_access][version] = "1.x-dev"
+; Node Access bug if core patch is applied http://drupal.org/node/1097248#comment-6613538
+projects[content_access][patch][] = "http://drupal.org/files/1097248-content-access-node-grants-24.patch"
+
+projects[context_admin][version] = "1.x-dev"
 
 projects[content_taxonomy][version] = "1.x-dev"
 
@@ -51,9 +59,17 @@ projects[message] = "1"
 
 projects[mimemail][version] = "1"
 
+projects[panels][version] = "3"
+; UUID for panels http://drupal.org/node/1277908#comment-6176512
+projects[panels][patch][] = "http://drupal.org/files/panels-uuids_for_exported_objects-1277908-80.patch"
+; i18n hooks http://drupal.org/node/1179034#comment-5664050
+projects[panels][patch][] = "http://drupal.org/files/panels-add-hooks-to-integrate-i18n_panels-1179034-41.patch"
+
 projects[pathauto][version] = "1"
 
 projects[profile2][version] = "1.x-dev"
+; Add ctools relationship
+projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
 projects[recruiter_features][version] = "1.x-dev"
 
