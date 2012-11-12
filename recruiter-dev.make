@@ -29,7 +29,7 @@ projects[context][version] = "3"
 
 projects[date][version] = "2"
 
-projects[diff][version] = "2"
+projects[diff][version] = "3"
 
 projects[email][version] = "1"
 
