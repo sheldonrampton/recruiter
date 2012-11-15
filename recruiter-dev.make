@@ -51,7 +51,7 @@ projects[flag][patch][] = "http://drupal.org/files/1315850-entity_api_properties
 ; Flag Add views handler for flag entity links http://drupal.org/node/1362298
 projects[flag][patch][] = "http://drupal.org/files/1362298_independent_query_backend_flag_links-13.patch"
 
-projects[link][version] = "1"
+projects[link][version] = "1.x-dev"
 
 projects[mailsystem] = "2"
 
