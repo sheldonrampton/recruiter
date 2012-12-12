@@ -57,8 +57,6 @@ projects[mailsystem] = "2"
 
 projects[message] = "1"
 
-projects[mimemail][version] = "1"
-
 projects[panels][version] = "3"
 ; UUID for panels http://drupal.org/node/1277908#comment-6176512
 projects[panels][patch][] = "http://drupal.org/files/panels-uuids_for_exported_objects-1277908-80.patch"
