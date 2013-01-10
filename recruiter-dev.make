@@ -42,6 +42,8 @@ projects[facetapi][version] = "1"
 projects[features][version] = "1"
 
 projects[field_collection][version] = "1"
+; EntityFieldQueryException: Unknown field when deleting fields http://drupal.org/node/1866032
+projects[field_collection][patch][] = "http://drupal.org/files/fieldcol-1866032-7.patch"
 
 projects[field_permissions][version] = "1"
 
