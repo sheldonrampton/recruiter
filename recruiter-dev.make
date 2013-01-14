@@ -131,7 +131,6 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 
 ;  - Recruiter Cloudy base theme -
 
-projects[omega] = 4
 projects[omega_tools] = 4
 
 projects[block_class] = 1
@@ -139,5 +138,17 @@ projects[block_class] = 1
 projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
 
 projects[recruiter_cloudy] = 1
+
 projects[recruiter_menu] = 1
-projects[cloudy] = 1
+
+projects[omega][type] = theme
+projects[omega][version] = 4
+; Wrong error colors used in drupal-messages mixin http://drupal.org/node/1758752
+projects[omega][patch][] = "http://drupal.org/files/omega4_error_message_color.patch"
+; Mobile sidebar js hides search region on desktop in epiqo layout http://drupal.org/node/1888212#comment-6937362
+projects[omega][patch][] = http://drupal.org/files/1888212_omega_mobile_sidebar_hides_search_region.patch
+; Use default variables in buttons mixin http://drupal.org/node/1821976
+projects[omega][patch][] = http://drupal.org/files/omega_buttons_variables_default.patch
+
+projects[cloudy][type] = theme
+projects[cloudy][version] = 1
