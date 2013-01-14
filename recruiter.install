@@ -68,7 +68,7 @@ function recruiter_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = 'recruiter_bartik';
+  $default_theme = 'cloudy';
   $admin_theme = 'seven';
   $values = array(
     array(
@@ -88,26 +88,6 @@ function recruiter_install() {
       'status' => 1,
       'weight' => 10,
       'region' => 'dashboard_main',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'login',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'navigation',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
       'pages' => '',
       'cache' => -1,
     ),
@@ -414,18 +394,26 @@ function recruiter_install() {
     ->condition('name', 'seven')
     ->execute();
   variable_set('admin_theme', 'seven');
-  // Enable recruiter_bartik.
+
+  // Enable omega.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'recruiter_bartik')
+    ->condition('name', 'omega')
     ->execute();
-  variable_set('theme_default', 'recruiter_bartik');
+
+  // Enable cloudy.
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'cloudy')
+    ->execute();
+  variable_set('theme_default', 'cloudy');
   variable_set('node_admin_theme', '1');
 
-  $theme_settings = variable_get('theme_recruiter_bartik_settings', array());
-  $theme_settings['toggle_name'] = FALSE;
-  variable_set('theme_recruiter_bartik_settings', $theme_settings);
+  $theme_settings = variable_get('theme_cloudy_settings', array());
+  $theme_settings['toggle_slogan'] = FALSE;
+  variable_set('theme_cloudy_settings', $theme_settings);
   variable_set('user_pictures', 0);
 
   // Create resume for user 1.

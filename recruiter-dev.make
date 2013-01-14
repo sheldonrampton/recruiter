@@ -127,3 +127,17 @@ libraries[colorbox][destination] = "libraries"
 ; CKEditor
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
+
+
+;  - Recruiter Cloudy base theme -
+
+projects[omega] = 4
+projects[omega_tools] = 4
+
+projects[block_class] = 1
+; Features support http://drupal.org/node/1230234
+projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
+
+projects[recruiter_cloudy] = 1
+projects[recruiter_menu] = 1
+projects[cloudy] = 1
