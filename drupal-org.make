@@ -44,7 +44,7 @@ projects[email][version] = "1.2"
 
 projects[entity][version] = "1.0"
 
-projects[entityreference][version] = "1.0-rc3"
+projects[entityreference][version] = "1.0"
 
 projects[facetapi][version] = "1.2"
 
@@ -81,7 +81,7 @@ projects[profile2][version] = "1.3"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-projects[recruiter_features][version] = "1.0-rc2"
+projects[recruiter_features][version] = "1.0-rc3"
 
 projects[role_export][version] = "1.0"
 
@@ -104,7 +104,7 @@ projects[search_api_db][version] = "1.0-beta4"
 
 projects[strongarm][version] = "2.0"
 
-projects[synonyms][version] = "1.0"
+projects[synonyms][version] = "1.1"
 
 projects[taxonomy_csv][version] = "5.10"
 
