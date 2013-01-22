@@ -31,6 +31,7 @@ dependencies[] = views_ui
 dependencies[] = taxonomy_manager
 dependencies[] = colorbox
 dependencies[] = context_ui
+dependencies[] = facetapi_pretty_paths
 
 ; Install the recruiter modules.
 dependencies[] = recruiter_job

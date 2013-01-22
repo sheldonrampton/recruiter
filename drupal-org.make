@@ -48,6 +48,8 @@ projects[entityreference][version] = "1.0-rc3"
 
 projects[facetapi][version] = "1.2"
 
+projects[facetapi_pretty_paths][version] = "1.0-beta1"
+
 projects[features][version] = "1.0"
 
 projects[field_collection][version] = "1.0-beta5"
