@@ -39,6 +39,13 @@ projects[entityreference][version] = "1"
 
 projects[facetapi][version] = "1"
 
+; projects[facetapi_pretty_paths][version] = 1.x-dev
+
+projects[facetapi_pretty_paths][type] = module
+projects[facetapi_pretty_paths][download][type] = git
+projects[facetapi_pretty_paths][download][branch] = 7.x-1.x
+projects[facetapi_pretty_paths][download][url] = http://git.drupal.org/project/facetapi_pretty_paths.git
+
 projects[features][version] = "1"
 
 projects[field_collection][version] = "1"
@@ -54,8 +61,6 @@ projects[flag][patch][] = "http://drupal.org/files/1315850-entity_api_properties
 projects[flag][patch][] = "http://drupal.org/files/1362298_independent_query_backend_flag_links-13.patch"
 
 projects[link][version] = "1.x-dev"
-
-projects[mailsystem] = "2"
 
 projects[message] = "1"
 
