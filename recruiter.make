@@ -37,6 +37,8 @@ projects[content_taxonomy][download][revision] = f3ad6dc33629ec33db58aaee678fab2
 projects[context][version] = "3.0-beta6"
 
 projects[date][version] = "2.6"
+; Make it possible to disable fieldset for date field http://drupal.org/node/1467712#comment-6137556
+projects[date][patch][] = "http://drupal.org/files/date_option_render_as_regular_field-1467712-60.patch"
 
 projects[diff][version] = "2.0"
 
