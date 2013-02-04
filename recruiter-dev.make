@@ -55,8 +55,6 @@ projects[field_collection][patch][] = "http://drupal.org/files/fieldcol-1866032-
 projects[field_permissions][version] = "1"
 
 projects[flag][version] = "3.x-dev"
-; Flag Add views handler for flag entity links http://drupal.org/node/1362298
-projects[flag][patch][] = "http://drupal.org/files/1362298_independent_query_backend_flag_links-13.patch"
 
 projects[link][version] = "1.x-dev"
 
