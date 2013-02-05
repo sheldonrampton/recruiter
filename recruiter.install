@@ -93,16 +93,6 @@ function recruiter_install() {
     ),
     array(
       'module' => 'system',
-      'delta' => 'powered-by',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'footer',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
       'delta' => 'help',
       'theme' => $default_theme,
       'status' => 1,
@@ -217,18 +207,14 @@ function recruiter_install() {
     rdf_mapping_save($rdf_mapping);
   }
 
-  // Default "Basic page" to not be promoted and have comments disabled.
+  // Default "Basic page" to not be promoted.
   variable_set('node_options_page', array('status'));
-  variable_set('comment_page', COMMENT_NODE_HIDDEN);
 
   // Don't display date and author information for "Basic page" nodes by default.
   variable_set('node_submitted_page', FALSE);
 
-  // Enable user picture support and set the default to a square thumbnail option.
-  variable_set('user_pictures', '1');
-  variable_set('user_picture_dimensions', '1024x1024');
-  variable_set('user_picture_file_size', '800');
-  variable_set('user_picture_style', 'thumbnail');
+  // By default, disable user picture support.
+  variable_set('user_pictures', '0');
 
   // Allow visitor account creation with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
@@ -395,14 +381,14 @@ function recruiter_install() {
     ->execute();
   variable_set('admin_theme', 'seven');
 
-  // Enable omega.
+  // Enable omega base theme.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
     ->condition('name', 'omega')
     ->execute();
 
-  // Enable cloudy.
+  // Enable cloudy default theme.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
@@ -414,7 +400,6 @@ function recruiter_install() {
   $theme_settings = variable_get('theme_cloudy_settings', array());
   $theme_settings['toggle_slogan'] = FALSE;
   variable_set('theme_cloudy_settings', $theme_settings);
-  variable_set('user_pictures', 0);
 
   // Create resume for user 1.
   profile2_save(profile2_create(array('type' => 'resume', 'uid' => 1)));
