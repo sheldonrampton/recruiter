@@ -41,12 +41,7 @@ projects[entityreference][version] = "1"
 
 projects[facetapi][version] = "1"
 
-; projects[facetapi_pretty_paths][version] = 1.x-dev
-
-projects[facetapi_pretty_paths][type] = module
-projects[facetapi_pretty_paths][download][type] = git
-projects[facetapi_pretty_paths][download][branch] = 7.x-1.x
-projects[facetapi_pretty_paths][download][url] = http://git.drupal.org/project/facetapi_pretty_paths.git
+projects[facetapi_pretty_paths][version] = 1
 
 projects[features][version] = "1"
 
@@ -74,7 +69,12 @@ projects[profile2][version] = "1.x-dev"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-projects[recruiter_features][version] = "1.x-dev"
+; projects[recruiter_features][version] = "1.x-dev"
+
+projects[recruiter_features][type] = module
+projects[recruiter_features][download][type] = git
+projects[recruiter_features][download][branch] = cloudy
+projects[recruiter_features][download][url] = http://git.drupal.org/project/recruiter_features.git
 
 projects[role_export][version] = "1"
 
@@ -137,18 +137,13 @@ projects[block_class] = 1
 ; Features support http://drupal.org/node/1230234
 projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
 
-projects[recruiter_cloudy] = 1
-
-projects[recruiter_menu] = 1
-
 projects[omega][type] = theme
 projects[omega][version] = 4
-; Wrong error colors used in drupal-messages mixin http://drupal.org/node/1758752
-projects[omega][patch][] = "http://drupal.org/files/omega4_error_message_color.patch"
-; Mobile sidebar js hides search region on desktop in epiqo layout http://drupal.org/node/1888212#comment-6937362
-projects[omega][patch][] = http://drupal.org/files/1888212_omega_mobile_sidebar_hides_search_region.patch
-; Use default variables in buttons mixin http://drupal.org/node/1821976
-projects[omega][patch][] = http://drupal.org/files/omega_buttons_variables_default.patch
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = 1
+; projects[cloudy][version] = 1
+
+projects[cloudy][download][type] = git
+projects[cloudy][download][branch] = 7.x-1.x
+projects[cloudy][download][url] = http://git.drupal.org/project/recruiter_features.git
+
