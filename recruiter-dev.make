@@ -145,5 +145,5 @@ projects[cloudy][type] = theme
 
 projects[cloudy][download][type] = git
 projects[cloudy][download][branch] = 7.x-1.x
-projects[cloudy][download][url] = http://git.drupal.org/project/recruiter_features.git
+projects[cloudy][download][url] = http://git.drupal.org/project/cloudy.git
 
