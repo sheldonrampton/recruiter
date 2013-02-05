@@ -141,9 +141,4 @@ projects[omega][type] = theme
 projects[omega][version] = 4
 
 projects[cloudy][type] = theme
-; projects[cloudy][version] = 1
-
-projects[cloudy][download][type] = git
-projects[cloudy][download][branch] = 7.x-1.x
-projects[cloudy][download][url] = http://git.drupal.org/project/recruiter_features.git
-
+projects[cloudy][version] = 1
