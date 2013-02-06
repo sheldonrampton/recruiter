@@ -69,12 +69,7 @@ projects[profile2][version] = "1.x-dev"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-; projects[recruiter_features][version] = "1.x-dev"
-
-projects[recruiter_features][type] = module
-projects[recruiter_features][download][type] = git
-projects[recruiter_features][download][branch] = cloudy
-projects[recruiter_features][download][url] = http://git.drupal.org/project/recruiter_features.git
+projects[recruiter_features][version] = "1.x-dev"
 
 projects[role_export][version] = "1"
 
