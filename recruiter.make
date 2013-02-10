@@ -139,3 +139,23 @@ libraries[colorbox][destination] = "libraries"
 ; CKEditor
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
+
+;  - Recruiter Cloudy base theme -
+
+projects[omega_tools][version] = "4.x-dev"
+projects[omega_tools][download][type] = git
+projects[omega_tools][download][branch] = 7.x-4.x
+projects[omega_tools][download][revision] = d5ac30a03194f42616cc868ef7d45683db38f819
+
+projects[block_class] = 1.2
+; Features support http://drupal.org/node/1230234
+projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
+
+projects[omega][type] = theme
+projects[omega][version] = 4.0-alpha7
+
+projects[cloudy][type] = theme
+projects[cloudy][version] = "1.x-dev"
+projects[cloudy][download][type] = git
+projects[cloudy][download][branch] = 7.x-1.x
+projects[cloudy][download][revision] = e40aaa76c00e802e505283e245199cb78d38eaa8
