@@ -83,7 +83,7 @@ projects[profile2][version] = "1.3"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-projects[recruiter_features][version] = "1.0-rc3"
+projects[recruiter_features][version] = "1.x-dev"
 
 projects[role_export][version] = "1.0"
 
@@ -156,6 +156,3 @@ projects[omega][version] = 4.0-alpha7
 
 projects[cloudy][type] = theme
 projects[cloudy][version] = "1.x-dev"
-projects[cloudy][download][type] = git
-projects[cloudy][download][branch] = 7.x-1.x
-projects[cloudy][download][revision] = e40aaa76c00e802e505283e245199cb78d38eaa8
