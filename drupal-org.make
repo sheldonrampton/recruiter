@@ -65,6 +65,8 @@ projects[panels][patch][] = "http://drupal.org/files/panels-add-hooks-to-integra
 
 projects[pathauto][version] = "1"
 
+projects[pm_existing_pages][version] = 1
+
 projects[profile2][version] = "1.x-dev"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
