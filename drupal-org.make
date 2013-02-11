@@ -135,7 +135,7 @@ projects[block_class] = 1
 projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
 
 projects[omega][type] = theme
-projects[omega][version] = 4
+projects[omega][version] = 4.x-dev
 
 projects[cloudy][type] = theme
 projects[cloudy][version] = 1
