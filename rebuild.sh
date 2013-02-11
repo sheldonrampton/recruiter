@@ -9,7 +9,7 @@ else
   DIR='recruiter'
 fi
 
-if [ -f recruiter.make ]; then
+if [ -f drupal-org.make ]; then
   SELECTION="$1"
   if [ "$SELECTION" == "" ]; then
     echo -e "\nThis command can be used to run recruiter.make in place, or to generate"
@@ -26,26 +26,26 @@ if [ -f recruiter.make ]; then
 
     # Run make file only.
     echo "Building development install profile..."
-    drush make --yes --working-copy --no-core --contrib-destination=. recruiter-dev.make
-    
+    drush make --yes --working-copy --no-core --contrib-destination=. drupal-org.make
+
   elif [ $SELECTION = "2" ]; then
 
     # Run make file only.
     echo "Building stable install profile..."
-    drush make --yes --working-copy --no-core --contrib-destination=. recruiter.make
+    drush make --yes --working-copy --no-core --contrib-destination=. recruiter-stable.make
 
   elif [ $SELECTION = "3" ]; then
 
     # Generate a complete tar.gz of Drupal + Recruiter
     echo "Building Recruiter distribution..."
 
-    drush make --prepare-install --working-copy --yes build.make $DIR && echo "Done. Distribution can be found in the directory $DIR."
+    drush make --prepare-install --working-copy --yes build-recruiter.make $DIR && echo "Done. Distribution can be found in the directory $DIR."
   elif [ $SELECTION = "4" ]; then
 
     basedir=`pwd`
     for dir in modules/*
     do
-      cd $basedir/$dir  
+      cd $basedir/$dir
       if [ -d ".git" ]; then
         echo $(pwd)
         git pull
@@ -57,7 +57,7 @@ if [ -f recruiter.make ]; then
 
     # update core. Before going down make sure we have absolute paths and
     # no links via readlink.
-    basedir=`readlink -f $basedir`    
+    basedir=`readlink -f $basedir`
     cd $basedir/../..;
     if [ -d ".git" ]; then
       echo "Updating core"
@@ -71,6 +71,6 @@ if [ -f recruiter.make ]; then
    echo "Invalid selection."
   fi
 else
-  echo 'Could not locate file "recruiter.make"'
+  echo 'Could not locate file "drupal-org.make"'
 fi
 
