@@ -3,11 +3,8 @@
 api = 2
 core = 7.x
 
-; Use drupal.org drupal via Git.
-projects[drupal][type] = core
-projects[drupal][download][type] = git
-projects[drupal][download][url] = git://git.drupalcode.org/project/drupal.git
-projects[drupal][download][revision] = 7.19
+; Not specifying a drupal core version will use the latest stable release.
+; projects[drupal][version] = 
 
 ; CORE PATCHES
 
@@ -19,4 +16,3 @@ projects[drupal][patch][] = http://drupal.org/files/1146244-82-node-save-on-inse
 ; http://drupal.org/node/737816#comment-6978566
 ; (fixes integrity constraint violation when adding permissions, see http://drupal.org/node/1063204)
 projects[drupal][patch][] = http://drupal.org/files/drupal-7.x-fix_pdoexception_grant_permissions-737816-26-do-not-test.patch
-
