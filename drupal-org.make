@@ -123,7 +123,8 @@ libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
 libraries[colorbox][directory_name] = "colorbox"
-libraries[colorbox][destination] = "libraries"
+; jquery.colorbox.js should be under libraries/colorbox/colorbox
+libraries[colorbox][destination] = "libraries/colorbox"
 
 ; CKEditor
 libraries[ckeditor][download][type] = "get"
