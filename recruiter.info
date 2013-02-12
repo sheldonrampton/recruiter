@@ -4,9 +4,6 @@ core = 7.x
 
 ; Install the modules from the standard profile.
 dependencies[] = block
-dependencies[] = color
-dependencies[] = contextual
-dependencies[] = dashboard
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
@@ -15,22 +12,8 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = path
 dependencies[] = taxonomy
-dependencies[] = dblog
-dependencies[] = shortcut
-dependencies[] = overlay
-dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
-
-; Install contributed modules.
-dependencies[] = admin_menu_toolbar
-dependencies[] = rules
-dependencies[] = rules_admin
-dependencies[] = views_ui
-dependencies[] = taxonomy_manager
-dependencies[] = colorbox
-dependencies[] = context_ui
-dependencies[] = facetapi_pretty_paths
 
 ; Install the recruiter modules.
 dependencies[] = recruiter_job
@@ -40,9 +23,3 @@ dependencies[] = recruiter_resume
 dependencies[] = recruiter_resume_search
 dependencies[] = recruiter_resume_search_notifications
 dependencies[] = recruiter_register
-
-; Install requirements for the recruiter cloudy base theme
-dependencies[] = omega_tools
-dependencies[] = block_class
-dependencies[] = recruiter_cloudy
-dependencies[] = recruiter_menu

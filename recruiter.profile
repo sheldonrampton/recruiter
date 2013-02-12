@@ -11,102 +11,34 @@
  * Allows the profile to alter the site configuration form.
  */
 function recruiter_form_install_configure_form_alter(&$form, $form_state) {
-  // Pre-populate the site name with our profile's name.
+
+  // Pre-populate some fields.
   $form['site_information']['site_name']['#default_value'] = t('Recruiter');
-}
+  $form['site_information']['site_mail']['#default_value'] = 'admin@' . ($_SERVER['HTTP_HOST'] != 'localhost' ? $_SERVER['HTTP_HOST'] : 'example.com');
+  $form['admin_account']['account']['name']['#default_value'] = 'admin';
 
-/**
- * Implements hook_install_tasks().
- */
-function recruiter_install_tasks() {
-  $tasks = array(
-    'recruiter_import_vocabularies_batch' => array(
-      'display_name' => st('Import terms'),
-      'display' => TRUE,
-      'type' => 'batch',
-      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
-    ),
+  // Add checkbox for example content.
+  $form['recruiter'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => FALSE,
+    '#title' => t('Recruiter'),
   );
-  return $tasks;
-}
 
-/**
- * Defines batch operation for importing.
- */
-function recruiter_import_vocabularies_batch() {
-  $batch = array(
-    'operations' => array(
-      array('recruiter_import_vocabularies', array()),
-    ),
-    'finished' => 'recruiter_import_vocabularies_finished',
-    'title' => t('Import terms'),
-    'init_message' => t('Starting import.'),
-    'progress_message' => t('Processed @current out of @total.'),
-    'error_message' => t('Example Batch has encountered an error.'),
+  $form['recruiter']['recruiter_demo_content'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Install demo content'),
+    '#description' => t('Check this option to enable demonstration content for Recruiter to get your site up and running quickly.'),
+    '#default_value' => TRUE,
   );
-  return $batch;
+
+  $form['#submit'][] = 'recruiter_install_configure_form_submit';
 }
 
-/**
- * Import batch operation for vocabularies.
- */
-function recruiter_import_vocabularies(&$context) {
-  if (!isset($context['sandbox']['progress'])) {
-    $vocs = taxonomy_vocabulary_load_multiple(FALSE);
-    $context['sandbox']['progress'] = 0;
-    $context['sandbox']['current_node'] = 0;
-    $context['sandbox']['max'] = count($vocs);
-    $context['sandbox']['vocs'] = $vocs;
-  }
-
-  $voc = array_pop($context['sandbox']['vocs']);
-  recruiter_import_vocabulary($voc, $context);
-  $context['sandbox']['progress']++;
-
-  if ($context['sandbox']['progress'] != $context['sandbox']['max']) {
-    $context['finished'] = $context['sandbox']['progress'] / $context['sandbox']['max'];
-  }
-}
 
 /**
- * Imports terms into a vocabulary using taxonomy csv.
+ * Submit callback.
  */
-function recruiter_import_vocabulary($voc, &$context) {
-  // Note: drupal_get_path('profile', 'recruiter') didn't work here.
-  $import_dir = dirname(__FILE__) . '/taxonomy_import/';
-
-  // Use Taxonomy CSV to import terms from a file.
-  $module_dir = dirname(__FILE__) . '/modules/taxonomy_csv';
-  require_once "$module_dir/import/taxonomy_csv.import.api.inc";
-
-  // Import terms for each voc, where a .csv file exits.
-  $filename = $import_dir . $voc->machine_name . '.csv';
-  if (!file_exists($filename)) {
-    return;
-  }
-
-  // Set options for import.
-  $options['import_format'] = TAXONOMY_CSV_FORMAT_TREE;
-  $options['enclosure'] = '"';
-  $options['vocabulary_target'] = 'existing';
-  $options['vocabulary_id'] = $voc->vid;
-  $options['check_hierarchy'] = FALSE;
-  $options['set_hierarchy'] = 1;
-  $options['source_choice'] = 'text';
-  $options['url'] = $filename;
-  taxonomy_csv_import($options);
-
-  $context['results'][] = t('Imported terms for vocabulary @voc_name', array('@voc_name' => $voc->name));
-}
-
-/**
- * Prints message after batch is finished.
- */
-function recruiter_import_vocabularies_finished($success, $results, $operations) {
-  $message = "";
-  if ($success) {
-    $message .= theme('item_list', array('items' => $results));
-  }
-  $message .= t("Import finished");
-  drupal_set_message($message);
+function recruiter_install_configure_form_submit(&$form, &$form_state) {
+  // Set variable to install or not demo content.
+  variable_set('recruiter_install_demo_content', $form_state['values']['recruiter_demo_content']);
 }

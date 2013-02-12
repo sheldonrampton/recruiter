@@ -6,6 +6,220 @@
  */
 
 /**
+ * Implements hook_install_tasks().
+ */
+function recruiter_install_tasks() {
+  // Increase maximum function nesting level to prevent install errors.
+  $max_nesting_level = ini_get('xdebug.max_nesting_level');
+  if ($max_nesting_level > 0 && $max_nesting_level <= '200') {
+    ini_set('xdebug.max_nesting_level', 200);
+  }
+
+  // Remove any status messages that might have been set. They are unneeded.
+  // drupal_get_messages('status', TRUE);
+
+  $tasks = array(
+    'recruiter_install_additional_modules' => array(
+      'display_name' => st('Install additional modules'),
+      'type' => 'batch',
+    ),
+    'recruiter_import_vocabularies_batch' => array(
+      'display_name' => st('Import terms'),
+      'type' => 'batch',
+    ),
+    'recruiter_import_content' => array(
+      'display_name' => st('Import demo content'),
+      'type' => 'batch',
+    ),
+    'recruiter_cleanup' => array(
+      'display_name' => st('Post-install cleanup'),
+      'type' => 'batch',
+    ),
+  );
+
+  return $tasks;
+}
+
+
+/**
+ * Task callback: uses Batch API to install additional modules that should
+ * be enabled by default but shouldn't be considered profile dependencies.
+ *
+ * Also installs demo content if selected.
+ */
+function recruiter_install_additional_modules() {
+  $modules = array(
+
+    // Install default core modules.
+    'contextual',
+    'dashboard',
+    'dblog',
+    'shortcut',
+    'overlay',
+    'field_ui',
+
+    // Install default contrib modules.
+    'admin_menu_toolbar',
+    'rules_admin',
+    'views_ui',
+    'taxonomy_manager',
+    'colorbox',
+    'context_ui',
+    'pathauto',
+    'facetapi_pretty_paths',
+    'colorbox',
+    'context_ui',
+    'rules_admin',
+    'views_ui',
+    'wysiwyg',
+
+    // Install requirements for the recruiter cloudy base theme.
+    'omega_tools',
+    'block_class',
+    'recruiter_cloudy',
+    'recruiter_menu',
+  );
+
+  if (variable_get('recruiter_install_demo_content', FALSE)) {
+    $modules[] = 'recruiter_demo';
+  }
+
+  // Resolve the dependencies now, so that module_enable() doesn't need
+  // to do it later for each individual module (which kills performance).
+  $files = system_rebuild_module_data();
+  $modules_sorted = array();
+  foreach ($modules as $module) {
+    if ($files[$module]->requires) {
+      // Create a list of dependencies that haven't been installed yet.
+      $dependencies = array_keys($files[$module]->requires);
+      $dependencies = array_filter($dependencies, '_recruiter_filter_dependencies');
+      // Add them to the module list.
+      $modules = array_merge($modules, $dependencies);
+    }
+  }
+  $modules = array_unique($modules);
+  foreach ($modules as $module) {
+    $modules_sorted[$module] = $files[$module]->sort;
+  }
+  arsort($modules_sorted);
+
+  $operations = array();
+  // Enable the selected modules.
+  foreach ($modules_sorted as $module => $weight) {
+    $operations[] = array('_recruiter_enable_module', array($module, $files[$module]->info['name']));
+  }
+
+  $batch = array(
+    'title' => t('Installing additional modules'),
+    'operations' => $operations,
+    'file' => drupal_get_path('profile', 'recruiter') . '/recruiter.install_callbacks.inc',
+  );
+
+  return $batch;
+}
+
+/**
+ * array_filter() callback used to filter out already installed dependencies.
+ */
+function _recruiter_filter_dependencies($dependency) {
+  return !module_exists($dependency);
+}
+
+/**
+ * Defines batch operation for importing vocabularies.
+ */
+function recruiter_import_vocabularies_batch() {
+  $batch = array(
+    'title' => t('Importing taxonomy terms'),
+    'operations' => array(
+      array('recruiter_import_vocabularies', array()),
+    ),
+    'finished' => 'recruiter_import_vocabularies_finished',
+    'title' => t('Import terms'),
+    'init_message' => t('Starting import.'),
+    'progress_message' => t('Processed @current out of @total.'),
+    'error_message' => t('Recruiter vocabularies import batch has encountered an error.'),
+    'file' => drupal_get_path('profile', 'recruiter') . '/recruiter.install_vocabularies.inc',
+  );
+  return $batch;
+}
+
+
+/**
+ * Task callback: return a batch API array with content migrations to import.
+ */
+function recruiter_import_content() {
+  if (variable_get('recruiter_install_demo_content', FALSE)) {
+    module_enable(array('recruiter_demo'));
+    $operations = array();
+
+    // Run all available migrations.
+    $migrations = migrate_migrations();
+    foreach ($migrations as $machine_name => $migration) {
+      $operations[] = array('_recruiter_import', array($machine_name, t('Importing demo content.')));
+    }
+
+    $batch = array(
+      'title' => t('Importing demo content'),
+      'operations' => $operations,
+      'finished' => 'recruiter_import_content_finished',
+      'file' => drupal_get_path('profile', 'recruiter') . '/recruiter.install_callbacks.inc',
+    );
+
+    return $batch;
+  }
+
+  variable_del('recruiter_install_demo_content');
+}
+
+/**
+ * Task callback: performs final post-installation cleanup.
+ */
+function recruiter_cleanup() {
+  $operations = array();
+
+  // Flush caches before we do anything.
+  $operations[] = array('_recruiter_flush_caches', array(t('Flushed caches.')));
+
+  // Rename FacetAPI block titles.
+  // For now let's only bother renaming the blocks we show by default.
+  $facet_blocks = array(
+    // Resume facet blocks.
+    '20lwlBykNTHsiVDNAjG1STlcNs5ZOkAd' => 'Career status',
+    '0E13X9GxANL1YrsKm6GzqUBvUn9dwwKX' => 'Field of study',
+    'Npc9qPmJF0Z7K11E3oY7p0Z1dHoH0Rpr' => 'Desired region',
+    'Z1OEEIJTmFLiH0khl0e9VwNxTjr1km0o' => 'Desired ocupation',
+    'MCIaDpM84mEXHKio1Bs8HcYiueQECFo8' => 'IT Skills',
+    'xETXZbrE5MuFZJhqCQ361R0xPQQIUoDH' => 'General Skills',
+    'PvSkNRl00z4DVBGE2G0g0wziYXD2YPFO' => 'Language',
+    // Job facet blocks.
+    'PE57RfU6JaWBJC3FFCu7iidegBzDJCMx' => 'Field of study',
+    'v3NKwi4cgrJI5BhGVl3K6y1dktYkhuo8' => 'Occupational field',
+    'IzmJzjOerbieKFXpXetvXQNCqhkAH8GM' => 'Employment type',
+    'fknTj1lNko0YBn9qkfWwlhCx0XCi0niU' => 'Required IT skills',
+    'plRdR3L5yjuALKnX3l09E70IsBWbyyiY' => 'Required general skills',
+    'GPKIRB6X2D0QOMoO6ldpQS739bPh6Zru' => 'Required languages',
+    'SZ9qoxuugBBvUZ39HNC99AUUIkZtp592' => 'Location',
+  );
+
+  foreach ($facet_blocks as $delta => $title) {
+    $operations[] = array('_recruiter_facet_block_titles', array($delta, $title, t('Setting FacetAPI block titles.')));
+  }
+
+  // Flush caches again for good measure.
+  $operations[] = array('_recruiter_flush_caches', array(t('Flushed caches one last time.')));
+
+  $batch = array(
+    'title' => t('Performing post-install cleanup'),
+    'operations' => $operations,
+    'finished' => 'recruiter_cleanup_finished',
+    'file' => drupal_get_path('profile', 'recruiter') . '/recruiter.install_callbacks.inc',
+  );
+
+  return $batch;
+}
+
+/**
  * Implements hook_install().
  *
  * Perform actions to set up the site for this profile.
