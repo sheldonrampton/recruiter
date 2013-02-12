@@ -26,16 +26,16 @@ function recruiter_install_tasks() {
       'display_name' => st('Install additional modules'),
       'type' => 'batch',
     ),
+    'recruiter_cleanup' => array(
+      'display_name' => st('Post-install cleanup'),
+      'type' => 'batch',
+    ),
     'recruiter_import_vocabularies_batch' => array(
       'display_name' => st('Import terms'),
       'type' => 'batch',
     ),
     'recruiter_import_content' => array(
       'display_name' => st('Import demo content'),
-      'type' => 'batch',
-    ),
-    'recruiter_cleanup' => array(
-      'display_name' => st('Post-install cleanup'),
       'type' => 'batch',
     ),
   );
@@ -199,11 +199,11 @@ function recruiter_import_content() {
 function recruiter_cleanup() {
   $operations = array();
 
-  // Flush caches before we do anything.
-  $operations[] = array('_recruiter_flush_caches', array(t('Flushed caches.')));
-
   // Revert all features.
   $operations[] = array('_recruiter_revert_all_features', array(t('Revert all features.')));
+
+  // Flush caches before we do anything.
+  $operations[] = array('_recruiter_flush_caches', array(t('Flushed caches.')));
 
   // Rename FacetAPI block titles.
   // For now let's only bother renaming the blocks we show by default.

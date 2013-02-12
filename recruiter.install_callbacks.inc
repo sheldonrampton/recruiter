@@ -130,7 +130,7 @@ function recruiter_cleanup_finished($success, $results) {
   // drupal_get_messages(NULL, TRUE);
 
   if ($success) {
-    drupal_set_message(t('Post-install cleanup successful. Your site is now ready!'), 'status', FALSE);
+    drupal_set_message(t('Post-install cleanup successful.'), 'status', FALSE);
   }
   else {
     drupal_set_message(t('Error perfoming post-install cleanup.'), 'error', FALSE);
