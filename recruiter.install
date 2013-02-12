@@ -3,6 +3,9 @@
 /**
  * @file
  * Install, update, and uninstall functions for the recruiter profile.
+ *
+ * With inspriations from Commerce Kickstart http://drupal.org/project/commerce_kickstart
+ * and Drop Jobs http://drupal.org/project/drop_jobs
  */
 
 /**
