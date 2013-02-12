@@ -43,6 +43,23 @@ function recruiter_install_tasks() {
   return $tasks;
 }
 
+/**
+ * Implements hook_install_tasks_alter().
+ */
+function recruiter_install_tasks_alter(&$tasks, $install_state) {
+  // Skip the profile selection, and use the 'exclusive' property to directly
+  // install the Recruiter distribution. Requires core patch: #1727430.
+  $tasks['install_select_profile']['display'] = FALSE;
+
+  // Exchange the logo that is used in the installer.
+  $theme_settings = array(
+    'toggle_logo' => 1,
+    'default_logo' => 0,
+    'logo_path' => 'profiles/recruiter/themes/cloudy/images/recruiter-logo.png',
+    'logo_upload' => '',
+  );
+  $GLOBALS['conf']['theme_seven_settings'] = $theme_settings;
+}
 
 /**
  * Task callback: uses Batch API to install additional modules that should

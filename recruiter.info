@@ -1,6 +1,8 @@
 name = Recruiter
 description = Install recruiter distribution.
 core = 7.x
+distribution_name = Recruiter
+exclusive = 1
 
 ; Install the modules from the standard profile.
 dependencies[] = block

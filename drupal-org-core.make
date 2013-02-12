@@ -16,3 +16,6 @@ projects[drupal][patch][] = http://drupal.org/files/1146244-82-node-save-on-inse
 ; http://drupal.org/node/737816#comment-6978566
 ; (fixes integrity constraint violation when adding permissions, see http://drupal.org/node/1063204)
 projects[drupal][patch][] = http://drupal.org/files/drupal-7.x-fix_pdoexception_grant_permissions-737816-26-do-not-test.patch
+
+; Recruiter profile preselection on installation, scheduled for 7.20 (drupal.org/node/1727430#comment-6623174)
+projects[drupal][patch][] = "http://drupal.org/files/drupal-provide_exclusive_property_install_profiles-1727430-35-d7.patch"
