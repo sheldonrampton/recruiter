@@ -185,6 +185,9 @@ function recruiter_cleanup() {
   // Flush caches before we do anything.
   $operations[] = array('_recruiter_flush_caches', array(t('Flushed caches.')));
 
+  // Revert all features.
+  $operations[] = array('_recruiter_revert_all_features', array(t('Revert all features.')));
+
   // Rename FacetAPI block titles.
   // For now let's only bother renaming the blocks we show by default.
   $facet_blocks = array(
