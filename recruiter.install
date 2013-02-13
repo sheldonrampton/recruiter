@@ -212,7 +212,7 @@ function recruiter_cleanup() {
     '20lwlBykNTHsiVDNAjG1STlcNs5ZOkAd' => 'Career status',
     '0E13X9GxANL1YrsKm6GzqUBvUn9dwwKX' => 'Field of study',
     'Npc9qPmJF0Z7K11E3oY7p0Z1dHoH0Rpr' => 'Desired region',
-    'Z1OEEIJTmFLiH0khl0e9VwNxTjr1km0o' => 'Desired ocupation',
+    'Z1OEEIJTmFLiH0khl0e9VwNxTjr1km0o' => 'Desired occupation',
     'MCIaDpM84mEXHKio1Bs8HcYiueQECFo8' => 'IT Skills',
     'xETXZbrE5MuFZJhqCQ361R0xPQQIUoDH' => 'General Skills',
     'PvSkNRl00z4DVBGE2G0g0wziYXD2YPFO' => 'Language',
