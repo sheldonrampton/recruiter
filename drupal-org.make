@@ -23,7 +23,7 @@ projects[content_access][patch][] = "http://drupal.org/files/1097248-content-acc
 
 projects[context_admin][version] = "1.x-dev"
 
-projects[content_taxonomy][version] = "1.x-dev"
+projects[content_taxonomy][version] = "1"
 
 projects[context][version] = "3"
 
