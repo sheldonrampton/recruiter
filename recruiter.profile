@@ -11,11 +11,8 @@
  * Allows the profile to alter the site configuration form.
  */
 function recruiter_form_install_configure_form_alter(&$form, $form_state) {
-
-  // Pre-populate some fields.
+  // Pre-populate site name.
   $form['site_information']['site_name']['#default_value'] = t('Recruiter');
-  $form['site_information']['site_mail']['#default_value'] = 'admin@' . ($_SERVER['HTTP_HOST'] != 'localhost' ? $_SERVER['HTTP_HOST'] : 'example.com');
-  $form['admin_account']['account']['name']['#default_value'] = 'admin';
 
   // Add checkbox for example content.
   $form['recruiter'] = array(
@@ -33,7 +30,6 @@ function recruiter_form_install_configure_form_alter(&$form, $form_state) {
 
   $form['#submit'][] = 'recruiter_install_configure_form_submit';
 }
-
 
 /**
  * Submit callback.
