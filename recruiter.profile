@@ -28,6 +28,24 @@ function recruiter_form_install_configure_form_alter(&$form, $form_state) {
     '#default_value' => TRUE,
   );
 
+  // The user needs to set a private file directory. This is a requirement for
+  // the resume feature and the directory is needed during the import of demo
+  // data.
+  $form['file_system'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => FALSE,
+    '#title' => t('File system'),
+  );
+  $form['file_system']['file_private_path'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Private file system path'),
+    '#default_value' => variable_get('file_private_path', ''),
+    '#maxlength' => 255,
+    '#description' => t('An existing local file system path for storing private files. It should be writable by Drupal and not accessible over the web. See the online handbook for <a href="@handbook">more information about securing private files</a>. The private file directory is needed by the resume feature and during the import of demo data.', array('@handbook' => 'http://drupal.org/documentation/modules/file')),
+    '#after_build' => array('system_check_directory'),
+    '#required' => TRUE,
+  );
+
   $form['#submit'][] = 'recruiter_install_configure_form_submit';
 }
 
@@ -37,4 +55,7 @@ function recruiter_form_install_configure_form_alter(&$form, $form_state) {
 function recruiter_install_configure_form_submit(&$form, &$form_state) {
   // Set variable to install or not demo content.
   variable_set('recruiter_install_demo_content', $form_state['values']['recruiter_demo_content']);
+
+  // Set the private files directory variable.
+  variable_set('file_private_path', $form_state['values']['file_private_path']);
 }

@@ -8,7 +8,7 @@ platform. Users can register either as recruiter and post job classifieds or
 they can register as applicants and fill out their resume. A faceted search
 helps users to find jobs and possible job candidates.
 
-More details at 
+More details at
 
  *  http://drupal.org/project/recruiter or
  *  http://epiqo.com/recruiter
@@ -31,18 +31,8 @@ Installation
    your webserver accordingly.
 
 2. Install Recruiter as a usual Drupal site by visiting it with your web
-   browser. Select the "Recruiter" installation profile and follow the usual
-   Drupal installation instructions (i.e. Drupal's INSTALL.txt in the webroot
-   subfolder).
-
-3. Configure your private file system path as usual at
-
-     "admin/config/media/file-system"
-
-   or in settings.php, example:
-
-     $conf['file_private_path'] = '/path/to/private/files';
-
+   browser and follow the usual Drupal installation instructions (i.e. Drupal's
+   INSTALL.txt in the webroot subfolder).
 
 That's it.
 
@@ -138,4 +128,3 @@ Make files
  * recruiter.make: Holds all components and their exact stable versions.
  * recruiter-dev.make: Holds all components with their continuing versions.
  * drupal-org.make: required for auto-packaging on drupal.org.
-  
