@@ -40,9 +40,9 @@ function recruiter_form_install_configure_form_alter(&$form, $form_state) {
   $form['file_system']['file_private_path'] = array(
     '#type' => 'textfield',
     '#title' => t('Private file system path'),
-    '#default_value' => variable_get('file_private_path', ''),
+    '#default_value' => variable_get('file_private_path', 'sites/default/files/private'),
     '#maxlength' => 255,
-    '#description' => t('An existing local file system path for storing private files. It should be writable by Drupal and not accessible over the web. See the online handbook for <a href="@handbook">more information about securing private files</a>. The private file directory is needed by the resume feature and during the import of demo data.', array('@handbook' => 'http://drupal.org/documentation/modules/file')),
+    '#description' => t('An existing local file system path for storing private files which is needed by the resume feature and during the import of demo data. It should be writable by Drupal and not accessible over the web. Note that non-Apache web servers may need additional configuration to secure private file directories. See the online handbook for <a href="@handbook">more information about securing private files</a>.', array('@handbook' => 'http://drupal.org/documentation/modules/file')),
     '#after_build' => array('system_check_directory'),
     '#required' => TRUE,
   );
