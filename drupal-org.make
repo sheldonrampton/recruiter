@@ -103,7 +103,7 @@ projects[taxonomy_csv][version] = "5"
 
 projects[taxonomy_manager][version] = "1"
 
-projects[term_level][version] = "1"
+projects[term_level][version] = "1.x-dev"
 
 projects[token][version] = "1"
 
