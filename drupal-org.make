@@ -122,9 +122,10 @@ libraries[SolrPhpClient][directory_name] = "SolrPhpClient"
 libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 
 ; Also add the colorbox library.
-libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
-libraries[colorbox][directory_name] = "colorbox"
+libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
+libraries[colorbox][download][type] = git
+libraries[colorbox][download][branch] = master
+libraries[colorbox][download][tag] = 1.3.34
 ; jquery.colorbox.js should be under libraries/colorbox/colorbox
 libraries[colorbox][destination] = "libraries/colorbox"
 
