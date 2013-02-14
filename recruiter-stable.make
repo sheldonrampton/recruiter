@@ -9,7 +9,7 @@ projects[acl][version] = "1.0"
 
 projects[addressfield][version] = "1.0-beta3"
 
-projects[admin_menu] = "3.0-rc3"
+projects[admin_menu] = "3.0-rc4"
 
 projects[autocomplete_deluxe][version] = "2.x-dev"
 projects[autocomplete_deluxe][download][type] = git
@@ -18,9 +18,12 @@ projects[autocomplete_deluxe][download][revision] = 0dfeff8243e42846f86a91386d08
 
 projects[ctools][version] = "1.2"
 
-projects[colorbox][version] = "1.4"
+projects[colorbox][version] = "1.5"
 
 projects[content_access][version] = "1.x-dev"
+projects[content_access][download][type] = git
+projects[content_access][download][branch] = 7.x-2.x
+projects[content_access][download][revision] = 60d678d049bebc77851be48cf414c89a4e5cb8ae
 ; Node Access bug if core patch is applied http://drupal.org/node/1097248#comment-6613538
 projects[content_access][patch][] = "http://drupal.org/files/1097248-content-access-node-grants-24.patch"
 
@@ -29,10 +32,7 @@ projects[context_admin][download][type] = git
 projects[context_admin][download][branch] = 7.x-1.x
 projects[context_admin][download][revision] = 15a8390e12805761d02d2bba84adfd2796a0a207
 
-projects[content_taxonomy][version] = "1.x-dev"
-projects[content_taxonomy][download][type] = git
-projects[content_taxonomy][download][branch] = 7.x-1.x
-projects[content_taxonomy][download][revision] = f3ad6dc33629ec33db58aaee678fab26967349bb
+projects[content_taxonomy][version] = "1.0-beta2"
 
 projects[context][version] = "3.0-beta6"
 
@@ -40,7 +40,7 @@ projects[date][version] = "2.6"
 ; Make it possible to disable fieldset for date field http://drupal.org/node/1467712#comment-6137556
 projects[date][patch][] = "http://drupal.org/files/date_option_render_as_regular_field-1467712-60.patch"
 
-projects[diff][version] = "2.0"
+projects[diff][version] = "3.2"
 
 projects[email][version] = "1.2"
 
@@ -57,19 +57,24 @@ projects[features][version] = "1.0"
 projects[field_collection][version] = "1.0-beta5"
 ; EntityFieldQueryException: Unknown field when deleting fields http://drupal.org/node/1866032
 projects[field_collection][patch][] = "http://drupal.org/files/fieldcol-1866032-7.patch"
+; Field collection migration handler: http://drupal.org/node/1175082
+projects[field_collection][patch][] = "http://drupal.org/files/field_collection-migrate-1175082-178.patch"
 
 projects[field_permissions][version] = "1.0-beta2"
 
-projects[flag][version] = "3.0-alpha4"
-; Flag entity properties http://drupal.org/node/1315850
-projects[flag][patch][] = "http://drupal.org/files/1315850-entity_api_properties-7.patch"
-; DEPRECATED (Job search uses teaser view since RC2).
-; Flag Add views handler for flag entity links http://drupal.org/node/1362298
-projects[flag][patch][] = "http://drupal.org/files/1362298_independent_query_backend_flag_links-13.patch"
+projects[flag][version] = "3.x-dev"
+projects[flag][download][type] = git
+projects[flag][download][branch] = 7.x-3.x
+projects[flag][download][revision] = 3fe0a348391c541d71b68c1b151866f399436d5a
 
-projects[link][version] = "1.0"
+projects[link][version] = "1.1"
 
 projects[message] = "1.7"
+
+projects[migrate] = "2.5"
+
+projects[migrate_extras] = "2.5"
+
 
 projects[panels][version] = "3.3"
 ; UUID for panels http://drupal.org/node/1277908#comment-6176512
@@ -79,11 +84,13 @@ projects[panels][patch][] = "http://drupal.org/files/panels-add-hooks-to-integra
 
 projects[pathauto][version] = "1.2"
 
+projects[pm_existing_pages][version] = "1.4"
+
 projects[profile2][version] = "1.3"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-projects[recruiter_features][version] = "1.0-rc3"
+projects[recruiter_features][version] = "1.0"
 
 projects[role_export][version] = "1.0"
 
@@ -112,7 +119,7 @@ projects[taxonomy_csv][version] = "5.10"
 
 projects[taxonomy_manager][version] = "1.0-rc1"
 
-projects[term_level][version] = "1.1"
+projects[term_level][version] = "1.2"
 
 projects[token][version] = "1.4"
 
@@ -131,14 +138,17 @@ libraries[SolrPhpClient][directory_name] = "SolrPhpClient"
 libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 
 ; Also add the colorbox library.
-libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "http://jacklmoore.com/colorbox/colorbox.zip"
-libraries[colorbox][directory_name] = "colorbox"
-libraries[colorbox][destination] = "libraries"
+libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
+libraries[colorbox][download][type] = git
+libraries[colorbox][download][branch] = master
+libraries[colorbox][download][tag] = 1.3.34
+; jquery.colorbox.js should be under libraries/colorbox/colorbox
+libraries[colorbox][destination] = "libraries/colorbox"
 
 ; CKEditor
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6/ckeditor_3.6.6.tar.gz"
+
 
 ;  - Recruiter Cloudy base theme -
 
@@ -158,4 +168,4 @@ projects[omega][download][branch] = 7.x-4.x
 projects[omega][download][revision] = 8d5494d4cf9bdb7e69eb9e8f47f5b76a282e705b
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = "1.x-dev"
+projects[cloudy][version] = "1.0"
