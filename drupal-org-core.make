@@ -4,7 +4,7 @@ api = 2
 core = 7.x
 
 ; Not specifying a drupal core version will use the latest stable release.
-; projects[drupal][version] = 
+projects[drupal][version] = "7.19"
 
 ; CORE PATCHES
 
