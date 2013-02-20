@@ -53,6 +53,8 @@ projects[facetapi][version] = "1.2"
 projects[facetapi_pretty_paths][version] = "1.0-beta2"
 
 projects[features][version] = "1.0"
+; Fixes import of menu links of disabled modules (http://drupal.org/node/1241108)
+projects[features][patch][] = "http://drupal.org/files/1241108-d7-1.patch"
 
 projects[field_collection][version] = "1.0-beta5"
 ; EntityFieldQueryException: Unknown field when deleting fields http://drupal.org/node/1866032
