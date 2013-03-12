@@ -119,11 +119,11 @@ projects[synonyms][version] = "1.1"
 
 projects[taxonomy_csv][version] = "5.10"
 
-projects[taxonomy_manager][version] = "1.0-rc1"
+projects[taxonomy_manager][version] = "1.0-rc2"
 
 projects[term_level][version] = "1.2"
 
-projects[token][version] = "1.4"
+projects[token][version] = "1.5"
 
 projects[views][version] = "3.5"
 
