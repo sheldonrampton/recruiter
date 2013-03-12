@@ -152,11 +152,6 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 
 ;  - Recruiter Cloudy base theme -
 
-projects[omega_tools][version] = "4.x-dev"
-projects[omega_tools][download][type] = git
-projects[omega_tools][download][branch] = 7.x-4.x
-projects[omega_tools][download][revision] = d5ac30a03194f42616cc868ef7d45683db38f819
-
 projects[block_class] = 1.2
 ; Features support http://drupal.org/node/1230234
 projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
