@@ -9,3 +9,5 @@
 .buildpath
 modules/*
 libraries
+themes/cloudy
+themes/omega
