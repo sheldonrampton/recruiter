@@ -165,4 +165,4 @@ projects[omega][download][branch] = 7.x-4.x
 projects[omega][download][revision] = 8d5494d4cf9bdb7e69eb9e8f47f5b76a282e705b
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = "1.0"
+projects[cloudy][version] = "1.1"
