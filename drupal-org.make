@@ -127,7 +127,7 @@ projects[term_level][version] = "1.2"
 
 projects[token][version] = "1.5"
 
-projects[views][version] = "3.5"
+projects[views][version] = "3.6"
 
 projects[views_bulk_operations][version] = "3.1"
 
