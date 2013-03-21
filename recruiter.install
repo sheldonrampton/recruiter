@@ -94,7 +94,6 @@ function recruiter_install_additional_modules() {
     'wysiwyg',
 
     // Install requirements for the recruiter cloudy base theme.
-    'omega_tools',
     'block_class',
     'recruiter_cloudy',
     'recruiter_menu',
