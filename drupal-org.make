@@ -9,7 +9,7 @@ projects[acl][version] = "1.0"
 
 projects[addressfield][version] = "1.0-beta3"
 
-projects[admin_menu] = "3.0-rc4"
+projects[admin_menu][version] = "3.0-rc4"
 
 projects[autocomplete_deluxe][version] = "2.x-dev"
 projects[autocomplete_deluxe][download][type] = git
@@ -71,11 +71,11 @@ projects[flag][download][revision] = 3fe0a348391c541d71b68c1b151866f399436d5a
 
 projects[link][version] = "1.1"
 
-projects[message] = "1.7"
+projects[message][version] = "1.7"
 
-projects[migrate] = "2.5"
+projects[migrate][version] = "2.5"
 
-projects[migrate_extras] = "2.5"
+projects[migrate_extras][version] = "2.5"
 
 
 projects[panels][version] = "3.3"
@@ -152,7 +152,7 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 
 ;  - Recruiter Cloudy base theme -
 
-projects[block_class] = 1.2
+projects[block_class][version] = 1.2
 ; Features support http://drupal.org/node/1230234
 projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
 
