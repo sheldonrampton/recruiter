@@ -16,6 +16,8 @@ projects[autocomplete_deluxe][download][type] = git
 projects[autocomplete_deluxe][download][branch] = 7.x-2.x
 projects[autocomplete_deluxe][download][revision] = 0dfeff8243e42846f86a91386d08b07c55ad4511
 
+projects[better_formats][version] = "1.0-beta1"
+
 projects[ctools][version] = "1.2"
 
 projects[colorbox][version] = "1.5"
