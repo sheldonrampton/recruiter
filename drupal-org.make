@@ -98,7 +98,7 @@ projects[recruiter_features][version] = "1.0"
 
 projects[role_export][version] = "1.0"
 
-projects[rules][version] = "2.2"
+projects[rules][version] = "2.3"
 
 projects[rules_autotag][version] = "1.1"
 
