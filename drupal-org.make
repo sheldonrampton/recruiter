@@ -1,5 +1,5 @@
 ; Recruiter drush make build file for drupal.org packaging.
-core = 7.21
+core = 7.22
 
 api = 2
 
@@ -18,7 +18,7 @@ projects[autocomplete_deluxe][download][revision] = 0dfeff8243e42846f86a91386d08
 
 projects[better_formats][version] = "1.0-beta1"
 
-projects[ctools][version] = "1.2"
+projects[ctools][version] = "1.3"
 
 projects[colorbox][version] = "1.5"
 
