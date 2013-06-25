@@ -109,7 +109,9 @@ projects[search_api][version] = "1.4"
 projects[search_api_saved_searches][version] = "1.x-dev"
 projects[search_api_saved_searches][download][type] = git
 projects[search_api_saved_searches][download][branch] = 7.x-1.x
-projects[search_api_saved_searches][download][revision] = d488038ee9950da087b8527e14abd59f3dda69ec
+projects[search_api_saved_searches][download][revision] = 0fbbef95cf0ba9891ba755b9f5b543e2ef43e0f6
+; Add option to filter by date instead of IDs https://drupal.org/node/2027441
+projects[search_api_saved_searches][patch][] = "https://drupal.org/files/2027441-1--determine_new_results_by_date_field.patch"
 
 projects[search_api_solr][version] = "1.0-rc3"
 
