@@ -7,7 +7,7 @@ api = 2
 
 projects[acl][version] = "1.0"
 
-projects[addressfield][version] = "1.0-beta3"
+projects[addressfield][version] = "1.0-rc7"
 
 projects[admin_menu][version] = "3.0-rc4"
 
@@ -20,7 +20,7 @@ projects[better_formats][version] = "1.0-beta1"
 
 projects[ctools][version] = "1.3"
 
-projects[colorbox][version] = "1.5"
+projects[colorbox][version] = "1.6"
 
 projects[content_access][version] = "1.x-dev"
 projects[content_access][download][type] = git
@@ -34,7 +34,10 @@ projects[context_admin][download][type] = git
 projects[context_admin][download][branch] = 7.x-1.x
 projects[context_admin][download][revision] = 15a8390e12805761d02d2bba84adfd2796a0a207
 
-projects[content_taxonomy][version] = "1.0-beta2"
+projects[content_taxonomy][version] = "1.0-dev"
+projects[content_taxonomy][download][type] = git
+projects[content_taxonomy][download][branch] = 7.x-1.x
+projects[content_taxonomy][download][revision] = 906d77dbd1009bce1d16bf46438c31f6198fdc9c
 
 projects[context][version] = "3.0-beta6"
 
@@ -46,11 +49,11 @@ projects[diff][version] = "3.2"
 
 projects[email][version] = "1.2"
 
-projects[entity][version] = "1.0"
+projects[entity][version] = "1.1"
 
 projects[entityreference][version] = "1.0"
 
-projects[facetapi][version] = "1.2"
+projects[facetapi][version] = "1.3"
 
 projects[facetapi_pretty_paths][version] = "1.0-beta2"
 
@@ -102,9 +105,13 @@ projects[rules][version] = "2.3"
 
 projects[rules_autotag][version] = "1.1"
 
-projects[rules_link][version] = "1.0-beta4"
+projects[rules_link][version] = "1.x-dev"
+projects[rules_link][download][type] = git
+projects[rules_link][download][branch] = 7.x-1.x
+projects[rules_link][download][revision] = 5bf6294229030346b07c4459f731e9093eea7e65
 
-projects[search_api][version] = "1.4"
+
+projects[search_api][version] = "1.7"
 
 projects[search_api_saved_searches][version] = "1.x-dev"
 projects[search_api_saved_searches][download][type] = git
@@ -113,9 +120,9 @@ projects[search_api_saved_searches][download][revision] = 0fbbef95cf0ba9891ba755
 ; Add option to filter by date instead of IDs https://drupal.org/node/2027441
 projects[search_api_saved_searches][patch][] = "https://drupal.org/files/2027441-1--determine_new_results_by_date_field.patch"
 
-projects[search_api_solr][version] = "1.0-rc3"
+projects[search_api_solr][version] = "1.0"
 
-projects[search_api_db][version] = "1.0-beta4"
+projects[search_api_db][version] = "1.0-rc1"
 
 projects[strongarm][version] = "2.0"
 
