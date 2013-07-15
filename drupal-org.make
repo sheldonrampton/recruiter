@@ -121,6 +121,8 @@ projects[search_api_saved_searches][download][revision] = 0fbbef95cf0ba9891ba755
 projects[search_api_saved_searches][patch][] = "https://drupal.org/files/2027441-1--determine_new_results_by_date_field.patch"
 
 projects[search_api_solr][version] = "1.0"
+; Fix Solr optimize call on cron: https://drupal.org/node/2042201#comment-7647029
+projects[search_api_solr][patch][] = "https://drupal.org/files/sapi-solr-2042201.patch"
 
 projects[search_api_db][version] = "1.0-rc1"
 
@@ -143,12 +145,6 @@ projects[views_bulk_operations][version] = "3.1"
 projects[wysiwyg][version] = "2.2"
 
 ;  -  Libraries  -
-
-;Library for accessing solr servers
-libraries[SolrPhpClient][download][type] = "get"
-libraries[SolrPhpClient][download][url] = "http://solr-php-client.googlecode.com/files/SolrPhpClient.r60.2011-05-04.tgz"
-libraries[SolrPhpClient][directory_name] = "SolrPhpClient"
-libraries[SolrPhpClient][destination] = "modules/search_api_solr/"
 
 ; Also add the colorbox library.
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.3.34.zip"
