@@ -55,7 +55,7 @@ projects[entityreference][version] = "1.0"
 
 projects[facetapi][version] = "1.3"
 
-projects[facetapi_pretty_paths][version] = "1.0-beta2"
+projects[facetapi_pretty_paths][version] = "1.0"
 
 projects[features][version] = "1.0"
 ; Fixes import of menu links of disabled modules (http://drupal.org/node/1241108)
