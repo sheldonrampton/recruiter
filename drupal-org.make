@@ -22,10 +22,7 @@ projects[ctools][version] = "1.3"
 
 projects[colorbox][version] = "1.6"
 
-projects[content_access][version] = "1.x-dev"
-projects[content_access][download][type] = git
-projects[content_access][download][branch] = 7.x-2.x
-projects[content_access][download][revision] = 60d678d049bebc77851be48cf414c89a4e5cb8ae
+projects[content_access][version] = "1.2-beta2"
 ; Node Access bug if core patch is applied http://drupal.org/node/1097248#comment-6613538
 projects[content_access][patch][] = "http://drupal.org/files/1097248-content-access-node-grants-24.patch"
 
