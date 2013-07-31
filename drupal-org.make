@@ -112,9 +112,7 @@ projects[search_api][version] = "1.7"
 
 projects[search_api_saved_searches][version] = "1.2"
 
-projects[search_api_solr][version] = "1.0"
-; Fix Solr optimize call on cron: https://drupal.org/node/2042201#comment-7647029
-projects[search_api_solr][patch][] = "https://drupal.org/files/sapi-solr-2042201.patch"
+projects[search_api_solr][version] = "1.1"
 
 projects[search_api_db][version] = "1.0-rc2"
 
