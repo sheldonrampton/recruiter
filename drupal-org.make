@@ -67,12 +67,11 @@ projects[flag][version] = "3.0"
 
 projects[link][version] = "1.1"
 
-projects[message][version] = "1.7"
+projects[message][version] = "1.9"
 
 projects[migrate][version] = "2.5"
 
 projects[migrate_extras][version] = "2.5"
-
 
 projects[panels][version] = "3.3"
 ; UUID for panels http://drupal.org/node/1277908#comment-6176512
