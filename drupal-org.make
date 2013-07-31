@@ -29,10 +29,7 @@ projects[content_access][download][revision] = 60d678d049bebc77851be48cf414c89a4
 ; Node Access bug if core patch is applied http://drupal.org/node/1097248#comment-6613538
 projects[content_access][patch][] = "http://drupal.org/files/1097248-content-access-node-grants-24.patch"
 
-projects[context_admin][version] = "1.x-dev"
-projects[context_admin][download][type] = git
-projects[context_admin][download][branch] = 7.x-1.x
-projects[context_admin][download][revision] = 15a8390e12805761d02d2bba84adfd2796a0a207
+projects[context_admin][version] = "1.2"
 
 projects[content_taxonomy][version] = "1.0-dev"
 projects[content_taxonomy][download][type] = git
