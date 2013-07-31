@@ -110,12 +110,7 @@ projects[rules_link][download][revision] = 5bf6294229030346b07c4459f731e9093eea7
 
 projects[search_api][version] = "1.7"
 
-projects[search_api_saved_searches][version] = "1.x-dev"
-projects[search_api_saved_searches][download][type] = git
-projects[search_api_saved_searches][download][branch] = 7.x-1.x
-projects[search_api_saved_searches][download][revision] = 0fbbef95cf0ba9891ba755b9f5b543e2ef43e0f6
-; Add option to filter by date instead of IDs https://drupal.org/node/2027441
-projects[search_api_saved_searches][patch][] = "https://drupal.org/files/2027441-1--determine_new_results_by_date_field.patch"
+projects[search_api_saved_searches][version] = "1.2"
 
 projects[search_api_solr][version] = "1.0"
 ; Fix Solr optimize call on cron: https://drupal.org/node/2042201#comment-7647029
