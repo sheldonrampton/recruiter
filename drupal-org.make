@@ -7,7 +7,7 @@ api = 2
 
 projects[acl][version] = "1.0"
 
-projects[addressfield][version] = "1.0-rc7"
+projects[addressfield][version] = "1.0-beta4"
 
 projects[admin_menu][version] = "3.0-rc4"
 
