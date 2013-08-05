@@ -28,7 +28,7 @@ projects[content_access][patch][] = "http://drupal.org/files/1097248-content-acc
 
 projects[context_admin][version] = "1.2"
 
-projects[content_taxonomy][version] = "1.0-dev"
+projects[content_taxonomy][version] = "1.x-dev"
 projects[content_taxonomy][download][type] = git
 projects[content_taxonomy][download][branch] = 7.x-1.x
 projects[content_taxonomy][download][revision] = 906d77dbd1009bce1d16bf46438c31f6198fdc9c
