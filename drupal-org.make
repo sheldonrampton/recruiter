@@ -63,7 +63,7 @@ projects[field_collection][patch][] = "http://drupal.org/files/field_collection-
 
 projects[field_permissions][version] = "1.0-beta2"
 
-projects[flag][version] = "3.0"
+projects[flag][version] = "3.1"
 
 projects[link][version] = "1.1"
 
