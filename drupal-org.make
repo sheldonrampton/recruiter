@@ -78,6 +78,8 @@ projects[panels][version] = "3.3"
 projects[panels][patch][] = "http://drupal.org/files/panels-uuids_for_exported_objects-1277908-80.patch"
 ; i18n hooks http://drupal.org/node/1179034#comment-5664050
 projects[panels][patch][] = "http://drupal.org/files/panels-add-hooks-to-integrate-i18n_panels-1179034-41.patch"
+; Mini Panels Warnings https://drupal.org/node/1480366
+projects[panels][patch][] = "https://drupal.org/files/panels-mini-panels-cache-1480366-5.patch"
 
 projects[pathauto][version] = "1.2"
 
