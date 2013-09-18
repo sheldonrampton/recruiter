@@ -69,6 +69,8 @@ projects[field_permissions][version] = "1.0-beta2"
 
 projects[flag][version] = "3.2"
 
+projects[i18n][version] = "1.10"
+
 projects[link][version] = "1.1"
 
 projects[message][version] = "1.9"
@@ -106,7 +108,6 @@ projects[rules_link][download][type] = git
 projects[rules_link][download][branch] = 7.x-1.x
 projects[rules_link][download][revision] = 5bf6294229030346b07c4459f731e9093eea7e65
 
-
 projects[search_api][version] = "1.8"
 
 projects[search_api_saved_searches][version] = "1.2"
@@ -120,6 +121,10 @@ projects[strongarm][version] = "2.0"
 projects[synonyms][version] = "1.1"
 
 projects[taxonomy_csv][version] = "5.10"
+
+projects[taxonomy_formatter][version] = "1.4"
+; Fix empty labels http://drupal.org/node/1352050#comment-7028512
+projects[taxonomy_formatter][patch][] = "http://drupal.org/files/taxonomy_formatter-label-on-empty-1352050-9.patch"
 
 projects[taxonomy_manager][version] = "1.0"
 
