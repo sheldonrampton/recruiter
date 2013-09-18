@@ -33,7 +33,7 @@ projects[content_taxonomy][download][type] = git
 projects[content_taxonomy][download][branch] = 7.x-1.x
 projects[content_taxonomy][download][revision] = 906d77dbd1009bce1d16bf46438c31f6198fdc9c
 
-projects[context][version] = "3.0-beta6"
+projects[context][version] = "3.0-beta7"
 
 projects[date][version] = "2.6"
 ; Make it possible to disable fieldset for date field http://drupal.org/node/1467712#comment-6137556
@@ -55,7 +55,11 @@ projects[features][version] = "1.0"
 ; Fixes import of menu links of disabled modules (http://drupal.org/node/1241108)
 projects[features][patch][] = "http://drupal.org/files/1241108-d7-1.patch"
 
-projects[field_collection][version] = "1.0-beta5"
+; Use the newer field collection version, which supports contexts for ctools.
+projects[field_collection][version] = "1.x-dev"
+projects[field_collection][download][type] = git
+projects[field_collection][download][branch] = 7.x-1.x
+projects[field_collection][download][revision] = 17d945fff4793dcd26cb8690ce82958f240b6dce
 ; EntityFieldQueryException: Unknown field when deleting fields http://drupal.org/node/1866032
 projects[field_collection][patch][] = "http://drupal.org/files/fieldcol-1866032-7.patch"
 ; Field collection migration handler: http://drupal.org/node/1175082
@@ -63,7 +67,7 @@ projects[field_collection][patch][] = "http://drupal.org/files/field_collection-
 
 projects[field_permissions][version] = "1.0-beta2"
 
-projects[flag][version] = "3.1"
+projects[flag][version] = "3.2"
 
 projects[link][version] = "1.1"
 
@@ -89,11 +93,11 @@ projects[profile2][version] = "1.3"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-projects[recruiter_features][version] = "1.0"
+projects[recruiter_features][version] = "1.x-dev"
 
 projects[role_export][version] = "1.0"
 
-projects[rules][version] = "2.3"
+projects[rules][version] = "2.4"
 
 projects[rules_autotag][version] = "1.2"
 
@@ -103,11 +107,11 @@ projects[rules_link][download][branch] = 7.x-1.x
 projects[rules_link][download][revision] = 5bf6294229030346b07c4459f731e9093eea7e65
 
 
-projects[search_api][version] = "1.7"
+projects[search_api][version] = "1.8"
 
 projects[search_api_saved_searches][version] = "1.2"
 
-projects[search_api_solr][version] = "1.1"
+projects[search_api_solr][version] = "1.2"
 
 projects[search_api_db][version] = "1.0-rc2"
 
@@ -149,10 +153,8 @@ projects[block_class][version] = 1.2
 projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
 
 projects[omega][type] = theme
-projects[omega][version] = "4.x-dev"
-projects[omega][download][type] = git
-projects[omega][download][branch] = 7.x-4.x
-projects[omega][download][revision] = 8d5494d4cf9bdb7e69eb9e8f47f5b76a282e705b
+projects[omega][version] = "4.0-rc1"
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = "1.1"
+projects[cloudy][version] = "1.2"
+
