@@ -11,7 +11,7 @@ projects[addressfield][version] = "1.0-beta4"
 
 projects[admin_menu][version] = "3.0-rc4"
 
-projects[autocomplete_deluxe][version] = "7.x-2.0-beta3"
+projects[autocomplete_deluxe][version] = "2.0-beta3"
 
 projects[better_formats][version] = "1.0-beta1"
 
