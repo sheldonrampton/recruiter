@@ -132,6 +132,8 @@ projects[term_level][version] = "1.2"
 
 projects[token][version] = "1.5"
 
+projects[variable][version] = "2.3"
+
 projects[views][version] = "3.7"
 
 projects[views_bulk_operations][version] = "3.1"
