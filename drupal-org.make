@@ -99,7 +99,7 @@ projects[recruiter_features][version] = "1.x-dev"
 
 projects[role_export][version] = "1.0"
 
-projects[rules][version] = "2.4"
+projects[rules][version] = "2.5"
 
 projects[rules_autotag][version] = "1.2"
 
