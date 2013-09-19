@@ -97,10 +97,7 @@ projects[rules][version] = "2.5"
 
 projects[rules_autotag][version] = "1.2"
 
-projects[rules_link][version] = "1.x-dev"
-projects[rules_link][download][type] = git
-projects[rules_link][download][branch] = 7.x-1.x
-projects[rules_link][download][revision] = 5bf6294229030346b07c4459f731e9093eea7e65
+projects[rules_link][version] = "1.0-beta5"
 
 projects[search_api][version] = "1.8"
 
