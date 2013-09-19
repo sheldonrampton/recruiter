@@ -11,10 +11,7 @@ projects[addressfield][version] = "1.0-beta4"
 
 projects[admin_menu][version] = "3.0-rc4"
 
-projects[autocomplete_deluxe][version] = "2.x-dev"
-projects[autocomplete_deluxe][download][type] = git
-projects[autocomplete_deluxe][download][branch] = 7.x-2.x
-projects[autocomplete_deluxe][download][revision] = 0dfeff8243e42846f86a91386d08b07c55ad4511
+projects[autocomplete_deluxe][version] = "7.x-2.0-beta3"
 
 projects[better_formats][version] = "1.0-beta1"
 
@@ -28,10 +25,7 @@ projects[content_access][patch][] = "http://drupal.org/files/1097248-content-acc
 
 projects[context_admin][version] = "1.2"
 
-projects[content_taxonomy][version] = "1.x-dev"
-projects[content_taxonomy][download][type] = git
-projects[content_taxonomy][download][branch] = 7.x-1.x
-projects[content_taxonomy][download][revision] = 906d77dbd1009bce1d16bf46438c31f6198fdc9c
+projects[content_taxonomy][version] = "1.2-beta2"
 
 projects[context][version] = "3.0-beta7"
 
@@ -155,9 +149,7 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 
 ;  - Recruiter Cloudy base theme -
 
-projects[block_class][version] = 1.2
-; Features support http://drupal.org/node/1230234
-projects[block_class][patch][] = "http://drupal.org/files/block_class.features-dev-24.patch"
+projects[block_class][version] = 1.3
 
 projects[omega][type] = theme
 projects[omega][version] = "4.0-rc1"
