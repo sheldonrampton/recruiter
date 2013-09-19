@@ -89,7 +89,7 @@ projects[profile2][version] = "1.3"
 ; Add ctools relationship
 projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.patch"
 
-projects[recruiter_features][version] = "1.x-dev"
+projects[recruiter_features][version] = "1.1"
 
 projects[role_export][version] = "1.0"
 
