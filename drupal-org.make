@@ -155,5 +155,5 @@ projects[omega][type] = theme
 projects[omega][version] = "4.0-rc1"
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = "1.2"
+projects[cloudy][version] = "1.3"
 
