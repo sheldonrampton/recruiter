@@ -27,7 +27,7 @@ projects[context_admin][version] = "1.2"
 
 projects[content_taxonomy][version] = "1.0-beta2"
 
-projects[context][version] = "3.0-beta7"
+projects[context][version] = "3.1"
 
 projects[date][version] = "2.6"
 ; Make it possible to disable fieldset for date field http://drupal.org/node/1467712#comment-6137556
