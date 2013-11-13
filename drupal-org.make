@@ -91,6 +91,8 @@ projects[profile2][patch][] = "http://drupal.org/files/1011370-profile2-ctools.p
 
 projects[recruiter_features][version] = "1.1"
 
+projects[roleassign][version] = "1.0"
+
 projects[role_export][version] = "1.0"
 
 projects[rules][version] = "2.5"
@@ -149,8 +151,8 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 projects[block_class][version] = 1.3
 
 projects[omega][type] = theme
-projects[omega][version] = "4.0-rc1"
+projects[omega][version] = "4.0"
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = "1.3"
+projects[cloudy][version] = "1.4"
 
