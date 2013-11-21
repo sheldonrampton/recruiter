@@ -1,5 +1,5 @@
 ; Recruiter drush make build file for drupal.org packaging.
-core = 7.23
+core = 7.24
 
 api = 2
 
@@ -39,7 +39,7 @@ projects[email][version] = "1.2"
 
 projects[entity][version] = "1.2"
 
-projects[entityreference][version] = "1.0"
+projects[entityreference][version] = "1.1"
 
 projects[facetapi][version] = "1.3"
 
