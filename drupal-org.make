@@ -65,7 +65,7 @@ projects[flag][version] = "3.2"
 
 projects[i18n][version] = "1.10"
 
-projects[link][version] = "1.1"
+projects[link][version] = "1.2"
 
 projects[message][version] = "1.9"
 
