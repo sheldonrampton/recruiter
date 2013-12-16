@@ -133,6 +133,8 @@ projects[views_bulk_operations][version] = "3.1"
 
 projects[wysiwyg][version] = "2.2"
 
+projects[wysiwyg_linebreaks][version] = "1.6"
+
 ;  -  Libraries  -
 
 ; Also add the colorbox library.
