@@ -1,5 +1,5 @@
 ; Recruiter drush make build file for drupal.org packaging.
-core = 7.24
+core = 7.25
 
 api = 2
 

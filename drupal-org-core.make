@@ -4,13 +4,9 @@ api = 2
 core = 7.x
 
 ; Not specifying a drupal core version will use the latest stable release.
-projects[drupal][version] = "7.24"
+projects[drupal][version] = "7.25"
 
 ; CORE PATCHES
-
-; node_access integrity constraint violation on module_invoke_all('node_' . $op, $node); http://drupal.org/node/1146244
-; http://drupal.org/node/1146244#comment-6644078
-projects[drupal][patch][] = http://drupal.org/files/1146244-82-node-save-on-insert.patch
 
 ; user_role_grant_permissions() throws PDOException when used for a disabled module's permission or with non-existent permissions
 ; http://drupal.org/node/737816#comment-6978566
