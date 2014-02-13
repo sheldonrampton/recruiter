@@ -95,9 +95,9 @@ projects[roleassign][version] = "1.0"
 
 projects[role_export][version] = "1.0"
 
-projects[rules][version] = "2.5"
+projects[rules][version] = "2.6"
 
-projects[rules_autotag][version] = "1.2"
+projects[rules_autotag][version] = "1.3"
 
 projects[rules_link][version] = "1.0-beta5"
 
