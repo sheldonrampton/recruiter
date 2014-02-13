@@ -15,7 +15,7 @@ projects[autocomplete_deluxe][version] = "2.0-beta3"
 
 projects[better_formats][version] = "1.0-beta1"
 
-projects[ctools][version] = "1.3"
+projects[ctools][version] = "1.4"
 
 projects[colorbox][version] = "1.6"
 
@@ -37,7 +37,7 @@ projects[diff][version] = "3.2"
 
 projects[email][version] = "1.2"
 
-projects[entity][version] = "1.2"
+projects[entity][version] = "1.x-dev"
 
 projects[entityreference][version] = "1.1"
 
@@ -127,7 +127,7 @@ projects[token][version] = "1.5"
 
 projects[variable][version] = "2.3"
 
-projects[views][version] = "3.7"
+projects[views][version] = "3.x-dev"
 
 projects[views_bulk_operations][version] = "3.1"
 
@@ -156,5 +156,5 @@ projects[omega][type] = theme
 projects[omega][version] = "4.0"
 
 projects[cloudy][type] = theme
-projects[cloudy][version] = "1.4"
+projects[cloudy][version] = "1.x-dev"
 
