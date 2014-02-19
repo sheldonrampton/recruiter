@@ -16,6 +16,8 @@ projects[autocomplete_deluxe][version] = "2.0-beta3"
 projects[better_formats][version] = "1.0-beta1"
 
 projects[ctools][version] = "1.4"
+; Only variables should be passed by reference in ctools_entity_from_field_context https://drupal.org/node/2195471
+projects[ctools][patch][] = https://drupal.org/files/issues/ctools-n2195471-1.patch
 
 projects[colorbox][version] = "1.6"
 
