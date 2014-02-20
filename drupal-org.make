@@ -98,6 +98,8 @@ projects[roleassign][version] = "1.0"
 projects[role_export][version] = "1.0"
 
 projects[rules][version] = "2.6"
+; Some Rules events are not called https://drupal.org/node/2120421
+projects[rules][patch][] = https://drupal.org/files/issues/rules-events-include-2120421-30.patch
 
 projects[rules_autotag][version] = "1.3"
 
