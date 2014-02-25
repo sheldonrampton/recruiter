@@ -16,8 +16,8 @@ projects[autocomplete_deluxe][version] = "2.0-beta3"
 projects[better_formats][version] = "1.0-beta1"
 
 projects[ctools][version] = "1.4"
-; Only variables should be passed by reference in ctools_entity_from_field_context https://drupal.org/node/2195471
-projects[ctools][patch][] = https://drupal.org/files/issues/ctools-n2195471-1.patch
+; PHP Warning: Missing argument 4 for entity_metadata_file_access() https://drupal.org/node/2204889
+projects[ctools][patch][] = https://drupal.org/files/issues/ctools-entity-access-2204889-1.patch
 
 projects[colorbox][version] = "1.6"
 
@@ -135,7 +135,7 @@ projects[views][version] = "3.x-dev"
 
 projects[views_bulk_operations][version] = "3.1"
 
-projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][version] = "2.x-dev"
 
 projects[wysiwyg_linebreaks][version] = "1.6"
 
@@ -149,7 +149,7 @@ libraries[colorbox][destination] = "libraries/colorbox"
 
 ; CKEditor
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.2/ckeditor_4.3.2_standard.zip"
 
 
 ;  - Recruiter Cloudy base theme -
