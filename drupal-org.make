@@ -132,6 +132,8 @@ projects[token][version] = "1.5"
 projects[variable][version] = "2.3"
 
 projects[views][version] = "3.x-dev"
+; Notice: Undefined index: data in views_plugin_cache->restore_headers() https://drupal.org/node/2018737
+projects[views][patch][] = https://drupal.org/files/issues/views-asset-diff-2018737-21.patch
 
 projects[views_bulk_operations][version] = "3.1"
 
