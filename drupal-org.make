@@ -15,9 +15,8 @@ projects[autocomplete_deluxe][version] = "2.0-beta3"
 
 projects[better_formats][version] = "1.0-beta1"
 
-projects[ctools][version] = "1.4"
-; PHP Warning: Missing argument 4 for entity_metadata_file_access() https://drupal.org/node/2204889
-projects[ctools][patch][] = https://drupal.org/files/issues/ctools-entity-access-2204889-1.patch
+; PHP notices fixed in dev version, should be set to 1.5 once that gets released.
+projects[ctools][version] = 1.x-dev
 
 projects[colorbox][version] = "1.6"
 
@@ -101,9 +100,9 @@ projects[rules][version] = "2.6"
 ; Some Rules events are not called https://drupal.org/node/2120421
 projects[rules][patch][] = https://drupal.org/files/issues/rules-events-include-2120421-30.patch
 
-projects[rules_autotag][version] = "1.3"
+projects[rules_autotag][version] = "1.x-dev"
 
-projects[rules_link][version] = "1.0-beta5"
+projects[rules_link][version] = "1.0"
 
 projects[search_api][version] = "1.8"
 
