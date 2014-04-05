@@ -80,7 +80,7 @@ projects[panels][patch][] = "http://drupal.org/files/panels-uuids_for_exported_o
 ; i18n hooks http://drupal.org/node/1179034#comment-5664050
 projects[panels][patch][] = "http://drupal.org/files/panels-add-hooks-to-integrate-i18n_panels-1179034-41.patch"
 ; Mini Panels Warnings https://drupal.org/node/1480366
-projects[panels][patch][] = "https://drupal.org/files/panels-mini-panels-cache-1480366-5.patch"
+projects[panels][patch][] = "http://drupal.org/files/panels-mini-panels-cache-1480366-5.patch"
 
 projects[pathauto][version] = "1.2"
 
@@ -132,7 +132,7 @@ projects[variable][version] = "2.3"
 
 projects[views][version] = "3.x-dev"
 ; Notice: Undefined index: data in views_plugin_cache->restore_headers() https://drupal.org/node/2018737
-projects[views][patch][] = https://drupal.org/files/issues/views-asset-diff-2018737-21.patch
+projects[views][patch][] = http://drupal.org/files/issues/views-asset-diff-2018737-21.patch
 
 projects[views_bulk_operations][version] = "3.1"
 
